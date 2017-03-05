@@ -387,7 +387,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
@@ -1222,7 +1222,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: inherit;
@@ -1339,7 +1339,7 @@ abbr {
   border-bottom: 1px dotted #0a0a0a; }
 
 code {
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-family: "Lora", Consolas, "Liberation Mono", Courier, monospace;
   font-weight: normal;
   color: #0a0a0a;
   background-color: #e6e6e6;
@@ -1351,7 +1351,7 @@ kbd {
   margin: 0;
   background-color: #e6e6e6;
   color: #0a0a0a;
-  font-family: Consolas, "Liberation Mono", Courier, monospace; }
+  font-family: "Lora", Consolas, "Liberation Mono", Courier, monospace; }
 
 .subheader {
   margin-top: 0.2rem;
