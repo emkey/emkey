@@ -56,3 +56,33 @@
 
 /* custom */
 @import "custom";
+.off-canvas-wrapper{
+	background-color: #112128;
+}
+.portrait{
+	border-radius: 50%;
+	width: 75%;
+	height: 75%;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 8px solid #517186;
+	@media #{$medium-up} {
+		width: 40%;
+	}
+	@media #{$large-up} {
+		width: 80%
+	}
+}
+
+.mbm{
+	font-size: 1.2rem;
+	font-weight: 400;
+  @media #{$medium-up} {
+	font-size: 1.5rem;
+
+  }
+  @media #{$large-up} {
+  }
+}
