@@ -53,7 +53,7 @@
 					<span class="title-bar-title mas"><a href="{{ site.url }}">{{ site.brand }}</a></span>
 				</div>
 				-->
-				<div class="title-bar-right mts">
+				<div class="title-bar-right">
 					<ul class="menu quiet show-for-medium">
 					{% include nav.html %}
 					</ul>
@@ -70,15 +70,17 @@
             <div class="row column">
 	            {% include portfolio.html %}
             </div>
-            <footer class="site-footer row column mtl" role="contentinfo">
-              <hr/>
-              <ul class="menu quiet copyright align-right">
-                <li><a href="https://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter"></i>@{{ site.twitter }}</a></li>
-                <li><a href="https://github.com/{{ site.github }}/"><i class="fa fa-github"></i>@{{ site.github }}</a></li>
-              </ul>
-              <ul class="menu quiet">
-                {% include nav.html %}
-              </ul>
+            <footer class="site-footer row column" role="contentinfo">
+				<hr/>
+				<ul class="menu quiet copyright align-right">
+					<li><a href="https://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter"></i>@{{ site.twitter }}</a></li>
+					<li><a href="https://github.com/{{ site.github }}/"><i class="fa fa-github"></i>@{{ site.github }}</a></li>
+				</ul>
+				<!-- 
+				<ul class="menu quiet">
+				{% include nav.html %}
+				</ul>
+				-->
             </footer>
           </div><!-- end .content -->
 
