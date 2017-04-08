@@ -4125,3 +4125,15 @@ h1, h2, h3, h4, h5, h6 {
   @media screen and (min-width: 40em) {
     .mbm {
       font-size: 1.5rem; } }
+
+.page-section {
+  margin-bottom: 64px; }
+  @media screen and (min-width: 40em) {
+    .page-section {
+      margin-bottom: 96px; } }
+  @media screen and (min-width: 64em) {
+    .page-section {
+      margin-bottom: 128px; } }
+
+.portfolio-thumbnail {
+  margin-bottom: 16px; }

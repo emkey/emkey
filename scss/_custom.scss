@@ -1,9 +1,9 @@
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   font-family: $header-font-family;
-  @media #{$medium-up} {
+  @include breakpoint(medium up) {
   }
-  @media #{$large-up} {
+  @include breakpoint(large up) {
   }
 }
 

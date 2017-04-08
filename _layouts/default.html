@@ -33,7 +33,7 @@
 		<meta name="twitter:title" content="{{ page.title }}">
 		<meta name="twitter:description" content="{{ page.description }}">
 		<meta name="twitter:image" content="{{ page.imageurl }}">
-	
+		<script src="bower_components/smooth-scroll/dist/js/smooth-scroll.js"></script>
 	</head>        
 <body>
 <div class="off-canvas-wrapper">
@@ -46,23 +46,29 @@
         </div>
 
         <div class="off-canvas-content" data-off-canvas-content>
-
-          <div class="title-bar">
-            <div class="title-bar-left">
-              <span class="title-bar-title mas"><a href="{{ site.url }}">{{ site.brand }}</a></span>
-            </div>
-            <div class="title-bar-right mts">
-              <ul class="menu quiet show-for-medium">
-                {% include nav.html %}
-              </ul>
-              <button class="menu-icon quiet hide-for-medium" type="button" data-toggle="offCanvasRight"><i class="fa fa-bars" aria-hidden="true"></i> MENU</button>
-            </div>
-          </div>
-          <div class="content">
+			
+			<div class="title-bar">
+				<!--
+				<div class="title-bar-left">
+					<span class="title-bar-title mas"><a href="{{ site.url }}">{{ site.brand }}</a></span>
+				</div>
+				-->
+				<div class="title-bar-right mts">
+					<ul class="menu quiet show-for-medium">
+					{% include nav.html %}
+					</ul>
+					<button class="menu-icon quiet hide-for-medium" type="button" data-toggle="offCanvasRight"><i class="fa fa-bars" aria-hidden="true"></i> MENU</button>
+				</div>
+      		</div>
+			
+			<div class="content">
+	            <div class="row column">
+	
+	              {{ content }}
+	              
+	            </div>
             <div class="row column">
-
-              {{ content }}
-              
+	            {% include portfolio.html %}
             </div>
             <footer class="site-footer row column mtl" role="contentinfo">
               <hr/>
