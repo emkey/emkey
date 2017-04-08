@@ -4119,6 +4119,10 @@ h1, h2, h3, h4, h5, h6 {
     .portrait {
       width: 80%; } }
 
+@media screen and (min-width: 64em) {
+  .introduction-statement {
+    font-size: 4rem; } }
+
 .mbm {
   font-size: 1.2rem;
   font-weight: 200; }
