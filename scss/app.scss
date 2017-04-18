@@ -106,3 +106,18 @@ body{
 .portfolio-thumbnail{
 	margin-bottom: 16px;
 }
+
+.block-list{
+	display: block;
+	margin: 0px;
+	
+	li{
+		display: block;
+		margin: 0px;
+		padding: 16px 0px;
+		border-bottom: 1px solid #e1e1e1;
+		&:last-child{
+			border: 0px;
+		}
+	}
+}

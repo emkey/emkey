@@ -4103,9 +4103,6 @@ h1, h2, h3, h4, h5, h6 {
 .off-canvas-wrapper {
   background-color: #112128; }
 
-body {
-  background-image: url("../images/pattern.png"); }
-
 .portrait {
   border-radius: 50%;
   width: 75%;
@@ -4144,3 +4141,14 @@ body {
 
 .portfolio-thumbnail {
   margin-bottom: 16px; }
+
+.block-list {
+  display: block;
+  margin: 0px; }
+  .block-list li {
+    display: block;
+    margin: 0px;
+    padding: 16px 0px;
+    border-bottom: 1px solid #e1e1e1; }
+    .block-list li:last-child {
+      border: 0px; }
