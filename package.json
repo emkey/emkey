@@ -1,31 +1,28 @@
 {
-  "name": "foundation-sites-template",
-  "version": "1.0.0",
-  "description": "Basic template for a new Foundation for Sites project.",
-  "main": "gulpfile.js",
-  "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-jekyll": "0.0.0",
-    "gulp-load-plugins": "^1.1.0",
-    "gulp-sass": "^2.1.0"
-  },
+  "name": "kalibrr-design-system",
+  "version": "0.0.1",
+  "description": "Initial Design System",
+  "main": "index.js",
   "scripts": {
-    "start": "gulp",
-    "build": "gulp sass"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "'Mark Lester C. Lacsamana', 'Alex Collado', 'Ferdenee Mempin'",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "modularscale-sass": "^3.0.5"
+  },
+  "dependencies": {
+    "global": "^4.3.2"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zurb/foundation-sites-template.git"
+    "url": "git@git-ssh.kalibrr.com:kalibrr/design-system.git"
   },
-  "bugs": {
-    "url": "https://github.com/zurb/foundation-sites/issues",
-    "email": "foundation@zurb.com"
-  },
-  "author": "ZURB <foundation@zurb.com>",
-  "license": "MIT",
-  "private": true,
-  "dependencies": {
-    "gulp-autoprefixer": "^3.1.0"
-  }
+  "keywords": [
+    "'design",
+    "system'"
+  ]
 }

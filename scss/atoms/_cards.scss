@@ -1,0 +1,22 @@
+.card{
+	background-color: $white;
+	border-radius: $border-radius;
+	border: 1px solid darken($white, 10%);
+	@include padding-all($medium-spacing);
+	@include margin-top($medium-spacing);
+	@include margin-bottom($normal-spacing);
+	@include respond-to(medium) {
+		@include padding-all($medium-spacing);
+		@include margin-top($medium-spacing);
+		@include margin-bottom($medium-spacing);
+	}
+	@include respond-to(large) {
+		@include padding-all($large-spacing);
+		@include margin-top($large-spacing);
+		@include margin-bottom($large-spacing);
+	}
+}
+
+html>layout-wrapper>layout-row.card{
+	border: 0px;
+}

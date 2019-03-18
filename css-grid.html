@@ -1,0 +1,328 @@
+<html>
+	<head>
+		<title>Design System | Quarks | Grid</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="css-grid-container">
+			<div class="css-grid">
+
+			</div>
+		</div>
+		<div class="layout-wrapper">
+			<br />
+			<div class="layout-row">
+				<div class="column column-12">
+					<h1>Grid</h1>
+				</div>
+			</div>
+			<br />
+			<div class="layout-row">
+				<div class="column column-12">
+					<h2>Fixed Grids</h2>
+					<h3>Sample debug grid</h3>
+				</div>
+			</div>
+			<div class="layout-row sample-grid">
+				<div class="column column-1">1</div>
+				<div class="column column-1">2</div>
+				<div class="column column-1">3</div>
+				<div class="column column-1">4</div>
+				<div class="column column-1">5</div>
+				<div class="column column-1">6</div>
+				<div class="column column-1">7</div>
+				<div class="column column-1">8</div>
+				<div class="column column-1">9</div>
+				<div class="column column-1">10</div>
+				<div class="column column-1">11</div>
+				<div class="column column-1">12</div>
+			</div>
+			<br />
+	 		<div class="layout-row sample-grid">
+				<div class="column column-2">2</div>
+				<div class="column column-2">2</div>
+				<div class="column column-2">2</div>
+				<div class="column column-2">2</div>
+				<div class="column column-2">2</div>
+				<div class="column column-2">2</div>
+	 		</div>
+	 		<br />
+	  		<div class="layout-row sample-grid">
+				<div class="column column-3">3</div>
+				<div class="column column-3">3</div>
+				<div class="column column-3">3</div>
+				<div class="column column-3">3</div>
+	 		</div>
+	 		<br />
+	 		<div class="layout-row sample-grid">
+				<div class="column column-4">4</div>
+				<div class="column column-4">4</div>
+				<div class="column column-4">4</div>
+	 		</div>
+	 		<br />
+	 		<div class="layout-row sample-grid">
+				<div class="column column-6">6</div>
+				<div class="column column-6">6</div>
+	 		</div>
+	 		<br />
+	 		<div class="layout-row sample-grid">
+				<div class="column column-1">1</div>
+				<div class="column column-11">11</div>
+	 		</div>
+	 		<br />
+	 		<div class="layout-row sample-grid">
+				<div class="column column-2">2</div>
+				<div class="column column-10">10</div>
+	 		</div>
+	 		<br />
+	 		<div class="layout-row sample-grid">
+				<div class="column column-3">3</div>
+				<div class="column column-9">9</div>
+	 		</div>
+	 		<br />
+	 		<div class="layout-row sample-grid">
+				<div class="column column-4">4</div>
+				<div class="column column-8">8</div>
+	 		</div>
+	 		<br />
+	 		<div class="layout-row sample-grid">
+				<div class="column column-5">5</div>
+				<div class="column column-7">7</div>
+	 		</div>
+	 		<br />
+	 		<div class="layout-row sample-grid">
+				<div class="column column-6">6</div>
+				<div class="column column-6">6</div>
+	 		</div>
+	 		<br />
+	 		<div class="layout-row sample-grid">
+				<div class="column column-7">7</div>
+				<div class="column column-5">5</div>
+	 		</div>
+	 		<br />
+	 		<div class="layout-row sample-grid">
+				<div class="column column-8">8</div>
+				<div class="column column-4">4</div>
+	 		</div>
+	 		<br />
+	 		<div class="layout-row sample-grid">
+				<div class="column column-9">9</div>
+				<div class="column column-3">3</div>
+	 		</div>
+	 		<br />
+	 		<div class="layout-row sample-grid">
+				<div class="column column-10">10</div>
+				<div class="column column-2">2</div>
+	 		</div>
+	 		<br />
+	 		<div class="layout-row sample-grid">
+				<div class="column column-11">11</div>
+				<div class="column column-1">1</div>
+	 		</div>
+	 		<br />
+	 		<div class="layout-row sample-grid">
+				<div class="column column-12">12</div>
+	 		</div>
+	 		<br />
+	 	</div>
+	 	<div class="layout-wrapper">
+			<div class="sample-livegrid">
+				<div class="column column-12"><h3>Sample usage of grid mixins</h3></div>
+				<div class="left-sidebar">
+					<p>This is an example of a container with the class being created by using @include with one of the available grid column mixins. This in particular is  3 column grid</p>
+					<p>This sidebar has 1 column on mobile browsers, 4 columns on tablet browsers and 3 columns on desktop browsers. The above breakpoint is showcased all in the .left-sidebar class</p>
+				</div>
+				<div class="middle-area">
+					<p>This is an example of a container with the class being created by using @include with one of the available grid column classes. This in particular is  6 column grid</p>
+					<p>This main container has 1 column on mobile browsers, 4 columns on tablet browsers and 6 columns on desktop browsers. The above breakpoint is showcased all in the .left-sidebar class</p>
+				</div>
+				<div class="right-sidebar">
+					<p>This is an example of a container with the class being created by using @include with one of the available grid column classes. This in particular is  3 column grid</p>
+					<p>This sidebar has 1 column on mobile browsers, 4 columns on tablet browsers and 3 columns on desktop browsers. The above breakpoint is showcased all in the .left-sidebar class</p>
+				</div>
+			</div>
+		</div>
+		<br />
+		<div class="layout-wrapper">
+			<div class="layout-row">
+				<div class="column-12 column">
+					<h3>Nested Grids</h3>
+				</div>
+			</div>
+		</div>
+		<div class="layout-wrapper">
+			<div class="layout-row sample-grid">
+				<div class="column-6 column">
+					 6 column parent cell
+					<div class="layout-wrapper nested-grid-sample">
+						<div class="layout-row sample-grid">
+							<div class="column-6 column">6 column nested cell
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br />
+		<div class="layout-wrapper">
+			<div class="layout-row">
+				<div class="column-12 column">
+					<h3>Cards using grids</h3>
+				</div>
+			</div>
+		</div>
+		<div class="layout-wrapper">
+			<div class="layout-row">
+				<div class="column column-1 card textalign-center">1</div>
+				<div class="column column-1 card textalign-center">2</div>
+				<div class="column column-1 card textalign-center">3</div>
+				<div class="column column-1 card  textalign-center">4</div>
+				<div class="column column-1 card textalign-center">5</div>
+				<div class="column column-1 card textalign-center">6</div>
+				<div class="column column-1 card textalign-center">7</div>
+				<div class="column column-1 card textalign-center">8</div>
+				<div class="column column-1 card textalign-center">9</div>
+				<div class="column column-1 card textalign-center">10</div>
+				<div class="column column-1 card textalign-center">11</div>
+				<div class="column column-1 card textalign-center">12</div>
+			</div>
+			<br />
+			<div class="layout-row">
+				<div class="column column-2 card textalign-center">1</div>
+				<div class="column column-2 card textalign-center">2</div>
+				<div class="column column-2 card textalign-center">3</div>
+				<div class="column column-2 card textalign-center">4</div>
+				<div class="column column-2 card textalign-center">5</div>
+				<div class="column column-2 card textalign-center">6</div>
+			</div>
+			<br />
+			<div class="layout-row">
+				<div class="column column-3 card textalign-center">1</div>
+				<div class="column column-3 card textalign-center">2</div>
+				<div class="column column-3 card textalign-center">3</div>
+				<div class="column column-3 card textalign-center">4</div>
+			</div>
+			<br />
+			<div class="layout-row">
+				<div class="column column-4 card textalign-center">1</div>
+				<div class="column column-4 card textalign-center">2</div>
+				<div class="column column-4 card textalign-center">3</div>
+			</div>
+			<br />
+			<div class="layout-row">
+				<div class="column column-6 card textalign-center">1</div>
+				<div class="column column-6 card textalign-center">2</div>
+			</div>
+		</div>
+<br />
+		<div class="fullwidth-wrapper">
+			<div class="layout-row">
+				<div class="column column-12">
+					<h2>Full width Grids</h2>
+					<h3>Sample grid</h3>
+				</div>
+			</div>
+			<div class="layout-row sample-grid">
+				<div class="column column-1">1</div>
+				<div class="column column-1">2</div>
+				<div class="column column-1">3</div>
+				<div class="column column-1">4</div>
+				<div class="column column-1">5</div>
+				<div class="column column-1">6</div>
+				<div class="column column-1">7</div>
+				<div class="column column-1">8</div>
+				<div class="column column-1">9</div>
+				<div class="column column-1">10</div>
+				<div class="column column-1">11</div>
+				<div class="column column-1">12</div>
+			</div>
+			<br />
+	 		<div class="layout-row sample-grid">
+				<div class="column column-2">2</div>
+				<div class="column column-2">2</div>
+				<div class="column column-2">2</div>
+				<div class="column column-2">2</div>
+				<div class="column column-2">2</div>
+				<div class="column column-2">2</div>
+	 		</div>
+	 		<br />
+	  		<div class="layout-row sample-grid">
+				<div class="column column-3">3</div>
+				<div class="column column-3">3</div>
+				<div class="column column-3">3</div>
+				<div class="column column-3">3</div>
+	 		</div>
+	 		<br />
+	 		<div class="layout-row sample-grid">
+				<div class="column column-4">4</div>
+				<div class="column column-4">4</div>
+				<div class="column column-4">4</div>
+	 		</div>
+	 		<br />
+	 		<div class="layout-row sample-grid">
+				<div class="column column-6">6</div>
+				<div class="column column-6">6</div>
+	 		</div>
+	 		<br />
+	 		<div class="layout-row sample-grid">
+				<div class="column column-1">1</div>
+				<div class="column column-11">11</div>
+	 		</div>
+	 		<br />
+	 		<div class="layout-row sample-grid">
+				<div class="column column-2">2</div>
+				<div class="column column-10">10</div>
+	 		</div>
+	 		<br />
+	 		<div class="layout-row sample-grid">
+				<div class="column column-3">3</div>
+				<div class="column column-9">9</div>
+	 		</div>
+	 		<br />
+	 		<div class="layout-row sample-grid">
+				<div class="column column-4">4</div>
+				<div class="column column-8">8</div>
+	 		</div>
+	 		<br />
+	 		<div class="layout-row sample-grid">
+				<div class="column column-5">5</div>
+				<div class="column column-7">7</div>
+	 		</div>
+	 		<br />
+	 		<div class="layout-row sample-grid">
+				<div class="column column-6">6</div>
+				<div class="column column-6">6</div>
+	 		</div>
+	 		<br />
+	 		<div class="layout-row sample-grid">
+				<div class="column column-7">7</div>
+				<div class="column column-5">5</div>
+	 		</div>
+	 		<br />
+	 		<div class="layout-row sample-grid">
+				<div class="column column-8">8</div>
+				<div class="column column-4">4</div>
+	 		</div>
+	 		<br />
+	 		<div class="layout-row sample-grid">
+				<div class="column column-9">9</div>
+				<div class="column column-3">3</div>
+	 		</div>
+	 		<br />
+	 		<div class="layout-row sample-grid">
+				<div class="column column-10">10</div>
+				<div class="column column-2">2</div>
+	 		</div>
+	 		<br />
+	 		<div class="layout-row sample-grid">
+				<div class="column column-11">11</div>
+				<div class="column column-1">1</div>
+	 		</div>
+	 		<br />
+	 		<div class="layout-row sample-grid">
+				<div class="column column-12">12</div>
+	 		</div>
+
+		</div>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+.section-introduction{
+	@extend .layout-wrapper;
+	@include clearfix;
+}
+.introduction-header{
+	@include padding-top($large-spacing);
+	@include padding-bottom($large-spacing);
+	@include column-width(12);
+	color: lighten($kdarkgrey, 20%);
+}
+.introduction-photo{
+	@include padding-bottom($large-spacing);
+	@include column-width(12);
+	@include respond-to(medium){
+		@include column-width(6);
+	}
+}
+.introduction-bio{
+	@include padding-left($normal-spacing);
+	@include padding-right($normal-spacing);
+	@include respond-to(medium){
+		@include column-width(8);
+		@include padding-left($normal-spacing);
+		@include padding-right($normal-spacing);
+	}
+}
+.section-portfolio{
+	@extend .layout-wrapper;
+	@include clearfix;
+	@include padding-bottom($normal-spacing);
+}
+.section-portfolio .portfolio-article{
+	@include padding-left($normal-spacing);
+	@include padding-right($normal-spacing);
+	@include padding-bottom($medium-spacing);
+	@include padding-top($large-spacing);
+	@include respond-to(medium){
+		@include column-width(4);
+		@include padding-left($normal-spacing);
+		@include padding-right($normal-spacing);
+	}
+	.portfolio-thumbnail{
+		width: 100%;
+		@include padding-bottom($medium-spacing);
+	}
+	.button{
+		margin: 0px;
+	}
+}

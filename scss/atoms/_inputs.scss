@@ -1,0 +1,58 @@
+
+
+input{
+	@include border-bottom(1px,solid);
+	@include border-top(0px,solid);
+	@include border-right(0px,solid);
+	@include border-left(0px,solid);
+	@include padding-bottom($normal-spacing);
+	@include padding-top($normal-spacing);
+	font-size: ms(0);
+	font-weight: $main-typeface;
+	line-height: $base-lineheight;
+
+	&::placeholder{
+		color: lighten($kdarkgrey, 30%);
+		font-weight: 300;
+	}
+	&:focus{
+		border-color: lighten($kblue, 15%);
+		&::placeholder{
+			color: lighten($kblue, 15%);
+		}
+	}
+}
+textarea{
+	resize: none;
+	@include border-top(0px,solid);
+	@include border-right(0px,solid);
+	@include border-left(0px,solid);
+	@include border-bottom(1px,solid);
+	font-family: $main-typeface;
+	font-weight: 300;
+	font-size: ms(0);
+	line-height: $base-lineheight;
+	color: lighten($kdarkgrey, 30%);
+	display: inline-block;
+	@include padding-top($normal-spacing);
+	@include padding-right($normal-spacing);
+	@include padding-bottom($normal-spacing);
+	@include padding-left($normal-spacing);
+	&:focus{
+	background-color: darken($white, 15%);
+	border-top-right-radius: $border-radius;
+	border-top-left-radius: $border-radius;
+	
+	@include border-bottom(1px,solid);
+		&::placeholder{
+			color: lighten($kblue, 15%);
+		}
+	}
+	
+}
+input.error, textarea.error{
+	border-color: $red;
+	&::placeholder{
+		color: $red;
+	}
+}

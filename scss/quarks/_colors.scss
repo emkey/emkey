@@ -1,0 +1,359 @@
+/*
+I. Backgrounds
+	A. Primary Colors
+	B. Secondary Colors
+	C. Tints
+II. Borders
+	A. Primary Colors
+	B. Secondary Colors
+	C. Tints 
+*/
+
+/* For lightening color. */
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+/* For darkening color. */
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+/* Lightening Background states */
+@mixin backgroundtint($color,$grade) {
+	@if $grade == 0{
+		background-color: $color;
+	}
+	@if ($grade == 1 and not ($color == $white)){
+		background-color: tint($color,20%)
+	}
+	@if ($grade == 2 and not ($color == $white)){
+		background-color: tint($color,40%)
+	}
+	@if ($grade == 3 and not ($color == $white)){
+		background-color: tint($color,60%)
+	}
+	@if ($grade == 1 and ($color == $white)){
+		background-color: tint($color,10%)
+	}
+	@if ($grade == 2 and ($color == $white)){
+		background-color: tint($color,20%)
+	}
+	@if ($grade == 3 and ($color == $white)){
+		background-color: tint($color,30%)
+	}
+}
+/* Lightening Borders */
+@mixin bordertint($color,$grade) {
+	@if $grade == 0{
+		border-color: $color;
+	}
+	@if ($grade == 1 and not ($color == $white)){
+		border-color: tint($color,20%)
+	}
+	@if ($grade == 2 and not ($color == $white)){
+		border-color: tint($color,40%)
+	}
+	@if ($grade == 3 and not ($color == $white)){
+		border-color: tint($color,60%)
+	}
+	@if ($grade == 1 and ($color == $white)){
+		border-color: tint($color,10%)
+	}
+	@if ($grade == 2 and ($color == $white)){
+		border-color: tint($color,20%)
+	}
+	@if ($grade == 3 and ($color == $white)){
+		border-color: tint($color,30%)
+	}
+}
+/* Darkening Background states */
+@mixin backgroundshade($color,$grade) {
+	@if $grade == 0{
+		background-color: $color;
+	}
+	@if ($grade == 1 and not ($color == $white)){
+		background-color: shade($color,20%)
+	}
+	@if ($grade == 2 and not ($color == $white)){
+		background-color: shade($color,40%)
+	}
+	@if ($grade == 3 and not ($color == $white)){
+		background-color: shade($color,60%)
+	}
+	@if ($grade == 1 and ($color == $white)){
+		background-color: shade($color,10%)
+	}
+	@if ($grade == 2 and ($color == $white)){
+		background-color: shade($color,20%)
+	}
+	@if ($grade == 3 and ($color == $white)){
+		background-color: shade($color,30%)
+	}
+}
+/* Darkening Border colors */
+@mixin bordershade($color,$grade) {
+	@if $grade == 0{
+		border-color: $color;
+	}
+	@if ($grade == 1 and not ($color == $white)){
+		border-color: shade($color,20%)
+	}
+	@if ($grade == 2 and not ($color == $white)){
+		border-color: shade($color,40%)
+	}
+	@if ($grade == 3 and not ($color == $white)){
+		border-color: shade($color,60%)
+	}
+	@if ($grade == 1 and ($color == $white)){
+		border-color: shade($color,10%)
+	}
+	@if ($grade == 2 and ($color == $white)){
+		border-color: shade($color,20%)
+	}
+	@if ($grade == 3 and ($color == $white)){
+		border-color: shade($color,30%)
+	}
+}
+
+/* Darkening Border colors */
+@mixin textcolorshade($color,$grade) {
+	@if $grade == 0{
+		color: $color;
+	}
+	@if ($grade == 1 and not ($color == $white)){
+		color: shade($color,20%)
+	}
+	@if ($grade == 2 and not ($color == $white)){
+		color: shade($color,40%)
+	}
+	@if ($grade == 3 and not ($color == $white)){
+		color: shade($color,60%)
+	}
+	@if ($grade == 1 and ($color == $white)){
+		color: shade($color,10%)
+	}
+	@if ($grade == 2 and ($color == $white)){
+		color: shade($color,20%)
+	}
+	@if ($grade == 3 and ($color == $white)){
+		color: shade($color,30%)
+	}
+}
+@mixin textcolortint($color,$grade) {
+	@if $grade == 0{
+		color: $color;
+	}
+	@if ($grade == 1 and not ($color == $white)){
+		color: tint($color,20%)
+	}
+	@if ($grade == 2 and not ($color == $white)){
+		color: tint($color,40%)
+	}
+	@if ($grade == 3 and not ($color == $white)){
+		color: tint($color,60%)
+	}
+	@if ($grade == 1 and ($color == $white)){
+		color: tint($color,10%)
+	}
+	@if ($grade == 2 and ($color == $white)){
+		color: tint($color,20%)
+	}
+	@if ($grade == 3 and ($color == $white)){
+		color: tint($color,30%)
+	}
+}
+
+/* I. Backgrounds */
+	/* A. Primary Colors */
+	.fill-blue{
+		@include backgroundtint($kblue,0);
+	}
+	.fill-black{
+		@include backgroundtint($kdarkgrey,0);
+	}
+	.fill-white{
+		@include backgroundtint($white,0);
+	}
+	/* B. Secondary Colors */
+	.fill-red{
+		@include backgroundtint($red,0);
+	}
+	.fill-green{
+		@include backgroundtint($green,0);
+	}
+	.fill-amber{
+		@include backgroundtint($amber,0);
+	}
+
+	/* C. Tints */
+	$fill-slug: fill !default;
+		/* 1. Blues */
+		@for $i from 1 through 3{
+			.#{$fill-slug}-blue-#{$i}{
+				@include backgroundtint($kblue,$i);
+			}
+		}
+		/* 2. Black */
+		@for $i from 1 through 3{
+			.#{$fill-slug}-black-#{$i}{
+				@include backgroundtint($kdarkgrey,$i);
+			}
+		}
+		/* 3. Whites */
+		@for $i from 1 through 3{
+			.#{$fill-slug}-white-#{$i}{
+				@include backgroundshade($white,$i);
+			}
+		}
+		/* 4. Red */
+		@for $i from 1 through 3{
+			.#{$fill-slug}-red-#{$i}{
+				@include backgroundtint($red,$i);
+			}
+		}
+		/* 5. Amber */
+		@for $i from 1 through 3{
+			.#{$fill-slug}-amber-#{$i}{
+				@include backgroundtint($amber,$i);
+			}
+		}
+		/* 6. Green */
+		@for $i from 1 through 3{
+			.#{$fill-slug}-green-#{$i}{
+				@include backgroundtint($green,$i);
+			}
+		}
+
+/* II. Borders */
+$border-slug: border !default;
+	/* A. Primary */
+		/* 1. Blue */
+		.border-blue{
+			@include bordertint($kblue,0);
+		}
+
+		/* 2. Black */
+		.border-black{
+			@include bordertint($kdarkgrey,0);
+		}
+
+		/* 3. White */
+		.border-white{
+			@include bordershade($white,0);
+		}
+
+	/* Secondary */
+
+		/* 1. Amber */
+		.border-amber{
+			@include bordertint($amber,0);
+		}
+
+		/* 2. Red */
+		.border-red{
+			@include bordertint($red,0);
+		}
+
+		/* 3. Green */
+		.border-green{
+			@include bordertint($green,0);
+		}
+		
+	/* Tints */
+
+		/* Blue */
+		@for $i from 1 through 3{
+			.#{$border-slug}-blue-#{$i}{
+				@include bordertint($kblue,$i);
+			}
+		}
+
+		/* Black */
+		@for $i from 1 through 3{
+			.#{$border-slug}-black-#{$i}{
+				@include bordertint($kdarkgrey,$i);
+			}
+		}
+
+		/* White */
+		@for $i from 1 through 3{
+			.#{$border-slug}-white-#{$i}{
+				@include bordershade($white,$i);
+			}
+		}
+
+		/* Amber */
+		@for $i from 1 through 3{
+			.#{$border-slug}-amber-#{$i}{
+				@include bordertint($amber,$i);
+			}
+		}
+
+		/* Red */
+		@for $i from 1 through 3{
+			.#{$border-slug}-red-#{$i}{
+				@include bordertint($red,$i);
+			}
+		}
+
+		/* Green */
+		@for $i from 1 through 3{
+			.#{$border-slug}-green-#{$i}{
+				@include bordertint($green,$i);
+			}
+		}
+
+/* III. Text Color */
+$textcolor-slug: textcolor !default;
+	/* A. Primary Color */
+	.textcolor-blue{
+		@include textcolortint($kblue,0);
+	}
+	.textcolor-black{
+		@include textcolortint($kdarkgrey,0);
+	}
+	.textcolor-white{
+		@include textcolortint($white,0);
+	}
+	/* B. Secondary Color */
+	.textcolor-amber{
+		@include textcolortint($amber,0);
+	}
+	.textcolor-red{
+		@include textcolortint($red,0);
+	}
+	.textcolor-green{
+		@include textcolortint($green,0);
+	}
+	/* C. Tints */
+	@for $i from 1 through 3{
+		.#{$textcolor-slug}-blue-#{$i}{
+			@include textcolortint($kblue,$i);
+		}
+	}
+	@for $i from 1 through 3{
+		.#{$textcolor-slug}-black-#{$i}{
+			@include textcolortint($kdarkgrey,$i);
+		}
+	}
+	@for $i from 1 through 3{
+		.#{$textcolor-slug}-white-#{$i}{
+			@include textcolorshade($white,$i);
+		}
+	}
+	@for $i from 1 through 3{
+		.#{$textcolor-slug}-amber-#{$i}{
+			@include textcolortint($amber,$i);
+		}
+	}
+	@for $i from 1 through 3{
+		.#{$textcolor-slug}-red-#{$i}{
+			@include textcolortint($red,$i);
+		}
+	}
+	@for $i from 1 through 3{
+		.#{$textcolor-slug}-green-#{$i}{
+			@include textcolortint($green,$i);
+		}
+	}

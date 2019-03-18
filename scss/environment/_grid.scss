@@ -1,0 +1,57 @@
+/* Example CSS */
+.sample-grid{
+	background-color: $red;
+	.column{
+		background-color: lighten($red, 15%);
+		text-align: center;
+	}
+} 
+.sample-livegrid{
+	@extend .layout-wrapper;
+	@include clearfix;
+	.column{
+		
+	}
+}
+.left-sidebar{
+	@include column-width(12);
+	@include padding-all($normal-spacing);
+	background-color: lighten($red, 30%);
+	@include respond-to(medium){
+		@include column-width(4);
+	}
+	@include respond-to(large){
+		@include column();
+		@include column-width(3);
+		@include padding-all($large-spacing);
+	}
+	
+}
+.middle-area{
+	@include column-width(12);
+	@include padding-all($normal-spacing);
+	background-color: lighten($red, 20%);
+	@include respond-to(medium){
+		@include column-width(4);
+		@include padding-all($normal-spacing);
+	}
+	@include respond-to(large){
+		@include column-width(6);
+	}
+}
+.right-sidebar{
+	@include column-width(12);
+	@include padding-all($normal-spacing);
+	background-color: lighten($red, 10%);
+	@include respond-to(medium){
+		@include column-width(4);
+	}
+	@include respond-to(large){
+		@include column-width(3);
+	}
+}
+.nested-grid-sample {
+	.column{
+		background-color: rgba(246,104,94,50);
+	}
+}

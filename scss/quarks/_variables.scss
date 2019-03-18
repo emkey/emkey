@@ -1,0 +1,58 @@
+/* Basic Variables */
+$root-fontsize: 100%;
+$border-radius: 0rem;
+$layout-maxwidth: 80rem;
+$layout-columns: 12;
+
+/* Layout Gutters */
+$small-gutter-width: 0.25rem;
+$medium-gutter-width: 0.5rem;
+$large-gutter-width: 1rem;
+
+/* Typography */
+$main-typeface: 'Merriweather', sans-serif;
+$sub-typeface: 'Fira Sans', serif;
+$base-fontsize: 1em;
+$base-lineheight: 1.8em;
+$font-weight: 400;
+
+/* Spacing */
+$normal-spacing: 0.5rem;
+$medium-spacing: 1rem;
+$large-spacing: 1.5rem;
+
+// Color Variables
+$kblue: #0076DE;
+$kdarkgrey: #1C1F21;
+$white: #fff;
+$red: #F44336;
+$green: #4CAF50;
+$amber: #FFC107;
+
+// Breakpoints
+$breakpoints: (
+  'small'  : 0px,
+  'medium' : 600px,
+  'large'  : 1025px
+);
+
+/*
+$shadowlevel: (
+	$level1: 3px;
+	$level2: 6px;
+	$level3: 9px;
+);
+
+$shadowalpha: (
+	$alpha1: 0.1;
+	$alpha2: 0.2;
+	$alpha3: 0.3;
+);
+*/
+$shadowlevel1: 3px;
+$shadowlevel2: 6px;
+$shadowlevel3: 9px;
+
+$shadowalpha1: 0.1;
+$shadowalpha2: 0.2;
+$shadowalpha3: 0.3;

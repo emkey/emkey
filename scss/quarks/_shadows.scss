@@ -1,0 +1,38 @@
+
+$shadowintensity10: 0.10;
+$shadowintensity20: 0.20;
+$shadowintensity30: 0.30;
+
+
+@mixin box-shadow($shadowlevel, $shadowalpha){
+	box-shadow: 0px 3px $shadowlevel rgba($kdarkgrey, $shadowalpha);
+}
+.box-shadow1{
+	@include box-shadow($shadowlevel1, $shadowalpha1);
+}
+.box-shadow2{
+	@include box-shadow($shadowlevel1, $shadowalpha2);
+}
+.box-shadow3{
+	@include box-shadow($shadowlevel1, $shadowalpha3);
+}
+.box-shadow4{
+	@include box-shadow($shadowlevel2, $shadowalpha1);
+}
+.box-shadow5{
+	@include box-shadow($shadowlevel2, $shadowalpha2);
+}
+.box-shadow6{
+	@include box-shadow($shadowlevel2, $shadowalpha3);
+}
+.box-shadow7{
+	@include box-shadow($shadowlevel3, $shadowalpha1);
+}
+.box-shadow8{
+	@include box-shadow($shadowlevel3, $shadowalpha2);
+}
+.box-shadow9{
+	@include box-shadow($shadowlevel3, $shadowalpha3);
+}
+
+// 

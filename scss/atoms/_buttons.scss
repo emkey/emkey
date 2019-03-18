@@ -1,0 +1,396 @@
+/* Buttons */
+/* Table of Contents */
+/** 
+I. Normal Buttons
+	A. Variations
+		1. Basic Hover State
+		2. Inverted Buttons
+		3. Deactivated Buttons
+		4. Negative Buttons
+		5. Warning Buttons
+
+II. Secondary Buttons
+
+**/
+
+$hover:1;
+$clicked:3;
+// I. Normal Buttons
+
+.button{
+	@extend .button-text;
+	@include padding-top($normal-spacing);
+	@include padding-right($medium-spacing);
+	@include padding-bottom($normal-spacing);
+	@include padding-left($medium-spacing)
+	@include margin-all($normal-spacing);
+	border-radius: $border-radius;
+	font-family: $sub-typeface;
+	transition: background-color 0.30s ease-out;
+	// A. Variations
+		// 1. Basic Hover State
+		&:hover{
+			@extend .#{$fill-slug}-blue-#{$hover};
+			@extend .#{$textcolor-slug}-white;
+		}
+		&.clicked{
+			@extend .#{$textcolor-slug}-blue;
+			@extend .#{$fill-slug}-blue-#{$clicked};
+		}
+		&.clicked:hover{
+			@extend .#{$textcolor-slug}-blue;
+			@extend .#{$fill-slug}-blue-#{$clicked};
+		}
+		// 2. Inverted Button
+		&.inverted{
+			@extend .#{$textcolor-slug}-white;
+		}
+		&.inverted:hover{
+			@extend .#{$textcolor-slug}-white;
+			@extend .#{$fill-slug}-blue-#{$hover};
+		}
+		&.inverted.clicked{
+			@extend .#{$textcolor-slug}-white;
+			@extend .#{$fill-slug}-blue-#{$clicked};
+		}
+		&.inverted.clicked:hover{
+			@extend .#{$textcolor-slug}-white;
+			@extend .#{$fill-slug}-blue-#{$clicked};
+		}
+		// 3. Deactivated Button
+		&.deactivated{
+			@extend .#{$textcolor-slug}-white-#{$hover};
+		}
+		&.deactivated:hover{
+			@extend .#{$textcolor-slug}-white-#{$hover};
+			background-color: transparent;
+		}
+		&.deactivated.clicked{
+			@extend .#{$fill-slug}-white-#{$clicked};
+			@extend .#{$fill-slug}-white-#{$hover};
+		}
+		&.deactivated.clicked:hover{
+			@extend .#{$fill-slug}-white-#{$clicked};
+			@extend .#{$fill-slug}-white-#{$hover};
+		}
+		// 4. Negative Button
+		&.negative{
+			@extend .#{$textcolor-slug}-red;;
+		}
+		&.negative:hover{
+			@extend .#{$fill-slug}-red-#{$hover};
+			@extend .#{$textcolor-slug}-white;
+		}
+		&.negative.clicked{
+			@extend .#{$fill-slug}-red-#{$clicked};
+		}
+		&.negative.clicked:hover{
+			@extend .#{$textcolor-slug}-red;;
+			@extend .#{$fill-slug}-red-#{$clicked};
+		}
+//* Old System Buttons *///
+		// 5. Success Button
+		&.success{
+			@extend .#{$textcolor-slug}-green;
+		}
+		&.success:hover{
+			@extend .#{$fill-slug}-green-#{$hover};
+			@extend .#{$textcolor-slug}-white;		
+		}
+		&.success.clicked{
+			@extend .#{$textcolor-slug}-green;
+			@extend .#{$fill-slug}-green-#{$clicked};
+		}
+		&.success.clicked:hover{
+			@extend .#{$textcolor-slug}-green;
+			@extend .#{$fill-slug}-green-#{$clicked};
+		}
+		// 6. Warning Button
+		&.warning{
+			@extend .#{$textcolor-slug}-amber;
+		}
+		&.warning:hover{
+			@extend .#{$fill-slug}-amber-#{$hover};
+			@extend .#{$textcolor-slug}-white;
+		}
+		&.warning.clicked{
+			@extend .#{$textcolor-slug}-amber;
+			@extend .#{$fill-slug}-amber-#{$clicked};
+		}
+		&.warning.clicked:hover{
+			@extend .#{$textcolor-slug}-amber;
+			@extend .#{$fill-slug}-amber-#{$clicked};
+		}
+		//7. Neutral Button
+		&.neutral{
+			@extend .#{$textcolor-slug}-black;
+		}
+		&.neutral:hover{
+			@extend .#{$textcolor-slug}-white;;
+			@extend .#{$fill-slug}-black-#{$hover}
+		}
+		&.neutral.clicked{
+			@extend .#{$fill-slug}-black-#{$clicked};
+		}
+		&.neutral.clicked:hover{
+			@extend .#{$textcolor-slug}-black;
+		}
+// II. Secondary Buttons
+
+	&.secondary{
+		@include border-all(1px,1px,1px,1px,solid);
+		@extend .border-blue;
+
+		// A. Variations
+			// 1. Basic Hover State
+			&:hover{
+				@extend .#{$fill-slug}-blue-#{$hover};
+				@extend .#{$border-slug}-blue-#{$hover};
+			}
+			&.clicked{
+				@extend .#{$fill-slug}-blue-#{$clicked};
+				@extend .#{$textcolor-slug}-blue;
+			}
+			&.clicked:hover{
+				@extend .#{$fill-slug}-blue-#{$clicked};
+				@extend .#{$textcolor-slug}-blue;
+			}
+			// 2. Inverted Buttons
+			&.inverted{
+				border-color: $white;
+			}
+			&.inverted:hover{
+				@extend .#{$fill-slug}-blue-#{$hover};
+				@extend .#{$border-slug}-blue-#{$hover};
+			}
+			&.inverted.clicked{
+				@extend .#{$border-slug}-white-#{$hover};
+				@extend .#{$fill-slug}-blue-#{$clicked};
+				@extend .#{$textcolor-slug}-white;;
+			}
+			&.inverted.clicked:hover{
+				@extend .#{$border-slug}-white-#{$hover};
+				@extend .#{$fill-slug}-blue-#{$clicked};
+				@extend .#{$textcolor-slug}-white;;
+			}
+			// 3. Deactivate Buttons
+			&.deactivated{
+				@extend .#{$textcolor-slug}-white-#{$hover};
+				@extend .#{$border-slug}-white-#{$hover};
+			}
+			&.deactivated:hover{
+				@extend .#{$textcolor-slug}-white-#{$hover};
+				@extend .#{$border-slug}-white-#{$hover};
+				background: transparent;
+			}
+			&.deactivated.clicked{
+				@extend .#{$border-slug}-white-#{$hover};
+				@extend .#{$textcolor-slug}-white-#{$hover};
+				background: transparent;
+			}
+			&.deactivated.clicked:hover{
+				@extend .#{$border-slug}-white-#{$hover};
+				@extend .#{$textcolor-slug}-white-#{$hover};
+				background:transparent;
+			}
+			// 4. Negative Buttons
+			&.negative{
+				@extend .#{$textcolor-slug}-red-#{$hover};
+				@extend .#{$border-slug}-red-#{$hover};
+			}
+			&.negative:hover{
+				@extend .#{$textcolor-slug}-white;
+				@extend .#{$border-slug}-red-#{$hover};
+				@extend .#{$fill-slug}-red-#{$hover};
+			}
+			&.negative.clicked{
+				@extend .#{$border-slug}-red-#{$hover};
+				@extend .#{$fill-slug}-red-#{$clicked};
+				@extend .#{$textcolor-slug}-red;
+			}
+			&.negative.clicked:hover{
+				@extend .#{$border-slug}-red-#{$hover};
+				@extend .#{$fill-slug}-red-#{$clicked};
+				@extend .#{$textcolor-slug}-red-#{$hover};
+			}
+//* Old System Buttons *//
+
+			// 5. Success Buttons
+			&.success{
+				@extend .#{$textcolor-slug}-green;
+				@extend .#{$border-slug}-green-#{$hover};
+			}
+			&.success:hover{
+				@extend .#{$textcolor-slug}-white;
+				@extend .#{$border-slug}-green-#{$hover};
+				@extend .#{$fill-slug}-green-#{$hover};
+			}
+			&.success.clicked{
+				@extend .#{$border-slug}-green-#{$hover};
+				@extend .#{$fill-slug}-green-#{$clicked};
+				@extend .#{$textcolor-slug}-green-#{$hover};
+			}
+			&.success.clicked:hover{
+				@extend .#{$border-slug}-green-#{$hover};
+				@extend .#{$fill-slug}-green-#{$clicked};
+				@extend .#{$textcolor-slug}-green-#{$hover};
+			}
+
+			// 6. Warning buttons
+			&.warning{
+				@extend .#{$textcolor-slug}-amber;
+				@extend .#{$border-slug}-amber-#{$hover};
+			}
+			&.warning:hover{
+				@extend .#{$textcolor-slug}-white;
+				@extend .#{$border-slug}-amber-#{$hover};
+				@extend .#{$fill-slug}-amber-#{$hover};
+			}
+			&.warning.clicked{
+				@extend .#{$textcolor-slug}-amber;
+				@extend .#{$border-slug}-amber-#{$hover};
+				@extend .#{$fill-slug}-amber-#{$clicked};
+			}
+			&.warning.clicked:hover{
+				@extend .#{$textcolor-slug}-amber;
+				@extend .#{$border-slug}-amber-#{$hover};
+				@extend .#{$fill-slug}-amber-#{$clicked};
+			}
+			// 7. Neutral Buttons
+			&.neutral{
+				@extend .#{$textcolor-slug}-black;
+				@extend .#{$border-slug}-black-#{$hover};
+			}
+			&.neutral:hover{
+				@extend .#{$textcolor-slug}-white;
+				@extend .#{$border-slug}-black-#{$hover};
+			}
+			&.neutral.clicked{
+				@extend .#{$textcolor-slug}-black;
+				@extend .#{$fill-slug}-black-#{$clicked};
+				@extend .#{$border-slug}-black-#{$hover};
+			}
+			&.neutral.clicked:hover{
+				@extend .#{$textcolor-slug}-black;
+				@extend .#{$fill-slug}-black-#{$clicked};
+				@extend .#{$border-slug}-black-#{$hover};
+			}
+	}		
+
+//III. Primary Buttons
+
+	&.primary{
+		@extend .fill-blue;
+		@extend .#{$textcolor-slug}-white;
+		// A. Variations
+			// 1. Hover
+			&:hover{
+				@extend .#{$fill-slug}-blue-#{$hover};
+			}
+			&.clicked{
+				@extend .#{$fill-slug}-blue-#{$clicked};
+			}
+			&.clicked:hover{
+				@extend .#{$fill-slug}-blue-#{$clicked};
+				@extend .#{$textcolor-slug}-white;
+			}
+			// 2. Inverted
+			&.inverted{
+				@extend .#{$fill-slug}-white;
+				@extend .#{$textcolor-slug}-blue;
+			}
+			&.inverted:hover{
+				@extend .#{$fill-slug}-blue-#{$hover};
+				@extend .#{$textcolor-slug}-white;
+			}
+			&.inverted.clicked{
+				@extend .#{$fill-slug}-blue-#{$clicked};
+				@extend .#{$textcolor-slug}-blue;
+			}
+			&.inverted.clicked:hover{
+				@extend .#{$fill-slug}-blue-#{$clicked};
+				@extend .#{$textcolor-slug}-blue;
+			}
+			// 3. Deactivated
+			&.deactivated{
+				@extend .#{$textcolor-slug}-white;
+				@extend .#{$fill-slug}-white-#{$hover};
+			}
+			&.deactivated:hover{
+				@extend .#{$textcolor-slug}-white;
+				@extend .#{$fill-slug}-white-#{$hover};
+			}
+			&.deactivated.clicked{
+				@extend .#{$textcolor-slug}-white;
+				@extend .#{$fill-slug}-white-#{$hover};
+			}
+			&.deactivated.clicked:hover{
+				@extend .#{$textcolor-slug}-white;;
+				@extend .#{$fill-slug}-white-#{$hover};
+			}
+			// 4. Negative Buttons
+			&.negative{
+				@extend .#{$fill-slug}-red;
+				@extend .#{$textcolor-slug}-white;
+			}
+			&.negative:hover{
+				@extend .#{$fill-slug}-red-#{$hover};
+			}
+			&.negative.clicked{
+				@extend .#{$fill-slug}-red-#{$hover};
+				@extend .#{$textcolor-slug}-white;
+			}
+			&.negative.clicked:hover{
+				@extend .#{$fill-slug}-red-#{$hover};
+				@extend .#{$textcolor-slug}-white;
+			}
+//* Old System Buttons *//
+
+			// 5. Success Buttons
+			&.success{
+				@extend .#{$textcolor-slug}-white;
+				@extend .#{$fill-slug}-green;
+			}
+			&.success:hover{
+				@extend .#{$textcolor-slug}-white;
+				@extend .#{$border-slug}-green-#{$hover};
+				@extend .#{$fill-slug}-green-#{$hover};
+			}
+			&.success.clicked{
+				@extend .#{$textcolor-slug}-green;
+				@extend .#{$fill-slug}-green-#{$clicked};
+			}
+			// 6. Warning Buttons
+			&.warning{
+				@extend .#{$textcolor-slug}-white;
+				@extend .#{$fill-slug}-amber;
+			}
+			&.warning:hover{
+				@extend .#{$textcolor-slug}-white;
+				@extend .#{$fill-slug}-amber-#{$hover};
+			}
+			&.warning.clicked{
+				@extend .#{$textcolor-slug}-amber;
+				@extend .#{$fill-slug}-amber-#{$clicked};
+			}
+			// 7. Neutral Buttons
+			&.neutral{
+				@extend .#{$textcolor-slug}-white;;
+				@extend .fill-black;
+			}
+			&.neutral:hover{
+				@extend .#{$textcolor-slug}-white;;
+				@extend .#{$fill-slug}-black-#{$hover};
+			}
+			&.neutral.clicked:hover{
+				@extend .#{$textcolor-slug}-white;
+				@extend .#{$fill-slug}-black-#{$clicked};
+			}
+	}
+}
+
+.fullwidth-button{
+	display: block;
+}
+
+

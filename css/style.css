@@ -1,0 +1,1615 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Basic Variables */
+/* Layout Gutters */
+/* Typography */
+/* Spacing */
+/*
+$shadowlevel: (
+	$level1: 3px;
+	$level2: 6px;
+	$level3: 9px;
+);
+
+$shadowalpha: (
+	$alpha1: 0.1;
+	$alpha2: 0.2;
+	$alpha3: 0.3;
+);
+*/
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Fira Sans", serif;
+  color: #4b5358; }
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: #1C1F21; }
+
+body {
+  font-family: "Merriweather", sans-serif;
+  color: #1C1F21; }
+
+a {
+  color: #0076DE; }
+
+/*
+I. Backgrounds
+	A. Primary Colors
+	B. Secondary Colors
+	C. Tints
+II. Borders
+	A. Primary Colors
+	B. Secondary Colors
+	C. Tints 
+*/
+/* For lightening color. */
+/* For darkening color. */
+/* Lightening Background states */
+/* Lightening Borders */
+/* Darkening Background states */
+/* Darkening Border colors */
+/* Darkening Border colors */
+/* I. Backgrounds */
+/* A. Primary Colors */
+.fill-blue, .button.primary {
+  background-color: #0076DE; }
+
+.fill-black, .button.primary.neutral {
+  background-color: #1C1F21; }
+
+.fill-white, .button.primary.inverted {
+  background-color: #fff; }
+
+/* B. Secondary Colors */
+.fill-red, .button.primary.negative {
+  background-color: #F44336; }
+
+.fill-green, .button.primary.success {
+  background-color: #4CAF50; }
+
+.fill-amber, .button.primary.warning {
+  background-color: #FFC107; }
+
+/* C. Tints */
+/* 1. Blues */
+.fill-blue-1, .button:hover, .button.inverted:hover, .button.secondary:hover, .button.secondary.inverted:hover, .button.primary:hover, .button.primary.inverted:hover {
+  background-color: #3391e5; }
+
+.fill-blue-2 {
+  background-color: #66adeb; }
+
+.fill-blue-3, .button.clicked, .button.clicked:hover, .button.inverted.clicked, .button.inverted.clicked:hover, .button.secondary.clicked, .button.secondary.clicked:hover, .button.secondary.inverted.clicked, .button.secondary.inverted.clicked:hover, .button.primary.clicked, .button.primary.clicked:hover, .button.primary.inverted.clicked, .button.primary.inverted.clicked:hover {
+  background-color: #99c8f2; }
+
+/* 2. Black */
+.fill-black-1, .button.neutral:hover, .button.primary.neutral:hover {
+  background-color: #494c4d; }
+
+.fill-black-2 {
+  background-color: #77797a; }
+
+.fill-black-3, .button.neutral.clicked, .button.secondary.neutral.clicked, .button.secondary.neutral.clicked:hover, .button.primary.neutral.clicked:hover {
+  background-color: #a4a5a6; }
+
+/* 3. Whites */
+.fill-white-1, .button.deactivated.clicked, .button.deactivated.clicked:hover, .button.primary.deactivated, .button.primary.deactivated:hover, .button.primary.deactivated.clicked, .button.primary.deactivated.clicked:hover {
+  background-color: #e6e6e6; }
+
+.fill-white-2 {
+  background-color: #cccccc; }
+
+.fill-white-3, .button.deactivated.clicked, .button.deactivated.clicked:hover {
+  background-color: #b3b3b3; }
+
+/* 4. Red */
+.fill-red-1, .button.negative:hover, .button.secondary.negative:hover, .button.primary.negative:hover, .button.primary.negative.clicked, .button.primary.negative.clicked:hover {
+  background-color: #f6695e; }
+
+.fill-red-2 {
+  background-color: #f88e86; }
+
+.fill-red-3, .button.negative.clicked, .button.negative.clicked:hover, .button.secondary.negative.clicked, .button.secondary.negative.clicked:hover {
+  background-color: #fbb4af; }
+
+/* 5. Amber */
+.fill-amber-1, .button.warning:hover, .button.secondary.warning:hover, .button.primary.warning:hover {
+  background-color: #ffcd39; }
+
+.fill-amber-2 {
+  background-color: #ffda6a; }
+
+.fill-amber-3, .button.warning.clicked, .button.warning.clicked:hover, .button.secondary.warning.clicked, .button.secondary.warning.clicked:hover, .button.primary.warning.clicked {
+  background-color: #ffe69c; }
+
+/* 6. Green */
+.fill-green-1, .button.success:hover, .button.secondary.success:hover, .button.primary.success:hover {
+  background-color: #70bf73; }
+
+.fill-green-2 {
+  background-color: #94cf96; }
+
+.fill-green-3, .button.success.clicked, .button.success.clicked:hover, .button.secondary.success.clicked, .button.secondary.success.clicked:hover, .button.primary.success.clicked {
+  background-color: #b7dfb9; }
+
+/* II. Borders */
+/* A. Primary */
+/* 1. Blue */
+.border-blue, .button.secondary {
+  border-color: #0076DE; }
+
+/* 2. Black */
+.border-black {
+  border-color: #1C1F21; }
+
+/* 3. White */
+.border-white {
+  border-color: #fff; }
+
+/* Secondary */
+/* 1. Amber */
+.border-amber {
+  border-color: #FFC107; }
+
+/* 2. Red */
+.border-red {
+  border-color: #F44336; }
+
+/* 3. Green */
+.border-green {
+  border-color: #4CAF50; }
+
+/* Tints */
+/* Blue */
+.border-blue-1, .button.secondary:hover, .button.secondary.inverted:hover {
+  border-color: #3391e5; }
+
+.border-blue-2 {
+  border-color: #66adeb; }
+
+.border-blue-3 {
+  border-color: #99c8f2; }
+
+/* Black */
+.border-black-1, .button.secondary.neutral, .button.secondary.neutral:hover, .button.secondary.neutral.clicked, .button.secondary.neutral.clicked:hover {
+  border-color: #494c4d; }
+
+.border-black-2 {
+  border-color: #77797a; }
+
+.border-black-3 {
+  border-color: #a4a5a6; }
+
+/* White */
+.border-white-1, .button.secondary.inverted.clicked, .button.secondary.inverted.clicked:hover, .button.secondary.deactivated, .button.secondary.deactivated:hover, .button.secondary.deactivated.clicked, .button.secondary.deactivated.clicked:hover {
+  border-color: #e6e6e6; }
+
+.border-white-2 {
+  border-color: #cccccc; }
+
+.border-white-3 {
+  border-color: #b3b3b3; }
+
+/* Amber */
+.border-amber-1, .button.secondary.warning, .button.secondary.warning:hover, .button.secondary.warning.clicked, .button.secondary.warning.clicked:hover {
+  border-color: #ffcd39; }
+
+.border-amber-2 {
+  border-color: #ffda6a; }
+
+.border-amber-3 {
+  border-color: #ffe69c; }
+
+/* Red */
+.border-red-1, .button.secondary.negative, .button.secondary.negative:hover, .button.secondary.negative.clicked, .button.secondary.negative.clicked:hover {
+  border-color: #f6695e; }
+
+.border-red-2 {
+  border-color: #f88e86; }
+
+.border-red-3 {
+  border-color: #fbb4af; }
+
+/* Green */
+.border-green-1, .button.secondary.success, .button.secondary.success:hover, .button.secondary.success.clicked, .button.secondary.success.clicked:hover, .button.primary.success:hover {
+  border-color: #70bf73; }
+
+.border-green-2 {
+  border-color: #94cf96; }
+
+.border-green-3 {
+  border-color: #b7dfb9; }
+
+/* III. Text Color */
+/* A. Primary Color */
+.textcolor-blue, .button.clicked, .button.clicked:hover, .button.secondary.clicked, .button.secondary.clicked:hover, .button.primary.inverted, .button.primary.inverted.clicked, .button.primary.inverted.clicked:hover {
+  color: #0076DE; }
+
+.textcolor-black, .button.neutral, .button.neutral.clicked:hover, .button.secondary.neutral, .button.secondary.neutral.clicked, .button.secondary.neutral.clicked:hover {
+  color: #1C1F21; }
+
+.textcolor-white, .button:hover, .button.inverted, .button.inverted:hover, .button.inverted.clicked, .button.inverted.clicked:hover, .button.negative:hover, .button.success:hover, .button.warning:hover, .button.neutral:hover, .button.secondary.inverted.clicked, .button.secondary.inverted.clicked:hover, .button.secondary.negative:hover, .button.secondary.success:hover, .button.secondary.warning:hover, .button.secondary.neutral:hover, .button.primary, .button.primary.clicked:hover, .button.primary.inverted:hover, .button.primary.deactivated, .button.primary.deactivated:hover, .button.primary.deactivated.clicked, .button.primary.deactivated.clicked:hover, .button.primary.negative, .button.primary.negative.clicked, .button.primary.negative.clicked:hover, .button.primary.success, .button.primary.success:hover, .button.primary.warning, .button.primary.warning:hover, .button.primary.neutral, .button.primary.neutral:hover, .button.primary.neutral.clicked:hover {
+  color: #fff; }
+
+/* B. Secondary Color */
+.textcolor-amber, .button.warning, .button.warning.clicked, .button.warning.clicked:hover, .button.secondary.warning, .button.secondary.warning.clicked, .button.secondary.warning.clicked:hover, .button.primary.warning.clicked {
+  color: #FFC107; }
+
+.textcolor-red, .button.negative, .button.negative.clicked:hover, .button.secondary.negative.clicked {
+  color: #F44336; }
+
+.textcolor-green, .button.success, .button.success.clicked, .button.success.clicked:hover, .button.secondary.success, .button.primary.success.clicked {
+  color: #4CAF50; }
+
+/* C. Tints */
+.textcolor-blue-1 {
+  color: #3391e5; }
+
+.textcolor-blue-2 {
+  color: #66adeb; }
+
+.textcolor-blue-3 {
+  color: #99c8f2; }
+
+.textcolor-black-1 {
+  color: #494c4d; }
+
+.textcolor-black-2 {
+  color: #77797a; }
+
+.textcolor-black-3 {
+  color: #a4a5a6; }
+
+.textcolor-white-1, .button.deactivated, .button.deactivated:hover, .button.secondary.deactivated, .button.secondary.deactivated:hover, .button.secondary.deactivated.clicked, .button.secondary.deactivated.clicked:hover {
+  color: #e6e6e6; }
+
+.textcolor-white-2 {
+  color: #cccccc; }
+
+.textcolor-white-3 {
+  color: #b3b3b3; }
+
+.textcolor-amber-1 {
+  color: #ffcd39; }
+
+.textcolor-amber-2 {
+  color: #ffda6a; }
+
+.textcolor-amber-3 {
+  color: #ffe69c; }
+
+.textcolor-red-1, .button.secondary.negative, .button.secondary.negative.clicked:hover {
+  color: #f6695e; }
+
+.textcolor-red-2 {
+  color: #f88e86; }
+
+.textcolor-red-3 {
+  color: #fbb4af; }
+
+.textcolor-green-1, .button.secondary.success.clicked, .button.secondary.success.clicked:hover {
+  color: #70bf73; }
+
+.textcolor-green-2 {
+  color: #94cf96; }
+
+.textcolor-green-3 {
+  color: #b7dfb9; }
+
+/* paddings */
+/* margins */
+.border-all {
+  border-width: 1px 1px 1px 1px;
+  border-style: solid; }
+
+.box-shadow1 {
+  box-shadow: 0px 3px 3px rgba(28, 31, 33, 0.1); }
+
+.box-shadow2 {
+  box-shadow: 0px 3px 3px rgba(28, 31, 33, 0.2); }
+
+.box-shadow3 {
+  box-shadow: 0px 3px 3px rgba(28, 31, 33, 0.3); }
+
+.box-shadow4 {
+  box-shadow: 0px 3px 6px rgba(28, 31, 33, 0.1); }
+
+.box-shadow5 {
+  box-shadow: 0px 3px 6px rgba(28, 31, 33, 0.2); }
+
+.box-shadow6 {
+  box-shadow: 0px 3px 6px rgba(28, 31, 33, 0.3); }
+
+.box-shadow7 {
+  box-shadow: 0px 3px 9px rgba(28, 31, 33, 0.1); }
+
+.box-shadow8 {
+  box-shadow: 0px 3px 9px rgba(28, 31, 33, 0.2); }
+
+.box-shadow9 {
+  box-shadow: 0px 3px 9px rgba(28, 31, 33, 0.3); }
+
+/* This is the Breakpoints Mixins */
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+/* This is a clearfix to make sure the layout stretches to the bottom */
+/* This is the basic grid wrapper */
+.layout-wrapper, .section-introduction, .section-portfolio, .sample-livegrid {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* Sets up a layout row */
+.layout-row:after {
+  display: table;
+  clear: both;
+  content: ''; }
+
+/* Sets up the left and right margins */
+.column {
+  float: left;
+  box-sizing: border-box; }
+  @media (min-width: 0px) {
+    .column {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 600px) {
+    .column {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1025px) {
+    .column {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+
+/* Creates a mixin for columns */
+/* Creates all the css column classes */
+@media (min-width: 0px) {
+  .column-1 {
+    width: calc(100% * 1/12 - (0.25rem * 2 )); } }
+
+@media (min-width: 600px) {
+  .column-1 {
+    width: calc(100% * 1/12 - (0.5rem * 2 )); } }
+
+@media (min-width: 1025px) {
+  .column-1 {
+    width: calc(100% * 1/12 - (1rem * 2 )); } }
+
+@media (min-width: 0px) {
+  .column-2 {
+    width: calc(100% * 2/12 - (0.25rem * 2 )); } }
+
+@media (min-width: 600px) {
+  .column-2 {
+    width: calc(100% * 2/12 - (0.5rem * 2 )); } }
+
+@media (min-width: 1025px) {
+  .column-2 {
+    width: calc(100% * 2/12 - (1rem * 2 )); } }
+
+@media (min-width: 0px) {
+  .column-3 {
+    width: calc(100% * 3/12 - (0.25rem * 2 )); } }
+
+@media (min-width: 600px) {
+  .column-3 {
+    width: calc(100% * 3/12 - (0.5rem * 2 )); } }
+
+@media (min-width: 1025px) {
+  .column-3 {
+    width: calc(100% * 3/12 - (1rem * 2 )); } }
+
+@media (min-width: 0px) {
+  .column-4 {
+    width: calc(100% * 4/12 - (0.25rem * 2 )); } }
+
+@media (min-width: 600px) {
+  .column-4 {
+    width: calc(100% * 4/12 - (0.5rem * 2 )); } }
+
+@media (min-width: 1025px) {
+  .column-4 {
+    width: calc(100% * 4/12 - (1rem * 2 )); } }
+
+@media (min-width: 0px) {
+  .column-5 {
+    width: calc(100% * 5/12 - (0.25rem * 2 )); } }
+
+@media (min-width: 600px) {
+  .column-5 {
+    width: calc(100% * 5/12 - (0.5rem * 2 )); } }
+
+@media (min-width: 1025px) {
+  .column-5 {
+    width: calc(100% * 5/12 - (1rem * 2 )); } }
+
+@media (min-width: 0px) {
+  .column-6 {
+    width: calc(100% * 6/12 - (0.25rem * 2 )); } }
+
+@media (min-width: 600px) {
+  .column-6 {
+    width: calc(100% * 6/12 - (0.5rem * 2 )); } }
+
+@media (min-width: 1025px) {
+  .column-6 {
+    width: calc(100% * 6/12 - (1rem * 2 )); } }
+
+@media (min-width: 0px) {
+  .column-7 {
+    width: calc(100% * 7/12 - (0.25rem * 2 )); } }
+
+@media (min-width: 600px) {
+  .column-7 {
+    width: calc(100% * 7/12 - (0.5rem * 2 )); } }
+
+@media (min-width: 1025px) {
+  .column-7 {
+    width: calc(100% * 7/12 - (1rem * 2 )); } }
+
+@media (min-width: 0px) {
+  .column-8 {
+    width: calc(100% * 8/12 - (0.25rem * 2 )); } }
+
+@media (min-width: 600px) {
+  .column-8 {
+    width: calc(100% * 8/12 - (0.5rem * 2 )); } }
+
+@media (min-width: 1025px) {
+  .column-8 {
+    width: calc(100% * 8/12 - (1rem * 2 )); } }
+
+@media (min-width: 0px) {
+  .column-9 {
+    width: calc(100% * 9/12 - (0.25rem * 2 )); } }
+
+@media (min-width: 600px) {
+  .column-9 {
+    width: calc(100% * 9/12 - (0.5rem * 2 )); } }
+
+@media (min-width: 1025px) {
+  .column-9 {
+    width: calc(100% * 9/12 - (1rem * 2 )); } }
+
+@media (min-width: 0px) {
+  .column-10 {
+    width: calc(100% * 10/12 - (0.25rem * 2 )); } }
+
+@media (min-width: 600px) {
+  .column-10 {
+    width: calc(100% * 10/12 - (0.5rem * 2 )); } }
+
+@media (min-width: 1025px) {
+  .column-10 {
+    width: calc(100% * 10/12 - (1rem * 2 )); } }
+
+@media (min-width: 0px) {
+  .column-11 {
+    width: calc(100% * 11/12 - (0.25rem * 2 )); } }
+
+@media (min-width: 600px) {
+  .column-11 {
+    width: calc(100% * 11/12 - (0.5rem * 2 )); } }
+
+@media (min-width: 1025px) {
+  .column-11 {
+    width: calc(100% * 11/12 - (1rem * 2 )); } }
+
+@media (min-width: 0px) {
+  .column-12 {
+    width: calc(100% * 12/12 - (0.25rem * 2 )); } }
+
+@media (min-width: 600px) {
+  .column-12 {
+    width: calc(100% * 12/12 - (0.5rem * 2 )); } }
+
+@media (min-width: 1025px) {
+  .column-12 {
+    width: calc(100% * 12/12 - (1rem * 2 )); } }
+
+.css-grid-container {
+  display: grid;
+  grid-template-rows: 100px; }
+  @media (min-width: 0px) {
+    .css-grid-container {
+      grid-template-columns: 0.25rem auto 0.25rem; } }
+  @media (min-width: 600px) {
+    .css-grid-container {
+      grid-template-columns: 0.5rem auto 0.5rem; } }
+  @media (min-width: 1025px) {
+    .css-grid-container {
+      grid-template-columns: 1rem auto 1rem; } }
+
+/*
+.css-grid-container{
+	display: grid;
+	grid-template-columns: 
+	unquote("
+	[full-start]
+	minmax($small-gutter-width, 1fr) 
+	[main-start]
+	minmax(0, 1008px) 
+	[main-end]
+	minmax($small-gutter-width, 1fr);
+	[full-end]");
+}
+*/
+.css-grid {
+  display: grid;
+  grid-column-start: 2;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+  grid-template-rows: 100px;
+  grid-gap: 0.5rem; }
+  @media (min-width: 0px) {
+    .css-grid {
+      grid-gap: 0.5rem; } }
+  @media (min-width: 600px) {
+    .css-grid {
+      grid-gap: 1rem; } }
+  @media (min-width: 1025px) {
+    .css-grid {
+      grid-gap: 2rem; } }
+
+body {
+  font-family: "Merriweather", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.8em; }
+
+h1, h2, h3, h4 {
+  font-weight: 500;
+  margin-bottom: 0.5rem; }
+
+h1 {
+  font-size: 3.8416em;
+  line-height: 1.2em; }
+  @media (min-width: 280px) and (max-width: 768px) {
+    h1 {
+      font-size: calc( 3.8416em + 2.2334 * ( ( 100vw - 280px) / 488 )); } }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 6.075em; } }
+
+h2 {
+  font-size: 2.744em;
+  line-height: 1.2em; }
+  @media (min-width: 280px) and (max-width: 768px) {
+    h2 {
+      font-size: calc( 2.744em + 1.306 * ( ( 100vw - 280px) / 488 )); } }
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 4.05em; } }
+
+h3 {
+  font-size: 1.96em;
+  line-height: 1.3em; }
+  @media (min-width: 280px) and (max-width: 768px) {
+    h3 {
+      font-size: calc( 1.96em + 0.74 * ( ( 100vw - 280px) / 488 )); } }
+  @media (min-width: 768px) {
+    h3 {
+      font-size: 2.7em; } }
+
+h4 {
+  font-size: 1.4em;
+  line-height: 1.3em; }
+  @media (min-width: 280px) and (max-width: 768px) {
+    h4 {
+      font-size: calc( 1.4em + 0.4 * ( ( 100vw - 280px) / 488 )); } }
+  @media (min-width: 768px) {
+    h4 {
+      font-size: 1.8em; } }
+
+p {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.caption {
+  font-size: 0.71429em; }
+
+label {
+  font-size: 0.71429em; }
+
+a {
+  color: #0076DE;
+  text-decoration: none; }
+  a:hover {
+    color: textcolortint(#0076DE, 2); }
+  a:active {
+    color: textcolortint(#0076DE, 0); }
+  a:visited {
+    color: textcolortint(#0076DE, 0); }
+  a:link {
+    color: textcolortint(#0076DE, 0); }
+
+.button-text, .button {
+  text-transform: uppercase;
+  letter-spacing: 0.0625em;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center; }
+
+/* Buttons */
+/* Table of Contents */
+/** 
+I. Normal Buttons
+	A. Variations
+		1. Basic Hover State
+		2. Inverted Buttons
+		3. Deactivated Buttons
+		4. Negative Buttons
+		5. Warning Buttons
+
+II. Secondary Buttons
+
+**/
+.button {
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  margin: 0.5rem;
+  border-radius: 0rem;
+  font-family: "Fira Sans", serif;
+  transition: background-color 0.30s ease-out; }
+  .button.deactivated:hover {
+    background-color: transparent; }
+  .button.secondary {
+    border-width: 1px 1px 1px 1px;
+    border-style: solid; }
+    .button.secondary.inverted {
+      border-color: #fff; }
+    .button.secondary.deactivated:hover {
+      background: transparent; }
+    .button.secondary.deactivated.clicked {
+      background: transparent; }
+    .button.secondary.deactivated.clicked:hover {
+      background: transparent; }
+
+.fullwidth-button {
+  display: block; }
+
+.card {
+  background-color: #fff;
+  border-radius: 0rem;
+  border: 1px solid #e6e6e6;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem; }
+  @media (min-width: 600px) {
+    .card {
+      padding: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem; } }
+  @media (min-width: 1025px) {
+    .card {
+      padding: 1.5rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem; } }
+
+html > layout-wrapper > layout-row.card {
+  border: 0px; }
+
+input {
+  border-bottom: 1px solid;
+  border-top: 0px solid;
+  border-right: 0px solid;
+  border-left: 0px solid;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  font-size: 1em;
+  font-weight: "Merriweather", sans-serif;
+  line-height: 1.8em; }
+  input::placeholder {
+    color: #626d74;
+    font-weight: 300; }
+  input:focus {
+    border-color: #2c9cff; }
+    input:focus::placeholder {
+      color: #2c9cff; }
+
+textarea {
+  resize: none;
+  border-top: 0px solid;
+  border-right: 0px solid;
+  border-left: 0px solid;
+  border-bottom: 1px solid;
+  font-family: "Merriweather", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.8em;
+  color: #626d74;
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem; }
+  textarea:focus {
+    background-color: #d9d9d9;
+    border-top-right-radius: 0rem;
+    border-top-left-radius: 0rem;
+    border-bottom: 1px solid; }
+    textarea:focus::placeholder {
+      color: #2c9cff; }
+
+input.error, textarea.error {
+  border-color: #F44336; }
+  input.error::placeholder, textarea.error::placeholder {
+    color: #F44336; }
+
+.section-introduction:after {
+  display: table;
+  clear: both;
+  content: ''; }
+
+.introduction-header {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  color: #4b5358; }
+  @media (min-width: 0px) {
+    .introduction-header {
+      width: calc(100% * 12/12 - (0.25rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 0px) and (min-width: 0px) {
+    .introduction-header {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 0px) and (min-width: 600px) {
+    .introduction-header {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 0px) and (min-width: 1025px) {
+    .introduction-header {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 600px) {
+    .introduction-header {
+      width: calc(100% * 12/12 - (0.5rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 600px) and (min-width: 0px) {
+    .introduction-header {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 600px) and (min-width: 600px) {
+    .introduction-header {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 600px) and (min-width: 1025px) {
+    .introduction-header {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1025px) {
+    .introduction-header {
+      width: calc(100% * 12/12 - (1rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 1025px) and (min-width: 0px) {
+    .introduction-header {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 1025px) and (min-width: 600px) {
+    .introduction-header {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1025px) and (min-width: 1025px) {
+    .introduction-header {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+
+.introduction-photo {
+  padding-bottom: 1.5rem; }
+  @media (min-width: 0px) {
+    .introduction-photo {
+      width: calc(100% * 12/12 - (0.25rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 0px) and (min-width: 0px) {
+    .introduction-photo {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 0px) and (min-width: 600px) {
+    .introduction-photo {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 0px) and (min-width: 1025px) {
+    .introduction-photo {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 600px) {
+    .introduction-photo {
+      width: calc(100% * 12/12 - (0.5rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 600px) and (min-width: 0px) {
+    .introduction-photo {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 600px) and (min-width: 600px) {
+    .introduction-photo {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 600px) and (min-width: 1025px) {
+    .introduction-photo {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1025px) {
+    .introduction-photo {
+      width: calc(100% * 12/12 - (1rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 1025px) and (min-width: 0px) {
+    .introduction-photo {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 1025px) and (min-width: 600px) {
+    .introduction-photo {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1025px) and (min-width: 1025px) {
+    .introduction-photo {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+
+@media (min-width: 600px) and (min-width: 0px) {
+  .introduction-photo {
+    width: calc(100% * 6/12 - (0.25rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 600px) and (min-width: 0px) and (min-width: 0px) {
+    .introduction-photo {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 600px) and (min-width: 0px) and (min-width: 600px) {
+    .introduction-photo {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 600px) and (min-width: 0px) and (min-width: 1025px) {
+    .introduction-photo {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+
+@media (min-width: 600px) and (min-width: 600px) {
+  .introduction-photo {
+    width: calc(100% * 6/12 - (0.5rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 600px) and (min-width: 600px) and (min-width: 0px) {
+    .introduction-photo {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 600px) and (min-width: 600px) and (min-width: 600px) {
+    .introduction-photo {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 600px) and (min-width: 600px) and (min-width: 1025px) {
+    .introduction-photo {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+
+@media (min-width: 600px) and (min-width: 1025px) {
+  .introduction-photo {
+    width: calc(100% * 6/12 - (1rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 0px) {
+    .introduction-photo {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 600px) {
+    .introduction-photo {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 1025px) {
+    .introduction-photo {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+
+.introduction-bio {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; }
+  @media (min-width: 600px) {
+    .introduction-bio {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem; } }
+  @media (min-width: 600px) and (min-width: 0px) {
+    .introduction-bio {
+      width: calc(100% * 8/12 - (0.25rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 600px) and (min-width: 0px) and (min-width: 0px) {
+    .introduction-bio {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 600px) and (min-width: 0px) and (min-width: 600px) {
+    .introduction-bio {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 600px) and (min-width: 0px) and (min-width: 1025px) {
+    .introduction-bio {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 600px) and (min-width: 600px) {
+    .introduction-bio {
+      width: calc(100% * 8/12 - (0.5rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 600px) and (min-width: 600px) and (min-width: 0px) {
+    .introduction-bio {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 600px) and (min-width: 600px) and (min-width: 600px) {
+    .introduction-bio {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 600px) and (min-width: 600px) and (min-width: 1025px) {
+    .introduction-bio {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 600px) and (min-width: 1025px) {
+    .introduction-bio {
+      width: calc(100% * 8/12 - (1rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 0px) {
+    .introduction-bio {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 600px) {
+    .introduction-bio {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 1025px) {
+    .introduction-bio {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+
+.section-portfolio {
+  padding-bottom: 0.5rem; }
+  .section-portfolio:after {
+    display: table;
+    clear: both;
+    content: ''; }
+
+.section-portfolio .portfolio-article {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 1rem;
+  padding-top: 1.5rem; }
+  @media (min-width: 600px) {
+    .section-portfolio .portfolio-article {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem; } }
+  @media (min-width: 600px) and (min-width: 0px) {
+    .section-portfolio .portfolio-article {
+      width: calc(100% * 4/12 - (0.25rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 600px) and (min-width: 0px) and (min-width: 0px) {
+    .section-portfolio .portfolio-article {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 600px) and (min-width: 0px) and (min-width: 600px) {
+    .section-portfolio .portfolio-article {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 600px) and (min-width: 0px) and (min-width: 1025px) {
+    .section-portfolio .portfolio-article {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 600px) and (min-width: 600px) {
+    .section-portfolio .portfolio-article {
+      width: calc(100% * 4/12 - (0.5rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 600px) and (min-width: 600px) and (min-width: 0px) {
+    .section-portfolio .portfolio-article {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 600px) and (min-width: 600px) and (min-width: 600px) {
+    .section-portfolio .portfolio-article {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 600px) and (min-width: 600px) and (min-width: 1025px) {
+    .section-portfolio .portfolio-article {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 600px) and (min-width: 1025px) {
+    .section-portfolio .portfolio-article {
+      width: calc(100% * 4/12 - (1rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 0px) {
+    .section-portfolio .portfolio-article {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 600px) {
+    .section-portfolio .portfolio-article {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 1025px) {
+    .section-portfolio .portfolio-article {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  .section-portfolio .portfolio-article .portfolio-thumbnail {
+    width: 100%;
+    padding-bottom: 1rem; }
+  .section-portfolio .portfolio-article .button {
+    margin: 0px; }
+
+/* Example CSS */
+.sample-grid {
+  background-color: #F44336; }
+  .sample-grid .column {
+    background-color: #f8877f;
+    text-align: center; }
+
+.sample-livegrid:after {
+  display: table;
+  clear: both;
+  content: ''; }
+
+.left-sidebar {
+  padding: 0.5rem;
+  background-color: #fccbc7; }
+  @media (min-width: 0px) {
+    .left-sidebar {
+      width: calc(100% * 12/12 - (0.25rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 0px) and (min-width: 0px) {
+    .left-sidebar {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 0px) and (min-width: 600px) {
+    .left-sidebar {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 0px) and (min-width: 1025px) {
+    .left-sidebar {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 600px) {
+    .left-sidebar {
+      width: calc(100% * 12/12 - (0.5rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 600px) and (min-width: 0px) {
+    .left-sidebar {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 600px) and (min-width: 600px) {
+    .left-sidebar {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 600px) and (min-width: 1025px) {
+    .left-sidebar {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1025px) {
+    .left-sidebar {
+      width: calc(100% * 12/12 - (1rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 1025px) and (min-width: 0px) {
+    .left-sidebar {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 1025px) and (min-width: 600px) {
+    .left-sidebar {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1025px) and (min-width: 1025px) {
+    .left-sidebar {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+
+@media (min-width: 600px) and (min-width: 0px) {
+  .left-sidebar {
+    width: calc(100% * 4/12 - (0.25rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 600px) and (min-width: 0px) and (min-width: 0px) {
+    .left-sidebar {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 600px) and (min-width: 0px) and (min-width: 600px) {
+    .left-sidebar {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 600px) and (min-width: 0px) and (min-width: 1025px) {
+    .left-sidebar {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+
+@media (min-width: 600px) and (min-width: 600px) {
+  .left-sidebar {
+    width: calc(100% * 4/12 - (0.5rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 600px) and (min-width: 600px) and (min-width: 0px) {
+    .left-sidebar {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 600px) and (min-width: 600px) and (min-width: 600px) {
+    .left-sidebar {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 600px) and (min-width: 600px) and (min-width: 1025px) {
+    .left-sidebar {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+
+@media (min-width: 600px) and (min-width: 1025px) {
+  .left-sidebar {
+    width: calc(100% * 4/12 - (1rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 0px) {
+    .left-sidebar {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 600px) {
+    .left-sidebar {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 1025px) {
+    .left-sidebar {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1025px) {
+    .left-sidebar {
+      float: left;
+      box-sizing: border-box;
+      padding: 1.5rem; } }
+  @media (min-width: 1025px) and (min-width: 0px) {
+    .left-sidebar {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 1025px) and (min-width: 600px) {
+    .left-sidebar {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1025px) and (min-width: 1025px) {
+    .left-sidebar {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1025px) and (min-width: 0px) {
+    .left-sidebar {
+      width: calc(100% * 3/12 - (0.25rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 1025px) and (min-width: 0px) and (min-width: 0px) {
+    .left-sidebar {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 1025px) and (min-width: 0px) and (min-width: 600px) {
+    .left-sidebar {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1025px) and (min-width: 0px) and (min-width: 1025px) {
+    .left-sidebar {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1025px) and (min-width: 600px) {
+    .left-sidebar {
+      width: calc(100% * 3/12 - (0.5rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 1025px) and (min-width: 600px) and (min-width: 0px) {
+    .left-sidebar {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 1025px) and (min-width: 600px) and (min-width: 600px) {
+    .left-sidebar {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1025px) and (min-width: 600px) and (min-width: 1025px) {
+    .left-sidebar {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1025px) and (min-width: 1025px) {
+    .left-sidebar {
+      width: calc(100% * 3/12 - (1rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 1025px) and (min-width: 1025px) and (min-width: 0px) {
+    .left-sidebar {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 1025px) and (min-width: 1025px) and (min-width: 600px) {
+    .left-sidebar {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1025px) and (min-width: 1025px) and (min-width: 1025px) {
+    .left-sidebar {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+
+.middle-area {
+  padding: 0.5rem;
+  background-color: #f99d97; }
+  @media (min-width: 0px) {
+    .middle-area {
+      width: calc(100% * 12/12 - (0.25rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 0px) and (min-width: 0px) {
+    .middle-area {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 0px) and (min-width: 600px) {
+    .middle-area {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 0px) and (min-width: 1025px) {
+    .middle-area {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 600px) {
+    .middle-area {
+      width: calc(100% * 12/12 - (0.5rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 600px) and (min-width: 0px) {
+    .middle-area {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 600px) and (min-width: 600px) {
+    .middle-area {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 600px) and (min-width: 1025px) {
+    .middle-area {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1025px) {
+    .middle-area {
+      width: calc(100% * 12/12 - (1rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 1025px) and (min-width: 0px) {
+    .middle-area {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 1025px) and (min-width: 600px) {
+    .middle-area {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1025px) and (min-width: 1025px) {
+    .middle-area {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 600px) {
+    .middle-area {
+      padding: 0.5rem; } }
+  @media (min-width: 600px) and (min-width: 0px) {
+    .middle-area {
+      width: calc(100% * 4/12 - (0.25rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 600px) and (min-width: 0px) and (min-width: 0px) {
+    .middle-area {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 600px) and (min-width: 0px) and (min-width: 600px) {
+    .middle-area {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 600px) and (min-width: 0px) and (min-width: 1025px) {
+    .middle-area {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 600px) and (min-width: 600px) {
+    .middle-area {
+      width: calc(100% * 4/12 - (0.5rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 600px) and (min-width: 600px) and (min-width: 0px) {
+    .middle-area {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 600px) and (min-width: 600px) and (min-width: 600px) {
+    .middle-area {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 600px) and (min-width: 600px) and (min-width: 1025px) {
+    .middle-area {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 600px) and (min-width: 1025px) {
+    .middle-area {
+      width: calc(100% * 4/12 - (1rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 0px) {
+    .middle-area {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 600px) {
+    .middle-area {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 1025px) {
+    .middle-area {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+
+@media (min-width: 1025px) and (min-width: 0px) {
+  .middle-area {
+    width: calc(100% * 6/12 - (0.25rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 1025px) and (min-width: 0px) and (min-width: 0px) {
+    .middle-area {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 1025px) and (min-width: 0px) and (min-width: 600px) {
+    .middle-area {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1025px) and (min-width: 0px) and (min-width: 1025px) {
+    .middle-area {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+
+@media (min-width: 1025px) and (min-width: 600px) {
+  .middle-area {
+    width: calc(100% * 6/12 - (0.5rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 1025px) and (min-width: 600px) and (min-width: 0px) {
+    .middle-area {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 1025px) and (min-width: 600px) and (min-width: 600px) {
+    .middle-area {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1025px) and (min-width: 600px) and (min-width: 1025px) {
+    .middle-area {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+
+@media (min-width: 1025px) and (min-width: 1025px) {
+  .middle-area {
+    width: calc(100% * 6/12 - (1rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 1025px) and (min-width: 1025px) and (min-width: 0px) {
+    .middle-area {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 1025px) and (min-width: 1025px) and (min-width: 600px) {
+    .middle-area {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1025px) and (min-width: 1025px) and (min-width: 1025px) {
+    .middle-area {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+
+.right-sidebar {
+  padding: 0.5rem;
+  background-color: #f77066; }
+  @media (min-width: 0px) {
+    .right-sidebar {
+      width: calc(100% * 12/12 - (0.25rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 0px) and (min-width: 0px) {
+    .right-sidebar {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 0px) and (min-width: 600px) {
+    .right-sidebar {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 0px) and (min-width: 1025px) {
+    .right-sidebar {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 600px) {
+    .right-sidebar {
+      width: calc(100% * 12/12 - (0.5rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 600px) and (min-width: 0px) {
+    .right-sidebar {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 600px) and (min-width: 600px) {
+    .right-sidebar {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 600px) and (min-width: 1025px) {
+    .right-sidebar {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1025px) {
+    .right-sidebar {
+      width: calc(100% * 12/12 - (1rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 1025px) and (min-width: 0px) {
+    .right-sidebar {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 1025px) and (min-width: 600px) {
+    .right-sidebar {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1025px) and (min-width: 1025px) {
+    .right-sidebar {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+
+@media (min-width: 600px) and (min-width: 0px) {
+  .right-sidebar {
+    width: calc(100% * 4/12 - (0.25rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 600px) and (min-width: 0px) and (min-width: 0px) {
+    .right-sidebar {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 600px) and (min-width: 0px) and (min-width: 600px) {
+    .right-sidebar {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 600px) and (min-width: 0px) and (min-width: 1025px) {
+    .right-sidebar {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+
+@media (min-width: 600px) and (min-width: 600px) {
+  .right-sidebar {
+    width: calc(100% * 4/12 - (0.5rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 600px) and (min-width: 600px) and (min-width: 0px) {
+    .right-sidebar {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 600px) and (min-width: 600px) and (min-width: 600px) {
+    .right-sidebar {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 600px) and (min-width: 600px) and (min-width: 1025px) {
+    .right-sidebar {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+
+@media (min-width: 600px) and (min-width: 1025px) {
+  .right-sidebar {
+    width: calc(100% * 4/12 - (1rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 0px) {
+    .right-sidebar {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 600px) {
+    .right-sidebar {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 1025px) {
+    .right-sidebar {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+
+@media (min-width: 1025px) and (min-width: 0px) {
+  .right-sidebar {
+    width: calc(100% * 3/12 - (0.25rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 1025px) and (min-width: 0px) and (min-width: 0px) {
+    .right-sidebar {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 1025px) and (min-width: 0px) and (min-width: 600px) {
+    .right-sidebar {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1025px) and (min-width: 0px) and (min-width: 1025px) {
+    .right-sidebar {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+
+@media (min-width: 1025px) and (min-width: 600px) {
+  .right-sidebar {
+    width: calc(100% * 3/12 - (0.5rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 1025px) and (min-width: 600px) and (min-width: 0px) {
+    .right-sidebar {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 1025px) and (min-width: 600px) and (min-width: 600px) {
+    .right-sidebar {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1025px) and (min-width: 600px) and (min-width: 1025px) {
+    .right-sidebar {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+
+@media (min-width: 1025px) and (min-width: 1025px) {
+  .right-sidebar {
+    width: calc(100% * 3/12 - (1rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 1025px) and (min-width: 1025px) and (min-width: 0px) {
+    .right-sidebar {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 1025px) and (min-width: 1025px) and (min-width: 600px) {
+    .right-sidebar {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1025px) and (min-width: 1025px) and (min-width: 1025px) {
+    .right-sidebar {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+
+.nested-grid-sample .column {
+  background-color: #f6685e; }

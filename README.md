@@ -1,51 +1,98 @@
-# jekyll-foundation-6-starter
+# Kalibrr Design System
 
-Start [a github pages](https://pages.github.com/) website powered by [Jekyll](http://jekyllrb.com/docs/quickstart/) using [Foundation/SCSS](http://foundation.zurb.com/sites/docs/installation.html#command-line-tool.html) in under 5 minutes! 
+The Kalibrr Design System used by the Kalibrr Job Platform and other Products.
 
-### What it is.
+## Getting Started
 
-Ever wanted a simple but nice looking responsive website as your project page or page for your repo? Are you in [a hackathon](http://baseballhackday.com) needing to put up a working website in minutes? I do. Here is what I do, and I am sharing for you to use it, free. Free as in free speech AND free beer.
+Make sure to have git, nodejs and sass installed on your machines.
 
-You can see [the working example site here](http://daigofuji.github.io/jekyll-foundation-6-starter/)
+### Prerequisites
 
-### For User & Organization Pages
-See [github documentation](https://help.github.com/articles/user-organization-and-project-pages/)
+#### Installing Git
 
-1. Fork or copy this repo to your user or project
-2. From the `settings` rename the repo to `username.github.io` naming scheme. (For this you need to use `master` branch)
+For Macs install Xcode Command Line Tools. Try running git from the terminal to make sure you have it.
 
-### For Project Pages
-See [github documentation](https://help.github.com/articles/user-organization-and-project-pages/#project-pages)
+```
+git --version
+```
+#### Installing NodeJs and NPM
 
-1. Create a `gh-pages` branch, i.e. `git checkout -b gh-pages`
-2. [Download the contents of this repo](https://github.com/daigofuji/jekyll-foundation-6-starter/archive/master.zip)
-3. Replace the entire branch contents with unzipped stuff
-4. Add, Commit then Publish the branch to github, i.e. `git push --set-upstream origin gh-pages`
+You can download the macOS Installer directly from the [nodejs.org](https://nodejs.org/en/) which will include npm.
 
-### To edit contents:
-1. edit `_config.yml`
-2. edit html/md files (`_layouts/default.html` is the base)
-3. edit sass and run `gulp` (Try [editing `scss/_stettings.scss`](http://foundation.zurb.com/sites/docs/sass.html))
-4. edit `_include/nav.html` 
+You can also install it through homebrew via terminal
+```
+brew install node
+``` 
 
-Use at your own risk, and follow license restriction of each products used. Most are MIT (OK to use commercially).
+#### Installing Sass
 
-### Tools used, and useful commands
+After installing NodeJS you can run
+```
+sudo npm install -g sass
+```
 
-If you don't have it, install [node.js](https://nodejs.org/en/). Easiest way it to use [Homebrew](http://brew.sh/) by
-  `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-then 
-  `brew install node`
-and install npm and gulp globally by running 
-  `sudo npm install npm bower gulp -g`
+#### Installing Gulp CLI
+```
+npm install --global gulp-cli
+```
 
-Run gulp to compile css from sass by simply run `gulp` or `npm start` from your terminal within your repo. 
-It will launch watch by default. <code>control-c</code> to stop. If you only want the css compiled once, run `gulp sass`
+### Installing
 
-To run jekyll locally to test your website while developing, run `bundle install` then `bundle exec jekyll serve --watch` (Requires ruby *) Your website should be viewable by going to [localhost:4000](http://localhost:4000/)
+Go to your projects folder and run the following in terminal
+```
+Git clone git@git-ssh.kalibrr.com:kalibrr/design-system.git
+```
 
-Github's doc on [how to use Jekyll on Github Pages](https://help.github.com/articles/using-jekyll-with-pages) is also helpful. 
+This should download the git repository into your local machine. Then move to the downloaded git repository folder
+```
+cd design-system
+```
 
-* You may have to run `brew install ruby` and `sudo gem install bundler`. [Mac OS X 10.11 nokogiri trouble](http://stackoverflow.com/questions/23668684/failed-to-build-gem-native-extension-when-i-run-bundle-install)
+After that run npm install
+```
+sudo npm install
+```
 
-You can update to the latest foundation by running `bower update foundation-sites --save`. Ping me and I will update this repo. Any questions, make an issue or ask on twitter @DaigoFuji
+## Test the install
+
+Run gulp from within the design-system folder
+```
+gulp
+```
+
+This should open a browser with a live view of the design system pages.
+
+## Other Resources
+### A Sketch Library
+A Sketch library has been created to help with designing full pages and for designers who are more comfortable working with Sketch than with code. You can request access to the Kalibrr Design System Sketch Library by creating a Sketch Cloud account and requesting it from the link below
+
+[Kalibrr Design System Sketch Library](https://sketch.cloud/s/pQPEJ)
+
+## Troubleshooting
+If you're having trouble feel free to email the kalibrr design team at design@kalibrr.com
+
+
+### Authentication Problems
+If you're having trouble and getting authentication problems in terminal, make sure you've done one of the following.
+
+#### If you're trying to clone through ssh 
+If you are git cloning from this url
+```
+git@git-ssh.kalibrr.com:kalibrr/design-system.git
+```
+Make sure that you've generated an SSH key and added it to your profile. You can add an SSH key in [this page](https://git.kalibrr.com/profile/keys) as well as follow instructions in a tutorial mentioned there.
+
+#### If you're trying to clone through an http/https
+If you are git cloning from this url
+```
+https://git.kalibrr.com/kalibrr/design-system.git
+```
+Make sure you've set access token through [this page](https://git.kalibrr.com/profile/personal_access_tokens)
+
+Instead of entering your git password, use the access token name as your git password.
+
+## Kalibrr Design Team
+* Mark Lester Coscolluela Lacsamana
+* Alex Hans Collado
+* Ferdenee Joi Mempin
+

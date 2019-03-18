@@ -1,0 +1,67 @@
+// This is the body typeface
+body{
+  font-family: $main-typeface;
+  font-size: ms(0);
+  font-weight: $font-weight;
+  line-height: $base-lineheight
+}
+//These are the headers
+h1,h2,h3,h4{
+	font-weight: 500;
+	@include margin-bottom($normal-spacing);
+}
+h1{
+	@include ms-respond(font-size,4);
+	line-height: 1.2em;
+}
+h2{
+	@include ms-respond(font-size,3);
+	line-height: 1.2em;
+}
+h3{
+	@include ms-respond(font-size,2);
+	line-height: 1.3em;
+}
+h4{
+	@include ms-respond(font-size,1);
+	line-height: 1.3em;
+}
+// paragraph elements
+p{
+	@include margin-top($medium-spacing);
+	@include margin-bottom($medium-spacing);
+}
+
+// This is the caption
+.caption{
+	font-size: ms(-1);
+}
+label{
+	font-size: ms(-1);
+}
+// Links
+	// Text Links
+	a{
+		color: $kblue;
+		text-decoration: none;
+		&:hover{
+		color: textcolortint($kblue, 2);
+		}
+		&:active{
+		color: textcolortint($kblue, 0);
+		}
+		&:visited{
+		color: textcolortint($kblue, 0);
+		}
+		&:link{
+		color: textcolortint($kblue, 0);
+		}
+	}
+	// Button Links
+	.button-text{
+		text-transform: uppercase;
+		letter-spacing: 0.0625em;
+		display: inline-block;
+		text-decoration: none;
+		@include  text-align(center);
+	}

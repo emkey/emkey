@@ -1,0 +1,126 @@
+html{
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* This is a clearfix to make sure the layout stretches to the bottom */
+@mixin clearfix {
+  &:after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+}
+
+/* This is the basic grid wrapper */
+.layout-wrapper{
+	max-width: $layout-maxwidth;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+/* Sets up a layout row */
+.layout-row{
+	@include clearfix;
+}
+/* Sets up the left and right margins */
+@mixin column(){
+	float: left;
+	box-sizing: border-box;
+	@include respond-to(small){
+		margin-right: $small-gutter-width;
+		margin-left: $small-gutter-width;
+	}
+	@include respond-to(medium){
+		margin-right: $medium-gutter-width;
+		margin-left: $medium-gutter-width;
+	}
+	@include respond-to(large){
+		margin-right: $large-gutter-width;
+		margin-left: $large-gutter-width;
+	}
+}
+.column{
+	@include column();
+}
+/* Creates a mixin for columns */
+@mixin column-width($column-number){
+	@include respond-to(small){
+		width: calc(100% * #{$column-number}/#{$layout-columns} - (#{$small-gutter-width} * 2));
+		@include column();
+	}
+	@include respond-to(medium){
+		width: calc(100% * #{$column-number}/#{$layout-columns} - (#{$medium-gutter-width} * 2));
+		@include column();
+	}
+	@include respond-to(large){
+		width: calc(100% * #{$column-number}/#{$layout-columns} - (#{$large-gutter-width} * 2));
+		@include column();
+	}
+}
+/* Creates all the css column classes */
+$column-slug: column;
+@for $i from 1 through $layout-columns{
+	@include respond-to(small){
+		.#{$column-slug}-#{$i}{
+			width: calc(100% * #{$i}/#{$layout-columns} - (#{$small-gutter-width} * 2 ));
+		}
+	}
+	@include respond-to(medium){
+		.#{$column-slug}-#{$i}{
+			width: calc(100% * #{$i}/#{$layout-columns} - (#{$medium-gutter-width} * 2 ));
+		}
+	}
+	@include respond-to(large){
+		.#{$column-slug}-#{$i}{
+			width: calc(100% * #{$i}/#{$layout-columns} - (#{$large-gutter-width} * 2 ));
+		}
+	}
+}
+.css-grid-container{
+	display: grid;
+	@include respond-to(small){
+		grid-template-columns: $small-gutter-width auto $small-gutter-width;
+	}
+	@include respond-to(medium){
+		grid-template-columns: $medium-gutter-width auto $medium-gutter-width;
+	}
+	@include respond-to(large){
+		grid-template-columns: $large-gutter-width auto $large-gutter-width;
+	}
+	grid-template-rows: 100px;
+}
+/*
+.css-grid-container{
+	display: grid;
+	grid-template-columns: 
+	unquote("
+	[full-start]
+	minmax($small-gutter-width, 1fr) 
+	[main-start]
+	minmax(0, 1008px) 
+	[main-end]
+	minmax($small-gutter-width, 1fr);
+	[full-end]");
+}
+*/
+.css-grid{
+	display: grid;
+	grid-column-start: 2;
+	grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+	grid-template-rows: 100px;
+	grid-gap: ($small-gutter-width * 2);
+	@include respond-to(small){
+		grid-gap: $small-gutter-width * 2;
+	}
+	@include respond-to(medium){
+		grid-gap: $medium-gutter-width * 2;
+	}
+	@include respond-to(large){
+		grid-gap: $large-gutter-width * 2;
+	}
+}

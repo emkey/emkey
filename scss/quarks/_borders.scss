@@ -1,0 +1,20 @@
+@mixin border-all($border-top, $border-right, $border-bottom, $border-left, $border-style){
+	border-width: $border-top $border-right $border-bottom $border-left;
+	border-style: $border-style;
+}
+@mixin border-top($border-size, $border-style){
+	border-top: $border-size $border-style;
+}
+@mixin border-right($border-size, $border-style){
+	border-right: $border-size $border-style;
+}
+@mixin border-bottom($border-size, $border-style){
+	border-bottom: $border-size $border-style;
+}
+@mixin border-left($border-size, $border-style){
+	border-left: $border-size $border-style;
+}
+
+.border-all{
+	@include border-all(1px,1px,1px,1px,solid);
+}

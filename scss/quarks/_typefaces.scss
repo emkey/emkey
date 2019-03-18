@@ -1,0 +1,40 @@
+
+$modularscale: (
+  base: 1em,
+  ratio: 1.4,
+  280px:(
+  base: 1em,
+  ratio: 1.4,
+  	),
+  768px:(
+  	base: 1.2em,
+  	ratio: 1.5
+  ),
+);
+
+@mixin text-align($alignment){
+  text-align: $alignment; 
+}
+.text-left{
+  @include text-align(left);
+}
+.text-center{
+  @include text-align(center);
+}
+.text-right{
+  @include text-align(right);
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: $sub-typeface;
+  color: lighten($kdarkgrey, 20%);
+  a{
+    color: $kdarkgrey
+  }
+}
+body{
+  font-family: $main-typeface;
+  color: $kdarkgrey;
+}
+a{
+  color: $kblue;
+}
