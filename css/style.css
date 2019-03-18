@@ -615,7 +615,7 @@ body {
   line-height: 2em; }
 
 h1, h2, h3, h4 {
-  font-weight: 500;
+  font-weight: 900;
   margin-bottom: 0.5rem; }
 
 h1 {
@@ -967,6 +967,57 @@ input.error, textarea.error {
 .introduction-bio {
   padding-left: 0.5rem;
   padding-right: 0.5rem; }
+  @media (min-width: 0px) {
+    .introduction-bio {
+      width: calc(100% * 12/12 - (0.25rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 0px) and (min-width: 0px) {
+    .introduction-bio {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 0px) and (min-width: 600px) {
+    .introduction-bio {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 0px) and (min-width: 1025px) {
+    .introduction-bio {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 600px) {
+    .introduction-bio {
+      width: calc(100% * 12/12 - (0.5rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 600px) and (min-width: 0px) {
+    .introduction-bio {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 600px) and (min-width: 600px) {
+    .introduction-bio {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 600px) and (min-width: 1025px) {
+    .introduction-bio {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1025px) {
+    .introduction-bio {
+      width: calc(100% * 12/12 - (1rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 1025px) and (min-width: 0px) {
+    .introduction-bio {
+      margin-right: 0.25rem;
+      margin-left: 0.25rem; } }
+  @media (min-width: 1025px) and (min-width: 600px) {
+    .introduction-bio {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1025px) and (min-width: 1025px) {
+    .introduction-bio {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
   @media (min-width: 600px) {
     .introduction-bio {
       padding-left: 0.5rem;

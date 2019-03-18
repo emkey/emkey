@@ -8,6 +8,7 @@
 	@include column-width(12);
 	color: lighten($kdarkgrey, 20%);
 }
+
 .introduction-photo{
 	@include padding-bottom($large-spacing);
 	@include column-width(12);
@@ -18,6 +19,7 @@
 .introduction-bio{
 	@include padding-left($normal-spacing);
 	@include padding-right($normal-spacing);
+	@include column-width(12);
 	@include respond-to(medium){
 		@include column-width(8);
 		@include padding-left($normal-spacing);
