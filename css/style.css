@@ -406,175 +406,175 @@ html {
 .column {
   float: left;
   box-sizing: border-box; }
-  @media (min-width: 0px) {
+  @media (min-width: 767px) {
     .column {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 600px) {
+  @media (min-width: 992px) {
     .column {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1025px) {
+  @media (min-width: 1200px) {
     .column {
       margin-right: 1rem;
       margin-left: 1rem; } }
 
 /* Creates a mixin for columns */
 /* Creates all the css column classes */
-@media (min-width: 0px) {
+@media (min-width: 767px) {
   .column-1 {
     width: calc(100% * 1/12 - (0.25rem * 2 )); } }
 
-@media (min-width: 600px) {
+@media (min-width: 992px) {
   .column-1 {
     width: calc(100% * 1/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
   .column-1 {
     width: calc(100% * 1/12 - (1rem * 2 )); } }
 
-@media (min-width: 0px) {
+@media (min-width: 767px) {
   .column-2 {
     width: calc(100% * 2/12 - (0.25rem * 2 )); } }
 
-@media (min-width: 600px) {
+@media (min-width: 992px) {
   .column-2 {
     width: calc(100% * 2/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
   .column-2 {
     width: calc(100% * 2/12 - (1rem * 2 )); } }
 
-@media (min-width: 0px) {
+@media (min-width: 767px) {
   .column-3 {
     width: calc(100% * 3/12 - (0.25rem * 2 )); } }
 
-@media (min-width: 600px) {
+@media (min-width: 992px) {
   .column-3 {
     width: calc(100% * 3/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
   .column-3 {
     width: calc(100% * 3/12 - (1rem * 2 )); } }
 
-@media (min-width: 0px) {
+@media (min-width: 767px) {
   .column-4 {
     width: calc(100% * 4/12 - (0.25rem * 2 )); } }
 
-@media (min-width: 600px) {
+@media (min-width: 992px) {
   .column-4 {
     width: calc(100% * 4/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
   .column-4 {
     width: calc(100% * 4/12 - (1rem * 2 )); } }
 
-@media (min-width: 0px) {
+@media (min-width: 767px) {
   .column-5 {
     width: calc(100% * 5/12 - (0.25rem * 2 )); } }
 
-@media (min-width: 600px) {
+@media (min-width: 992px) {
   .column-5 {
     width: calc(100% * 5/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
   .column-5 {
     width: calc(100% * 5/12 - (1rem * 2 )); } }
 
-@media (min-width: 0px) {
+@media (min-width: 767px) {
   .column-6 {
     width: calc(100% * 6/12 - (0.25rem * 2 )); } }
 
-@media (min-width: 600px) {
+@media (min-width: 992px) {
   .column-6 {
     width: calc(100% * 6/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
   .column-6 {
     width: calc(100% * 6/12 - (1rem * 2 )); } }
 
-@media (min-width: 0px) {
+@media (min-width: 767px) {
   .column-7 {
     width: calc(100% * 7/12 - (0.25rem * 2 )); } }
 
-@media (min-width: 600px) {
+@media (min-width: 992px) {
   .column-7 {
     width: calc(100% * 7/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
   .column-7 {
     width: calc(100% * 7/12 - (1rem * 2 )); } }
 
-@media (min-width: 0px) {
+@media (min-width: 767px) {
   .column-8 {
     width: calc(100% * 8/12 - (0.25rem * 2 )); } }
 
-@media (min-width: 600px) {
+@media (min-width: 992px) {
   .column-8 {
     width: calc(100% * 8/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
   .column-8 {
     width: calc(100% * 8/12 - (1rem * 2 )); } }
 
-@media (min-width: 0px) {
+@media (min-width: 767px) {
   .column-9 {
     width: calc(100% * 9/12 - (0.25rem * 2 )); } }
 
-@media (min-width: 600px) {
+@media (min-width: 992px) {
   .column-9 {
     width: calc(100% * 9/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
   .column-9 {
     width: calc(100% * 9/12 - (1rem * 2 )); } }
 
-@media (min-width: 0px) {
+@media (min-width: 767px) {
   .column-10 {
     width: calc(100% * 10/12 - (0.25rem * 2 )); } }
 
-@media (min-width: 600px) {
+@media (min-width: 992px) {
   .column-10 {
     width: calc(100% * 10/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
   .column-10 {
     width: calc(100% * 10/12 - (1rem * 2 )); } }
 
-@media (min-width: 0px) {
+@media (min-width: 767px) {
   .column-11 {
     width: calc(100% * 11/12 - (0.25rem * 2 )); } }
 
-@media (min-width: 600px) {
+@media (min-width: 992px) {
   .column-11 {
     width: calc(100% * 11/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
   .column-11 {
     width: calc(100% * 11/12 - (1rem * 2 )); } }
 
-@media (min-width: 0px) {
+@media (min-width: 767px) {
   .column-12 {
     width: calc(100% * 12/12 - (0.25rem * 2 )); } }
 
-@media (min-width: 600px) {
+@media (min-width: 992px) {
   .column-12 {
     width: calc(100% * 12/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
   .column-12 {
     width: calc(100% * 12/12 - (1rem * 2 )); } }
 
 .css-grid-container {
   display: grid;
   grid-template-rows: 100px; }
-  @media (min-width: 0px) {
+  @media (min-width: 767px) {
     .css-grid-container {
       grid-template-columns: 0.25rem auto 0.25rem; } }
-  @media (min-width: 600px) {
+  @media (min-width: 992px) {
     .css-grid-container {
       grid-template-columns: 0.5rem auto 0.5rem; } }
-  @media (min-width: 1025px) {
+  @media (min-width: 1200px) {
     .css-grid-container {
       grid-template-columns: 1rem auto 1rem; } }
 
@@ -598,13 +598,13 @@ html {
   grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
   grid-template-rows: 100px;
   grid-gap: 0.5rem; }
-  @media (min-width: 0px) {
+  @media (min-width: 767px) {
     .css-grid {
       grid-gap: 0.5rem; } }
-  @media (min-width: 600px) {
+  @media (min-width: 992px) {
     .css-grid {
       grid-gap: 1rem; } }
-  @media (min-width: 1025px) {
+  @media (min-width: 1200px) {
     .css-grid {
       grid-gap: 2rem; } }
 
@@ -615,7 +615,7 @@ body {
   line-height: 2em; }
 
 h1, h2, h3, h4 {
-  font-weight: 700;
+  font-weight: 900;
   margin-bottom: 0.5rem; }
 
 h1 {
@@ -734,12 +734,12 @@ II. Secondary Buttons
   padding: 1rem;
   margin-top: 1rem;
   margin-bottom: 0.5rem; }
-  @media (min-width: 600px) {
+  @media (min-width: 992px) {
     .card {
       padding: 1rem;
       margin-top: 1rem;
       margin-bottom: 1rem; } }
-  @media (min-width: 1025px) {
+  @media (min-width: 1200px) {
     .card {
       padding: 1.5rem;
       margin-top: 1.5rem;
@@ -804,162 +804,162 @@ input.error, textarea.error {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   color: #4b5358; }
-  @media (min-width: 0px) {
+  @media (min-width: 767px) {
     .introduction-header {
       width: calc(100% * 12/12 - (0.25rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 767px) and (min-width: 767px) {
     .introduction-header {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 0px) and (min-width: 600px) {
+  @media (min-width: 767px) and (min-width: 992px) {
     .introduction-header {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 0px) and (min-width: 1025px) {
+  @media (min-width: 767px) and (min-width: 1200px) {
     .introduction-header {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 600px) {
+  @media (min-width: 992px) {
     .introduction-header {
       width: calc(100% * 12/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 600px) and (min-width: 0px) {
+  @media (min-width: 992px) and (min-width: 767px) {
     .introduction-header {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 600px) and (min-width: 600px) {
+  @media (min-width: 992px) and (min-width: 992px) {
     .introduction-header {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 600px) and (min-width: 1025px) {
+  @media (min-width: 992px) and (min-width: 1200px) {
     .introduction-header {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1025px) {
+  @media (min-width: 1200px) {
     .introduction-header {
       width: calc(100% * 12/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1025px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 767px) {
     .introduction-header {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 1025px) and (min-width: 600px) {
+  @media (min-width: 1200px) and (min-width: 992px) {
     .introduction-header {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1025px) and (min-width: 1025px) {
+  @media (min-width: 1200px) and (min-width: 1200px) {
     .introduction-header {
       margin-right: 1rem;
       margin-left: 1rem; } }
 
 .introduction-photo {
   padding-bottom: 1.5rem; }
-  @media (min-width: 0px) {
+  @media (min-width: 767px) {
     .introduction-photo {
       width: calc(100% * 12/12 - (0.25rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 767px) and (min-width: 767px) {
     .introduction-photo {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 0px) and (min-width: 600px) {
+  @media (min-width: 767px) and (min-width: 992px) {
     .introduction-photo {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 0px) and (min-width: 1025px) {
+  @media (min-width: 767px) and (min-width: 1200px) {
     .introduction-photo {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 600px) {
+  @media (min-width: 992px) {
     .introduction-photo {
       width: calc(100% * 12/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 600px) and (min-width: 0px) {
+  @media (min-width: 992px) and (min-width: 767px) {
     .introduction-photo {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 600px) and (min-width: 600px) {
+  @media (min-width: 992px) and (min-width: 992px) {
     .introduction-photo {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 600px) and (min-width: 1025px) {
+  @media (min-width: 992px) and (min-width: 1200px) {
     .introduction-photo {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1025px) {
+  @media (min-width: 1200px) {
     .introduction-photo {
       width: calc(100% * 12/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1025px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 767px) {
     .introduction-photo {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 1025px) and (min-width: 600px) {
+  @media (min-width: 1200px) and (min-width: 992px) {
     .introduction-photo {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1025px) and (min-width: 1025px) {
+  @media (min-width: 1200px) and (min-width: 1200px) {
     .introduction-photo {
       margin-right: 1rem;
       margin-left: 1rem; } }
 
-@media (min-width: 600px) and (min-width: 0px) {
+@media (min-width: 992px) and (min-width: 767px) {
   .introduction-photo {
     width: calc(100% * 6/12 - (0.25rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 600px) and (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 992px) and (min-width: 767px) and (min-width: 767px) {
     .introduction-photo {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 600px) and (min-width: 0px) and (min-width: 600px) {
+  @media (min-width: 992px) and (min-width: 767px) and (min-width: 992px) {
     .introduction-photo {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 600px) and (min-width: 0px) and (min-width: 1025px) {
+  @media (min-width: 992px) and (min-width: 767px) and (min-width: 1200px) {
     .introduction-photo {
       margin-right: 1rem;
       margin-left: 1rem; } }
 
-@media (min-width: 600px) and (min-width: 600px) {
+@media (min-width: 992px) and (min-width: 992px) {
   .introduction-photo {
     width: calc(100% * 6/12 - (0.5rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 600px) and (min-width: 600px) and (min-width: 0px) {
+  @media (min-width: 992px) and (min-width: 992px) and (min-width: 767px) {
     .introduction-photo {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 600px) and (min-width: 600px) and (min-width: 600px) {
+  @media (min-width: 992px) and (min-width: 992px) and (min-width: 992px) {
     .introduction-photo {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 600px) and (min-width: 600px) and (min-width: 1025px) {
+  @media (min-width: 992px) and (min-width: 992px) and (min-width: 1200px) {
     .introduction-photo {
       margin-right: 1rem;
       margin-left: 1rem; } }
 
-@media (min-width: 600px) and (min-width: 1025px) {
+@media (min-width: 992px) and (min-width: 1200px) {
   .introduction-photo {
     width: calc(100% * 6/12 - (1rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 0px) {
+  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 767px) {
     .introduction-photo {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 600px) {
+  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 992px) {
     .introduction-photo {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 1025px) {
+  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 1200px) {
     .introduction-photo {
       margin-right: 1rem;
       margin-left: 1rem; } }
@@ -967,109 +967,109 @@ input.error, textarea.error {
 .introduction-bio {
   padding-left: 0.5rem;
   padding-right: 0.5rem; }
-  @media (min-width: 0px) {
+  @media (min-width: 767px) {
     .introduction-bio {
       width: calc(100% * 12/12 - (0.25rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 767px) and (min-width: 767px) {
     .introduction-bio {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 0px) and (min-width: 600px) {
+  @media (min-width: 767px) and (min-width: 992px) {
     .introduction-bio {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 0px) and (min-width: 1025px) {
+  @media (min-width: 767px) and (min-width: 1200px) {
     .introduction-bio {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 600px) {
+  @media (min-width: 992px) {
     .introduction-bio {
       width: calc(100% * 12/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 600px) and (min-width: 0px) {
+  @media (min-width: 992px) and (min-width: 767px) {
     .introduction-bio {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 600px) and (min-width: 600px) {
+  @media (min-width: 992px) and (min-width: 992px) {
     .introduction-bio {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 600px) and (min-width: 1025px) {
+  @media (min-width: 992px) and (min-width: 1200px) {
     .introduction-bio {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1025px) {
+  @media (min-width: 1200px) {
     .introduction-bio {
       width: calc(100% * 12/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1025px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 767px) {
     .introduction-bio {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 1025px) and (min-width: 600px) {
+  @media (min-width: 1200px) and (min-width: 992px) {
     .introduction-bio {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1025px) and (min-width: 1025px) {
+  @media (min-width: 1200px) and (min-width: 1200px) {
     .introduction-bio {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 600px) {
+  @media (min-width: 992px) {
     .introduction-bio {
       padding-left: 0.5rem;
       padding-right: 0.5rem; } }
-  @media (min-width: 600px) and (min-width: 0px) {
+  @media (min-width: 992px) and (min-width: 767px) {
     .introduction-bio {
       width: calc(100% * 8/12 - (0.25rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 600px) and (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 992px) and (min-width: 767px) and (min-width: 767px) {
     .introduction-bio {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 600px) and (min-width: 0px) and (min-width: 600px) {
+  @media (min-width: 992px) and (min-width: 767px) and (min-width: 992px) {
     .introduction-bio {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 600px) and (min-width: 0px) and (min-width: 1025px) {
+  @media (min-width: 992px) and (min-width: 767px) and (min-width: 1200px) {
     .introduction-bio {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 600px) and (min-width: 600px) {
+  @media (min-width: 992px) and (min-width: 992px) {
     .introduction-bio {
       width: calc(100% * 8/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 600px) and (min-width: 600px) and (min-width: 0px) {
+  @media (min-width: 992px) and (min-width: 992px) and (min-width: 767px) {
     .introduction-bio {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 600px) and (min-width: 600px) and (min-width: 600px) {
+  @media (min-width: 992px) and (min-width: 992px) and (min-width: 992px) {
     .introduction-bio {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 600px) and (min-width: 600px) and (min-width: 1025px) {
+  @media (min-width: 992px) and (min-width: 992px) and (min-width: 1200px) {
     .introduction-bio {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 600px) and (min-width: 1025px) {
+  @media (min-width: 992px) and (min-width: 1200px) {
     .introduction-bio {
       width: calc(100% * 8/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 0px) {
+  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 767px) {
     .introduction-bio {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 600px) {
+  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 992px) {
     .introduction-bio {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 1025px) {
+  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 1200px) {
     .introduction-bio {
       margin-right: 1rem;
       margin-left: 1rem; } }
@@ -1086,58 +1086,58 @@ input.error, textarea.error {
   padding-right: 0.5rem;
   padding-bottom: 1rem;
   padding-top: 1.5rem; }
-  @media (min-width: 600px) {
+  @media (min-width: 992px) {
     .section-portfolio .portfolio-article {
       padding-left: 0.5rem;
       padding-right: 0.5rem; } }
-  @media (min-width: 600px) and (min-width: 0px) {
+  @media (min-width: 992px) and (min-width: 767px) {
     .section-portfolio .portfolio-article {
       width: calc(100% * 4/12 - (0.25rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 600px) and (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 992px) and (min-width: 767px) and (min-width: 767px) {
     .section-portfolio .portfolio-article {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 600px) and (min-width: 0px) and (min-width: 600px) {
+  @media (min-width: 992px) and (min-width: 767px) and (min-width: 992px) {
     .section-portfolio .portfolio-article {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 600px) and (min-width: 0px) and (min-width: 1025px) {
+  @media (min-width: 992px) and (min-width: 767px) and (min-width: 1200px) {
     .section-portfolio .portfolio-article {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 600px) and (min-width: 600px) {
+  @media (min-width: 992px) and (min-width: 992px) {
     .section-portfolio .portfolio-article {
       width: calc(100% * 4/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 600px) and (min-width: 600px) and (min-width: 0px) {
+  @media (min-width: 992px) and (min-width: 992px) and (min-width: 767px) {
     .section-portfolio .portfolio-article {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 600px) and (min-width: 600px) and (min-width: 600px) {
+  @media (min-width: 992px) and (min-width: 992px) and (min-width: 992px) {
     .section-portfolio .portfolio-article {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 600px) and (min-width: 600px) and (min-width: 1025px) {
+  @media (min-width: 992px) and (min-width: 992px) and (min-width: 1200px) {
     .section-portfolio .portfolio-article {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 600px) and (min-width: 1025px) {
+  @media (min-width: 992px) and (min-width: 1200px) {
     .section-portfolio .portfolio-article {
       width: calc(100% * 4/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 0px) {
+  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 767px) {
     .section-portfolio .portfolio-article {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 600px) {
+  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 992px) {
     .section-portfolio .portfolio-article {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 1025px) {
+  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 1200px) {
     .section-portfolio .portfolio-article {
       margin-right: 1rem;
       margin-left: 1rem; } }
@@ -1162,176 +1162,176 @@ input.error, textarea.error {
 .left-sidebar {
   padding: 0.5rem;
   background-color: #fccbc7; }
-  @media (min-width: 0px) {
+  @media (min-width: 767px) {
     .left-sidebar {
       width: calc(100% * 12/12 - (0.25rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 767px) and (min-width: 767px) {
     .left-sidebar {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 0px) and (min-width: 600px) {
+  @media (min-width: 767px) and (min-width: 992px) {
     .left-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 0px) and (min-width: 1025px) {
+  @media (min-width: 767px) and (min-width: 1200px) {
     .left-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 600px) {
+  @media (min-width: 992px) {
     .left-sidebar {
       width: calc(100% * 12/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 600px) and (min-width: 0px) {
+  @media (min-width: 992px) and (min-width: 767px) {
     .left-sidebar {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 600px) and (min-width: 600px) {
+  @media (min-width: 992px) and (min-width: 992px) {
     .left-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 600px) and (min-width: 1025px) {
+  @media (min-width: 992px) and (min-width: 1200px) {
     .left-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1025px) {
+  @media (min-width: 1200px) {
     .left-sidebar {
       width: calc(100% * 12/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1025px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 767px) {
     .left-sidebar {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 1025px) and (min-width: 600px) {
+  @media (min-width: 1200px) and (min-width: 992px) {
     .left-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1025px) and (min-width: 1025px) {
+  @media (min-width: 1200px) and (min-width: 1200px) {
     .left-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
 
-@media (min-width: 600px) and (min-width: 0px) {
+@media (min-width: 992px) and (min-width: 767px) {
   .left-sidebar {
     width: calc(100% * 4/12 - (0.25rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 600px) and (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 992px) and (min-width: 767px) and (min-width: 767px) {
     .left-sidebar {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 600px) and (min-width: 0px) and (min-width: 600px) {
+  @media (min-width: 992px) and (min-width: 767px) and (min-width: 992px) {
     .left-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 600px) and (min-width: 0px) and (min-width: 1025px) {
+  @media (min-width: 992px) and (min-width: 767px) and (min-width: 1200px) {
     .left-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
 
-@media (min-width: 600px) and (min-width: 600px) {
+@media (min-width: 992px) and (min-width: 992px) {
   .left-sidebar {
     width: calc(100% * 4/12 - (0.5rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 600px) and (min-width: 600px) and (min-width: 0px) {
+  @media (min-width: 992px) and (min-width: 992px) and (min-width: 767px) {
     .left-sidebar {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 600px) and (min-width: 600px) and (min-width: 600px) {
+  @media (min-width: 992px) and (min-width: 992px) and (min-width: 992px) {
     .left-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 600px) and (min-width: 600px) and (min-width: 1025px) {
+  @media (min-width: 992px) and (min-width: 992px) and (min-width: 1200px) {
     .left-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
 
-@media (min-width: 600px) and (min-width: 1025px) {
+@media (min-width: 992px) and (min-width: 1200px) {
   .left-sidebar {
     width: calc(100% * 4/12 - (1rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 0px) {
+  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 767px) {
     .left-sidebar {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 600px) {
+  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 992px) {
     .left-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 1025px) {
+  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 1200px) {
     .left-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1025px) {
+  @media (min-width: 1200px) {
     .left-sidebar {
       float: left;
       box-sizing: border-box;
       padding: 1.5rem; } }
-  @media (min-width: 1025px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 767px) {
     .left-sidebar {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 1025px) and (min-width: 600px) {
+  @media (min-width: 1200px) and (min-width: 992px) {
     .left-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1025px) and (min-width: 1025px) {
+  @media (min-width: 1200px) and (min-width: 1200px) {
     .left-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1025px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 767px) {
     .left-sidebar {
       width: calc(100% * 3/12 - (0.25rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1025px) and (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 767px) and (min-width: 767px) {
     .left-sidebar {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 1025px) and (min-width: 0px) and (min-width: 600px) {
+  @media (min-width: 1200px) and (min-width: 767px) and (min-width: 992px) {
     .left-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1025px) and (min-width: 0px) and (min-width: 1025px) {
+  @media (min-width: 1200px) and (min-width: 767px) and (min-width: 1200px) {
     .left-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1025px) and (min-width: 600px) {
+  @media (min-width: 1200px) and (min-width: 992px) {
     .left-sidebar {
       width: calc(100% * 3/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1025px) and (min-width: 600px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (min-width: 767px) {
     .left-sidebar {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 1025px) and (min-width: 600px) and (min-width: 600px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (min-width: 992px) {
     .left-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1025px) and (min-width: 600px) and (min-width: 1025px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (min-width: 1200px) {
     .left-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1025px) and (min-width: 1025px) {
+  @media (min-width: 1200px) and (min-width: 1200px) {
     .left-sidebar {
       width: calc(100% * 3/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1025px) and (min-width: 1025px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 767px) {
     .left-sidebar {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 1025px) and (min-width: 1025px) and (min-width: 600px) {
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 992px) {
     .left-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1025px) and (min-width: 1025px) and (min-width: 1025px) {
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 1200px) {
     .left-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
@@ -1339,162 +1339,162 @@ input.error, textarea.error {
 .middle-area {
   padding: 0.5rem;
   background-color: #f99d97; }
-  @media (min-width: 0px) {
+  @media (min-width: 767px) {
     .middle-area {
       width: calc(100% * 12/12 - (0.25rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 767px) and (min-width: 767px) {
     .middle-area {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 0px) and (min-width: 600px) {
+  @media (min-width: 767px) and (min-width: 992px) {
     .middle-area {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 0px) and (min-width: 1025px) {
+  @media (min-width: 767px) and (min-width: 1200px) {
     .middle-area {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 600px) {
+  @media (min-width: 992px) {
     .middle-area {
       width: calc(100% * 12/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 600px) and (min-width: 0px) {
+  @media (min-width: 992px) and (min-width: 767px) {
     .middle-area {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 600px) and (min-width: 600px) {
+  @media (min-width: 992px) and (min-width: 992px) {
     .middle-area {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 600px) and (min-width: 1025px) {
+  @media (min-width: 992px) and (min-width: 1200px) {
     .middle-area {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1025px) {
+  @media (min-width: 1200px) {
     .middle-area {
       width: calc(100% * 12/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1025px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 767px) {
     .middle-area {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 1025px) and (min-width: 600px) {
+  @media (min-width: 1200px) and (min-width: 992px) {
     .middle-area {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1025px) and (min-width: 1025px) {
+  @media (min-width: 1200px) and (min-width: 1200px) {
     .middle-area {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 600px) {
+  @media (min-width: 992px) {
     .middle-area {
       padding: 0.5rem; } }
-  @media (min-width: 600px) and (min-width: 0px) {
+  @media (min-width: 992px) and (min-width: 767px) {
     .middle-area {
       width: calc(100% * 4/12 - (0.25rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 600px) and (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 992px) and (min-width: 767px) and (min-width: 767px) {
     .middle-area {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 600px) and (min-width: 0px) and (min-width: 600px) {
+  @media (min-width: 992px) and (min-width: 767px) and (min-width: 992px) {
     .middle-area {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 600px) and (min-width: 0px) and (min-width: 1025px) {
+  @media (min-width: 992px) and (min-width: 767px) and (min-width: 1200px) {
     .middle-area {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 600px) and (min-width: 600px) {
+  @media (min-width: 992px) and (min-width: 992px) {
     .middle-area {
       width: calc(100% * 4/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 600px) and (min-width: 600px) and (min-width: 0px) {
+  @media (min-width: 992px) and (min-width: 992px) and (min-width: 767px) {
     .middle-area {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 600px) and (min-width: 600px) and (min-width: 600px) {
+  @media (min-width: 992px) and (min-width: 992px) and (min-width: 992px) {
     .middle-area {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 600px) and (min-width: 600px) and (min-width: 1025px) {
+  @media (min-width: 992px) and (min-width: 992px) and (min-width: 1200px) {
     .middle-area {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 600px) and (min-width: 1025px) {
+  @media (min-width: 992px) and (min-width: 1200px) {
     .middle-area {
       width: calc(100% * 4/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 0px) {
+  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 767px) {
     .middle-area {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 600px) {
+  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 992px) {
     .middle-area {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 1025px) {
+  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 1200px) {
     .middle-area {
       margin-right: 1rem;
       margin-left: 1rem; } }
 
-@media (min-width: 1025px) and (min-width: 0px) {
+@media (min-width: 1200px) and (min-width: 767px) {
   .middle-area {
     width: calc(100% * 6/12 - (0.25rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1025px) and (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 767px) and (min-width: 767px) {
     .middle-area {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 1025px) and (min-width: 0px) and (min-width: 600px) {
+  @media (min-width: 1200px) and (min-width: 767px) and (min-width: 992px) {
     .middle-area {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1025px) and (min-width: 0px) and (min-width: 1025px) {
+  @media (min-width: 1200px) and (min-width: 767px) and (min-width: 1200px) {
     .middle-area {
       margin-right: 1rem;
       margin-left: 1rem; } }
 
-@media (min-width: 1025px) and (min-width: 600px) {
+@media (min-width: 1200px) and (min-width: 992px) {
   .middle-area {
     width: calc(100% * 6/12 - (0.5rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1025px) and (min-width: 600px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (min-width: 767px) {
     .middle-area {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 1025px) and (min-width: 600px) and (min-width: 600px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (min-width: 992px) {
     .middle-area {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1025px) and (min-width: 600px) and (min-width: 1025px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (min-width: 1200px) {
     .middle-area {
       margin-right: 1rem;
       margin-left: 1rem; } }
 
-@media (min-width: 1025px) and (min-width: 1025px) {
+@media (min-width: 1200px) and (min-width: 1200px) {
   .middle-area {
     width: calc(100% * 6/12 - (1rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1025px) and (min-width: 1025px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 767px) {
     .middle-area {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 1025px) and (min-width: 1025px) and (min-width: 600px) {
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 992px) {
     .middle-area {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1025px) and (min-width: 1025px) and (min-width: 1025px) {
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 1200px) {
     .middle-area {
       margin-right: 1rem;
       margin-left: 1rem; } }
@@ -1502,162 +1502,162 @@ input.error, textarea.error {
 .right-sidebar {
   padding: 0.5rem;
   background-color: #f77066; }
-  @media (min-width: 0px) {
+  @media (min-width: 767px) {
     .right-sidebar {
       width: calc(100% * 12/12 - (0.25rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 767px) and (min-width: 767px) {
     .right-sidebar {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 0px) and (min-width: 600px) {
+  @media (min-width: 767px) and (min-width: 992px) {
     .right-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 0px) and (min-width: 1025px) {
+  @media (min-width: 767px) and (min-width: 1200px) {
     .right-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 600px) {
+  @media (min-width: 992px) {
     .right-sidebar {
       width: calc(100% * 12/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 600px) and (min-width: 0px) {
+  @media (min-width: 992px) and (min-width: 767px) {
     .right-sidebar {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 600px) and (min-width: 600px) {
+  @media (min-width: 992px) and (min-width: 992px) {
     .right-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 600px) and (min-width: 1025px) {
+  @media (min-width: 992px) and (min-width: 1200px) {
     .right-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1025px) {
+  @media (min-width: 1200px) {
     .right-sidebar {
       width: calc(100% * 12/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1025px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 767px) {
     .right-sidebar {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 1025px) and (min-width: 600px) {
+  @media (min-width: 1200px) and (min-width: 992px) {
     .right-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1025px) and (min-width: 1025px) {
+  @media (min-width: 1200px) and (min-width: 1200px) {
     .right-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
 
-@media (min-width: 600px) and (min-width: 0px) {
+@media (min-width: 992px) and (min-width: 767px) {
   .right-sidebar {
     width: calc(100% * 4/12 - (0.25rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 600px) and (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 992px) and (min-width: 767px) and (min-width: 767px) {
     .right-sidebar {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 600px) and (min-width: 0px) and (min-width: 600px) {
+  @media (min-width: 992px) and (min-width: 767px) and (min-width: 992px) {
     .right-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 600px) and (min-width: 0px) and (min-width: 1025px) {
+  @media (min-width: 992px) and (min-width: 767px) and (min-width: 1200px) {
     .right-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
 
-@media (min-width: 600px) and (min-width: 600px) {
+@media (min-width: 992px) and (min-width: 992px) {
   .right-sidebar {
     width: calc(100% * 4/12 - (0.5rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 600px) and (min-width: 600px) and (min-width: 0px) {
+  @media (min-width: 992px) and (min-width: 992px) and (min-width: 767px) {
     .right-sidebar {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 600px) and (min-width: 600px) and (min-width: 600px) {
+  @media (min-width: 992px) and (min-width: 992px) and (min-width: 992px) {
     .right-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 600px) and (min-width: 600px) and (min-width: 1025px) {
+  @media (min-width: 992px) and (min-width: 992px) and (min-width: 1200px) {
     .right-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
 
-@media (min-width: 600px) and (min-width: 1025px) {
+@media (min-width: 992px) and (min-width: 1200px) {
   .right-sidebar {
     width: calc(100% * 4/12 - (1rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 0px) {
+  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 767px) {
     .right-sidebar {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 600px) {
+  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 992px) {
     .right-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 600px) and (min-width: 1025px) and (min-width: 1025px) {
+  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 1200px) {
     .right-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
 
-@media (min-width: 1025px) and (min-width: 0px) {
+@media (min-width: 1200px) and (min-width: 767px) {
   .right-sidebar {
     width: calc(100% * 3/12 - (0.25rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1025px) and (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 767px) and (min-width: 767px) {
     .right-sidebar {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 1025px) and (min-width: 0px) and (min-width: 600px) {
+  @media (min-width: 1200px) and (min-width: 767px) and (min-width: 992px) {
     .right-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1025px) and (min-width: 0px) and (min-width: 1025px) {
+  @media (min-width: 1200px) and (min-width: 767px) and (min-width: 1200px) {
     .right-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
 
-@media (min-width: 1025px) and (min-width: 600px) {
+@media (min-width: 1200px) and (min-width: 992px) {
   .right-sidebar {
     width: calc(100% * 3/12 - (0.5rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1025px) and (min-width: 600px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (min-width: 767px) {
     .right-sidebar {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 1025px) and (min-width: 600px) and (min-width: 600px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (min-width: 992px) {
     .right-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1025px) and (min-width: 600px) and (min-width: 1025px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (min-width: 1200px) {
     .right-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
 
-@media (min-width: 1025px) and (min-width: 1025px) {
+@media (min-width: 1200px) and (min-width: 1200px) {
   .right-sidebar {
     width: calc(100% * 3/12 - (1rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1025px) and (min-width: 1025px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 767px) {
     .right-sidebar {
       margin-right: 0.25rem;
       margin-left: 0.25rem; } }
-  @media (min-width: 1025px) and (min-width: 1025px) and (min-width: 600px) {
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 992px) {
     .right-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1025px) and (min-width: 1025px) and (min-width: 1025px) {
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 1200px) {
     .right-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
