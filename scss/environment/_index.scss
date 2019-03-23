@@ -18,9 +18,11 @@
 	@include margin-bottom($normal-spacing);
 	@include respond-to(medium){
 		@include column-width(12);
+		@include margin-bottom($medium-spacing);
 	}
 	@include respond-to(large){
 		@include column-width(8);
+		@include margin-bottom($large-spacing);
 	}
 }
 

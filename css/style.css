@@ -906,12 +906,14 @@ input.error, textarea.error {
     .hero {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-
-@media (min-width: 768px) and (min-width: 0px) {
-  .hero {
-    width: calc(100% * 12/12 - (0.5rem * 2));
-    float: left;
-    box-sizing: border-box; } }
+  @media (min-width: 768px) {
+    .hero {
+      margin-bottom: 1rem; } }
+  @media (min-width: 768px) and (min-width: 0px) {
+    .hero {
+      width: calc(100% * 12/12 - (0.5rem * 2));
+      float: left;
+      box-sizing: border-box; } }
   @media (min-width: 768px) and (min-width: 0px) and (min-width: 0px) {
     .hero {
       margin-right: 0.5rem;
@@ -924,12 +926,11 @@ input.error, textarea.error {
     .hero {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-
-@media (min-width: 768px) and (min-width: 768px) {
-  .hero {
-    width: calc(100% * 12/12 - (1rem * 2));
-    float: left;
-    box-sizing: border-box; } }
+  @media (min-width: 768px) and (min-width: 768px) {
+    .hero {
+      width: calc(100% * 12/12 - (1rem * 2));
+      float: left;
+      box-sizing: border-box; } }
   @media (min-width: 768px) and (min-width: 768px) and (min-width: 0px) {
     .hero {
       margin-right: 0.5rem;
@@ -942,12 +943,11 @@ input.error, textarea.error {
     .hero {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-
-@media (min-width: 768px) and (min-width: 1200px) {
-  .hero {
-    width: calc(100% * 12/12 - (1.25rem * 2));
-    float: left;
-    box-sizing: border-box; } }
+  @media (min-width: 768px) and (min-width: 1200px) {
+    .hero {
+      width: calc(100% * 12/12 - (1.25rem * 2));
+      float: left;
+      box-sizing: border-box; } }
   @media (min-width: 768px) and (min-width: 1200px) and (min-width: 0px) {
     .hero {
       margin-right: 0.5rem;
@@ -960,12 +960,14 @@ input.error, textarea.error {
     .hero {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-
-@media (min-width: 1200px) and (min-width: 0px) {
-  .hero {
-    width: calc(100% * 8/12 - (0.5rem * 2));
-    float: left;
-    box-sizing: border-box; } }
+  @media (min-width: 1200px) {
+    .hero {
+      margin-bottom: 1.5rem; } }
+  @media (min-width: 1200px) and (min-width: 0px) {
+    .hero {
+      width: calc(100% * 8/12 - (0.5rem * 2));
+      float: left;
+      box-sizing: border-box; } }
   @media (min-width: 1200px) and (min-width: 0px) and (min-width: 0px) {
     .hero {
       margin-right: 0.5rem;
@@ -978,12 +980,11 @@ input.error, textarea.error {
     .hero {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-
-@media (min-width: 1200px) and (min-width: 768px) {
-  .hero {
-    width: calc(100% * 8/12 - (1rem * 2));
-    float: left;
-    box-sizing: border-box; } }
+  @media (min-width: 1200px) and (min-width: 768px) {
+    .hero {
+      width: calc(100% * 8/12 - (1rem * 2));
+      float: left;
+      box-sizing: border-box; } }
   @media (min-width: 1200px) and (min-width: 768px) and (min-width: 0px) {
     .hero {
       margin-right: 0.5rem;
@@ -996,12 +997,11 @@ input.error, textarea.error {
     .hero {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-
-@media (min-width: 1200px) and (min-width: 1200px) {
-  .hero {
-    width: calc(100% * 8/12 - (1.25rem * 2));
-    float: left;
-    box-sizing: border-box; } }
+  @media (min-width: 1200px) and (min-width: 1200px) {
+    .hero {
+      width: calc(100% * 8/12 - (1.25rem * 2));
+      float: left;
+      box-sizing: border-box; } }
   @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 0px) {
     .hero {
       margin-right: 0.5rem;
