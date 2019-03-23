@@ -29,6 +29,9 @@
 .social-media{
 	@include column-width(12);
 }
+.social-media a{
+	border: 0px;
+}
 
 .intro-paragraph{
 	@include column-width(12);
@@ -104,7 +107,8 @@
 	@include column-width(9);
 	@include padding-top($normal-spacing);
 	@include respond-to(medium){
-		@include column-width(12);
+		@include column-width(12)
+		@include padding-top($medium-spacing);
 	}
 }
 
@@ -120,4 +124,22 @@
 	@include respond-to(large){
 		@include column-width(6);
 	}
+}
+.speaking-talks{
+	@include column-width(12);
+	@include respond-to(medium){
+		@include column-width(6);
+	}
+	@include respond-to(large){
+		@include column-width(4);
+	}
+}
+.speaking-talks li{
+	border-left: $normal-spacing solid $magenta;
+	padding-left: $normal-spacing;
+	margin-bottom: $normal-spacing;
+	margin-top: $normal-spacing;
+}
+.events{
+	@include column-width(12);
 }
