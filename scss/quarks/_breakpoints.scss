@@ -1,7 +1,7 @@
 /* This is the Breakpoints Mixins */
 $breakpoints: (
-  'small'  : 767px,
-  'medium' : 992px,
+  'small'  : 0px,
+  'medium' : 768px,
   'large'  : 1200px
 );
 @mixin respond-to($breakpoint) {

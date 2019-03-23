@@ -6,32 +6,68 @@ body{
   line-height: $base-lineheight
 }
 //These are the headers
-h1,h2,h3,h4{
-	font-weight: 900;
-	@include margin-bottom($normal-spacing);
+h1,h2,h3,h4,h5,h6{
+	font-family: $sub-typeface;
+	font-weight: bold;
+	line-height: 1.2em;
+	@include respond-to(medium){
+		line-height: 1.3em;
+	}
+	@include respond-to(large){
+		line-height: 1.2em;
+	}
 }
 h1{
-	@include ms-respond(font-size,4);
-	line-height: 1.2em;
+	@include ms-respond(font-size,6);
+
 }
 h2{
-	@include ms-respond(font-size,3);
-	line-height: 1.2em;
+	@include ms-respond(font-size,5);
+
 }
 h3{
-	@include ms-respond(font-size,2);
-	line-height: 1.3em;
+	@include ms-respond(font-size,4);
+
 }
 h4{
+	@include ms-respond(font-size,3);
+
+}
+h5{
+	@include ms-respond(font-size,2);
+
+}
+h6{
 	@include ms-respond(font-size,1);
-	line-height: 1.3em;
+
+}
+
+// header title //
+.title{
+	color: $magenta;
+}
+.subtitle{
+	font-family: $main-typeface;
+	font-weight: normal;
 }
 // paragraph elements
+body{
+	color: $palesky;
+}
 p{
 	@include margin-top($medium-spacing);
 	@include margin-bottom($medium-spacing);
 }
+strong{
+	font-weight: bold;
+}
+a{
+	color: #092E79;
+}
+a:hover{
+	color: lighten(#092E79,40%);
 
+}
 // This is the caption
 .caption{
 	font-size: ms(-1);

@@ -1,51 +1,121 @@
-.section-introduction{
-	@extend .layout-wrapper;
-	@include clearfix;
+.homepage{
+	@extend .layout-wrapper
 }
-.introduction-header{
-	@include padding-top($large-spacing);
-	@include padding-bottom($large-spacing);
-	@include column-width(12);
-	color: lighten($kdarkgrey, 20%);
+.intro{
+	border-top: 16px solid $magenta;
+	@extend .layout-row;
+	margin-bottom: 40px;
+	@include respond-to(medium){
+		margin-bottom: 64px;
+	}
+	@include respond-to(large){
+		margin-bottom: 80px;
+	}
 }
 
-.introduction-photo{
-	@include padding-bottom($large-spacing);
+.hero{
+	@include column-width(12);
+	@include margin-bottom($normal-spacing);
+	@include respond-to(medium){
+		@include column-width(12);
+	}
+	@include respond-to(large){
+		@include column-width(8);
+	}
+}
+
+.social-media{
+	@include column-width(12);
+}
+
+.intro-paragraph{
+	@include column-width(12);
+	@include margin-top($normal-spacing);
+	@include respond-to(medium){
+		@include column-width(9);
+		@include margin-top($medium-spacing);
+	}
+	@include respond-to(large){
+		@include column-width(6);
+		@include margin-top($large-spacing);
+	}
+}
+
+.process, .speaking{
+	@extend .layout-row;
+	margin-bottom: 40px;
+	@include respond-to(medium){
+		margin-bottom: 64px;
+	}
+	@include respond-to(large){
+		margin-bottom: 80px;
+	}
+	.title{
+		border-top: 16px solid $magenta;
+		display: inline-block;
+		padding-left: $normal-spacing;
+		margin-left: -($normal-spacing);
+		@include respond-to(medium){
+			padding-left: $medium-spacing;
+			margin-left: -($medium-spacing);
+		}
+		@include respond-to(large){
+			padding-left: $large-spacing;
+			margin-left: -($large-spacing);
+		}
+
+	}
+}
+.process-intro, .speaking-intro{
+	@extend .layout-row;
+	@include margin-bottom($large-spacing);
+	.subtitle{
+		@include column-width(11);
+		@include respond-to(large){
+			@include column-width(8);
+		}
+	}
+}
+.process-step{
+	@include margin-top($normal-spacing);
+	@include respond-to(medium){
+		@include margin-top($medium-spacing);
+	}
 	@include column-width(12);
 	@include respond-to(medium){
 		@include column-width(6);
 	}
+	@include respond-to(large){
+		@include column-width(3);
+	}
 }
-.introduction-bio{
-	@include padding-left($normal-spacing);
-	@include padding-right($normal-spacing);
+.process-step .process-icon{
+	@include column-width(3);
+	@include respond-to(medium){
+		@include column-width(12);
+		img{
+			width: 100px;
+		}
+	}
+}
+.process-step .process-information{
+	@include column-width(9);
+	@include padding-top($normal-spacing);
+	@include respond-to(medium){
+		@include column-width(12);
+	}
+}
+
+.process .header, .speaking .header{
+	@include column-width(12);
+	margin-top:40px;
+}
+.speaking-info{
 	@include column-width(12);
 	@include respond-to(medium){
-		@include column-width(8);
-		@include padding-left($normal-spacing);
-		@include padding-right($normal-spacing);
+	@include column-width(9);
 	}
-}
-.section-portfolio{
-	@extend .layout-wrapper;
-	@include clearfix;
-	@include padding-bottom($normal-spacing);
-}
-.section-portfolio .portfolio-article{
-	@include padding-left($normal-spacing);
-	@include padding-right($normal-spacing);
-	@include padding-bottom($medium-spacing);
-	@include padding-top($large-spacing);
-	@include respond-to(medium){
-		@include column-width(4);
-		@include padding-left($normal-spacing);
-		@include padding-right($normal-spacing);
-	}
-	.portfolio-thumbnail{
-		width: 100%;
-		@include padding-bottom($medium-spacing);
-	}
-	.button{
-		margin: 0px;
+	@include respond-to(large){
+		@include column-width(6);
 	}
 }

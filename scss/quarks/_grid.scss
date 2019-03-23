@@ -25,6 +25,7 @@ html{
 }
 /* Sets up a layout row */
 .layout-row{
+	width: 100%;
 	@include clearfix;
 }
 /* Sets up the left and right margins */

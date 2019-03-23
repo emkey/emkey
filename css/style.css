@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700,700i|Merriweather:300,300i,400,400i,700,700i");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -70,19 +71,6 @@ $shadowalpha: (
 
 .text-right {
   text-align: right; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Fira Sans", serif;
-  color: #4b5358; }
-  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    color: #1C1F21; }
-
-body {
-  font-family: "Merriweather", sans-serif;
-  color: #1C1F21; }
-
-a {
-  color: #0076DE; }
 
 /*
 I. Backgrounds
@@ -391,192 +379,194 @@ html {
 
 /* This is a clearfix to make sure the layout stretches to the bottom */
 /* This is the basic grid wrapper */
-.layout-wrapper, .section-introduction, .section-portfolio, .sample-livegrid {
-  max-width: 80rem;
+.layout-wrapper, .homepage, .sample-livegrid {
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto; }
 
 /* Sets up a layout row */
-.layout-row:after {
-  display: table;
-  clear: both;
-  content: ''; }
+.layout-row, .intro, .process, .speaking, .process-intro, .speaking-intro {
+  width: 100%; }
+  .layout-row:after, .intro:after, .process:after, .speaking:after, .process-intro:after, .speaking-intro:after {
+    display: table;
+    clear: both;
+    content: ''; }
 
 /* Sets up the left and right margins */
 .column {
   float: left;
   box-sizing: border-box; }
-  @media (min-width: 767px) {
-    .column {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 992px) {
+  @media (min-width: 0px) {
     .column {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 768px) {
     .column {
       margin-right: 1rem;
       margin-left: 1rem; } }
+  @media (min-width: 1200px) {
+    .column {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
 
 /* Creates a mixin for columns */
 /* Creates all the css column classes */
-@media (min-width: 767px) {
-  .column-1 {
-    width: calc(100% * 1/12 - (0.25rem * 2 )); } }
-
-@media (min-width: 992px) {
+@media (min-width: 0px) {
   .column-1 {
     width: calc(100% * 1/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .column-1 {
     width: calc(100% * 1/12 - (1rem * 2 )); } }
 
-@media (min-width: 767px) {
-  .column-2 {
-    width: calc(100% * 2/12 - (0.25rem * 2 )); } }
+@media (min-width: 1200px) {
+  .column-1 {
+    width: calc(100% * 1/12 - (1.25rem * 2 )); } }
 
-@media (min-width: 992px) {
+@media (min-width: 0px) {
   .column-2 {
     width: calc(100% * 2/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .column-2 {
     width: calc(100% * 2/12 - (1rem * 2 )); } }
 
-@media (min-width: 767px) {
-  .column-3 {
-    width: calc(100% * 3/12 - (0.25rem * 2 )); } }
+@media (min-width: 1200px) {
+  .column-2 {
+    width: calc(100% * 2/12 - (1.25rem * 2 )); } }
 
-@media (min-width: 992px) {
+@media (min-width: 0px) {
   .column-3 {
     width: calc(100% * 3/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .column-3 {
     width: calc(100% * 3/12 - (1rem * 2 )); } }
 
-@media (min-width: 767px) {
-  .column-4 {
-    width: calc(100% * 4/12 - (0.25rem * 2 )); } }
+@media (min-width: 1200px) {
+  .column-3 {
+    width: calc(100% * 3/12 - (1.25rem * 2 )); } }
 
-@media (min-width: 992px) {
+@media (min-width: 0px) {
   .column-4 {
     width: calc(100% * 4/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .column-4 {
     width: calc(100% * 4/12 - (1rem * 2 )); } }
 
-@media (min-width: 767px) {
-  .column-5 {
-    width: calc(100% * 5/12 - (0.25rem * 2 )); } }
+@media (min-width: 1200px) {
+  .column-4 {
+    width: calc(100% * 4/12 - (1.25rem * 2 )); } }
 
-@media (min-width: 992px) {
+@media (min-width: 0px) {
   .column-5 {
     width: calc(100% * 5/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .column-5 {
     width: calc(100% * 5/12 - (1rem * 2 )); } }
 
-@media (min-width: 767px) {
-  .column-6 {
-    width: calc(100% * 6/12 - (0.25rem * 2 )); } }
+@media (min-width: 1200px) {
+  .column-5 {
+    width: calc(100% * 5/12 - (1.25rem * 2 )); } }
 
-@media (min-width: 992px) {
+@media (min-width: 0px) {
   .column-6 {
     width: calc(100% * 6/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .column-6 {
     width: calc(100% * 6/12 - (1rem * 2 )); } }
 
-@media (min-width: 767px) {
-  .column-7 {
-    width: calc(100% * 7/12 - (0.25rem * 2 )); } }
+@media (min-width: 1200px) {
+  .column-6 {
+    width: calc(100% * 6/12 - (1.25rem * 2 )); } }
 
-@media (min-width: 992px) {
+@media (min-width: 0px) {
   .column-7 {
     width: calc(100% * 7/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .column-7 {
     width: calc(100% * 7/12 - (1rem * 2 )); } }
 
-@media (min-width: 767px) {
-  .column-8 {
-    width: calc(100% * 8/12 - (0.25rem * 2 )); } }
+@media (min-width: 1200px) {
+  .column-7 {
+    width: calc(100% * 7/12 - (1.25rem * 2 )); } }
 
-@media (min-width: 992px) {
+@media (min-width: 0px) {
   .column-8 {
     width: calc(100% * 8/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .column-8 {
     width: calc(100% * 8/12 - (1rem * 2 )); } }
 
-@media (min-width: 767px) {
-  .column-9 {
-    width: calc(100% * 9/12 - (0.25rem * 2 )); } }
+@media (min-width: 1200px) {
+  .column-8 {
+    width: calc(100% * 8/12 - (1.25rem * 2 )); } }
 
-@media (min-width: 992px) {
+@media (min-width: 0px) {
   .column-9 {
     width: calc(100% * 9/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .column-9 {
     width: calc(100% * 9/12 - (1rem * 2 )); } }
 
-@media (min-width: 767px) {
-  .column-10 {
-    width: calc(100% * 10/12 - (0.25rem * 2 )); } }
+@media (min-width: 1200px) {
+  .column-9 {
+    width: calc(100% * 9/12 - (1.25rem * 2 )); } }
 
-@media (min-width: 992px) {
+@media (min-width: 0px) {
   .column-10 {
     width: calc(100% * 10/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .column-10 {
     width: calc(100% * 10/12 - (1rem * 2 )); } }
 
-@media (min-width: 767px) {
-  .column-11 {
-    width: calc(100% * 11/12 - (0.25rem * 2 )); } }
+@media (min-width: 1200px) {
+  .column-10 {
+    width: calc(100% * 10/12 - (1.25rem * 2 )); } }
 
-@media (min-width: 992px) {
+@media (min-width: 0px) {
   .column-11 {
     width: calc(100% * 11/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .column-11 {
     width: calc(100% * 11/12 - (1rem * 2 )); } }
 
-@media (min-width: 767px) {
-  .column-12 {
-    width: calc(100% * 12/12 - (0.25rem * 2 )); } }
+@media (min-width: 1200px) {
+  .column-11 {
+    width: calc(100% * 11/12 - (1.25rem * 2 )); } }
 
-@media (min-width: 992px) {
+@media (min-width: 0px) {
   .column-12 {
     width: calc(100% * 12/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .column-12 {
     width: calc(100% * 12/12 - (1rem * 2 )); } }
+
+@media (min-width: 1200px) {
+  .column-12 {
+    width: calc(100% * 12/12 - (1.25rem * 2 )); } }
 
 .css-grid-container {
   display: grid;
   grid-template-rows: 100px; }
-  @media (min-width: 767px) {
-    .css-grid-container {
-      grid-template-columns: 0.25rem auto 0.25rem; } }
-  @media (min-width: 992px) {
+  @media (min-width: 0px) {
     .css-grid-container {
       grid-template-columns: 0.5rem auto 0.5rem; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 768px) {
     .css-grid-container {
       grid-template-columns: 1rem auto 1rem; } }
+  @media (min-width: 1200px) {
+    .css-grid-container {
+      grid-template-columns: 1.25rem auto 1.25rem; } }
 
 /*
 .css-grid-container{
@@ -597,76 +587,134 @@ html {
   grid-column-start: 2;
   grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
   grid-template-rows: 100px;
-  grid-gap: 0.5rem; }
-  @media (min-width: 767px) {
-    .css-grid {
-      grid-gap: 0.5rem; } }
-  @media (min-width: 992px) {
+  grid-gap: 1rem; }
+  @media (min-width: 0px) {
     .css-grid {
       grid-gap: 1rem; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 768px) {
     .css-grid {
       grid-gap: 2rem; } }
+  @media (min-width: 1200px) {
+    .css-grid {
+      grid-gap: 2.5rem; } }
 
 body {
   font-family: "Merriweather", sans-serif;
   font-size: 1em;
-  font-weight: 400;
-  line-height: 2em; }
+  font-weight: 300;
+  line-height: 1.5em; }
 
-h1, h2, h3, h4 {
-  font-weight: 900;
-  margin-bottom: 0.5rem; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Fira Sans", serif;
+  font-weight: bold;
+  line-height: 1.2em; }
+  @media (min-width: 768px) {
+    h1, h2, h3, h4, h5, h6 {
+      line-height: 1.3em; } }
+  @media (min-width: 1200px) {
+    h1, h2, h3, h4, h5, h6 {
+      line-height: 1.2em; } }
 
 h1 {
-  font-size: 3.8416em;
-  line-height: 1.2em; }
-  @media (min-width: 280px) and (max-width: 768px) {
+  font-size: 2.31306em; }
+  @media (min-width: 0px) and (max-width: 768px) {
     h1 {
-      font-size: calc( 3.8416em + 2.2334 * ( ( 100vw - 280px) / 488 )); } }
-  @media (min-width: 768px) {
+      font-size: calc( 2.31306em + 2.51375 * ( ( 100vw - 0px) / 768 )); } }
+  @media (min-width: 768px) and (max-width: 1200px) {
     h1 {
-      font-size: 6.075em; } }
+      font-size: calc( 4.82681em + 1.22664 * ( ( 100vw - 768px) / 432 )); } }
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 6.05345em; } }
 
 h2 {
-  font-size: 2.744em;
-  line-height: 1.2em; }
-  @media (min-width: 280px) and (max-width: 768px) {
+  font-size: 2.01136em; }
+  @media (min-width: 0px) and (max-width: 768px) {
     h2 {
-      font-size: calc( 2.744em + 1.306 * ( ( 100vw - 280px) / 488 )); } }
-  @media (min-width: 768px) {
+      font-size: calc( 2.01136em + 1.70157 * ( ( 100vw - 0px) / 768 )); } }
+  @media (min-width: 768px) and (max-width: 1200px) {
     h2 {
-      font-size: 4.05em; } }
+      font-size: calc( 3.71293em + 0.7711 * ( ( 100vw - 768px) / 432 )); } }
+  @media (min-width: 1200px) {
+    h2 {
+      font-size: 4.48403em; } }
 
 h3 {
-  font-size: 1.96em;
-  line-height: 1.3em; }
-  @media (min-width: 280px) and (max-width: 768px) {
+  font-size: 1.74901em; }
+  @media (min-width: 0px) and (max-width: 768px) {
     h3 {
-      font-size: calc( 1.96em + 0.74 * ( ( 100vw - 280px) / 488 )); } }
-  @media (min-width: 768px) {
+      font-size: calc( 1.74901em + 1.10709 * ( ( 100vw - 0px) / 768 )); } }
+  @media (min-width: 768px) and (max-width: 1200px) {
     h3 {
-      font-size: 2.7em; } }
+      font-size: calc( 2.8561em + 0.46541 * ( ( 100vw - 768px) / 432 )); } }
+  @media (min-width: 1200px) {
+    h3 {
+      font-size: 3.32151em; } }
 
 h4 {
-  font-size: 1.4em;
-  line-height: 1.3em; }
-  @media (min-width: 280px) and (max-width: 768px) {
+  font-size: 1.52087em; }
+  @media (min-width: 0px) and (max-width: 768px) {
     h4 {
-      font-size: calc( 1.4em + 0.4 * ( ( 100vw - 280px) / 488 )); } }
-  @media (min-width: 768px) {
+      font-size: calc( 1.52087em + 0.67613 * ( ( 100vw - 0px) / 768 )); } }
+  @media (min-width: 768px) and (max-width: 1200px) {
     h4 {
-      font-size: 1.8em; } }
+      font-size: calc( 2.197em + 0.26337 * ( ( 100vw - 768px) / 432 )); } }
+  @media (min-width: 1200px) {
+    h4 {
+      font-size: 2.46038em; } }
+
+h5 {
+  font-size: 1.3225em; }
+  @media (min-width: 0px) and (max-width: 768px) {
+    h5 {
+      font-size: calc( 1.3225em + 0.3675 * ( ( 100vw - 0px) / 768 )); } }
+  @media (min-width: 768px) and (max-width: 1200px) {
+    h5 {
+      font-size: calc( 1.69em + 0.1325 * ( ( 100vw - 768px) / 432 )); } }
+  @media (min-width: 1200px) {
+    h5 {
+      font-size: 1.8225em; } }
+
+h6 {
+  font-size: 1.15em; }
+  @media (min-width: 0px) and (max-width: 768px) {
+    h6 {
+      font-size: calc( 1.15em + 0.15 * ( ( 100vw - 0px) / 768 )); } }
+  @media (min-width: 768px) and (max-width: 1200px) {
+    h6 {
+      font-size: calc( 1.3em + 0.05 * ( ( 100vw - 768px) / 432 )); } }
+  @media (min-width: 1200px) {
+    h6 {
+      font-size: 1.35em; } }
+
+.title {
+  color: #E5627C; }
+
+.subtitle {
+  font-family: "Merriweather", sans-serif;
+  font-weight: normal; }
+
+body {
+  color: #6A7383; }
 
 p {
   margin-top: 1rem;
   margin-bottom: 1rem; }
 
+strong {
+  font-weight: bold; }
+
+a {
+  color: #092E79; }
+
+a:hover {
+  color: #5b8df3; }
+
 .caption {
-  font-size: 0.71429em; }
+  font-size: 0.76923em; }
 
 label {
-  font-size: 0.71429em; }
+  font-size: 0.76923em; }
 
 a {
   color: #0076DE;
@@ -734,7 +782,7 @@ II. Secondary Buttons
   padding: 1rem;
   margin-top: 1rem;
   margin-bottom: 0.5rem; }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     .card {
       padding: 1rem;
       margin-top: 1rem;
@@ -757,7 +805,7 @@ input {
   padding-top: 0.5rem;
   font-size: 1em;
   font-weight: "Merriweather", sans-serif;
-  line-height: 2em; }
+  line-height: 1.5em; }
   input::placeholder {
     color: #626d74;
     font-weight: 300; }
@@ -775,7 +823,7 @@ textarea {
   font-family: "Merriweather", sans-serif;
   font-weight: 300;
   font-size: 1em;
-  line-height: 2em;
+  line-height: 1.5em;
   color: #626d74;
   display: inline-block;
   padding-top: 0.5rem;
@@ -795,357 +843,1124 @@ input.error, textarea.error {
   input.error::placeholder, textarea.error::placeholder {
     color: #F44336; }
 
-.section-introduction:after {
-  display: table;
-  clear: both;
-  content: ''; }
+.intro {
+  border-top: 16px solid #E5627C;
+  margin-bottom: 40px; }
+  @media (min-width: 768px) {
+    .intro {
+      margin-bottom: 64px; } }
+  @media (min-width: 1200px) {
+    .intro {
+      margin-bottom: 80px; } }
 
-.introduction-header {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  color: #4b5358; }
-  @media (min-width: 767px) {
-    .introduction-header {
-      width: calc(100% * 12/12 - (0.25rem * 2));
-      float: left;
-      box-sizing: border-box; } }
-  @media (min-width: 767px) and (min-width: 767px) {
-    .introduction-header {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 767px) and (min-width: 992px) {
-    .introduction-header {
-      margin-right: 0.5rem;
-      margin-left: 0.5rem; } }
-  @media (min-width: 767px) and (min-width: 1200px) {
-    .introduction-header {
-      margin-right: 1rem;
-      margin-left: 1rem; } }
-  @media (min-width: 992px) {
-    .introduction-header {
+.hero {
+  margin-bottom: 0.5rem; }
+  @media (min-width: 0px) {
+    .hero {
       width: calc(100% * 12/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 992px) and (min-width: 767px) {
-    .introduction-header {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 992px) and (min-width: 992px) {
-    .introduction-header {
+  @media (min-width: 0px) and (min-width: 0px) {
+    .hero {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 992px) and (min-width: 1200px) {
-    .introduction-header {
+  @media (min-width: 0px) and (min-width: 768px) {
+    .hero {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1200px) {
-    .introduction-header {
+  @media (min-width: 0px) and (min-width: 1200px) {
+    .hero {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+  @media (min-width: 768px) {
+    .hero {
       width: calc(100% * 12/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 767px) {
-    .introduction-header {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 1200px) and (min-width: 992px) {
-    .introduction-header {
+  @media (min-width: 768px) and (min-width: 0px) {
+    .hero {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 1200px) {
-    .introduction-header {
+  @media (min-width: 768px) and (min-width: 768px) {
+    .hero {
       margin-right: 1rem;
       margin-left: 1rem; } }
-
-.introduction-photo {
-  padding-bottom: 1.5rem; }
-  @media (min-width: 767px) {
-    .introduction-photo {
-      width: calc(100% * 12/12 - (0.25rem * 2));
-      float: left;
-      box-sizing: border-box; } }
-  @media (min-width: 767px) and (min-width: 767px) {
-    .introduction-photo {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 767px) and (min-width: 992px) {
-    .introduction-photo {
-      margin-right: 0.5rem;
-      margin-left: 0.5rem; } }
-  @media (min-width: 767px) and (min-width: 1200px) {
-    .introduction-photo {
-      margin-right: 1rem;
-      margin-left: 1rem; } }
-  @media (min-width: 992px) {
-    .introduction-photo {
-      width: calc(100% * 12/12 - (0.5rem * 2));
-      float: left;
-      box-sizing: border-box; } }
-  @media (min-width: 992px) and (min-width: 767px) {
-    .introduction-photo {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 992px) and (min-width: 992px) {
-    .introduction-photo {
-      margin-right: 0.5rem;
-      margin-left: 0.5rem; } }
-  @media (min-width: 992px) and (min-width: 1200px) {
-    .introduction-photo {
-      margin-right: 1rem;
-      margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 1200px) {
+    .hero {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
   @media (min-width: 1200px) {
-    .introduction-photo {
-      width: calc(100% * 12/12 - (1rem * 2));
+    .hero {
+      width: calc(100% * 12/12 - (1.25rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 767px) {
-    .introduction-photo {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 1200px) and (min-width: 992px) {
-    .introduction-photo {
+  @media (min-width: 1200px) and (min-width: 0px) {
+    .hero {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 1200px) {
-    .introduction-photo {
+  @media (min-width: 1200px) and (min-width: 768px) {
+    .hero {
       margin-right: 1rem;
       margin-left: 1rem; } }
+  @media (min-width: 1200px) and (min-width: 1200px) {
+    .hero {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
 
-@media (min-width: 992px) and (min-width: 767px) {
-  .introduction-photo {
-    width: calc(100% * 6/12 - (0.25rem * 2));
+@media (min-width: 768px) and (min-width: 0px) {
+  .hero {
+    width: calc(100% * 12/12 - (0.5rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 992px) and (min-width: 767px) and (min-width: 767px) {
-    .introduction-photo {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 992px) and (min-width: 767px) and (min-width: 992px) {
-    .introduction-photo {
+  @media (min-width: 768px) and (min-width: 0px) and (min-width: 0px) {
+    .hero {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 992px) and (min-width: 767px) and (min-width: 1200px) {
-    .introduction-photo {
+  @media (min-width: 768px) and (min-width: 0px) and (min-width: 768px) {
+    .hero {
       margin-right: 1rem;
       margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 0px) and (min-width: 1200px) {
+    .hero {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
 
-@media (min-width: 992px) and (min-width: 992px) {
-  .introduction-photo {
+@media (min-width: 768px) and (min-width: 768px) {
+  .hero {
+    width: calc(100% * 12/12 - (1rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 768px) and (min-width: 768px) and (min-width: 0px) {
+    .hero {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 768px) and (min-width: 768px) and (min-width: 768px) {
+    .hero {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 768px) and (min-width: 1200px) {
+    .hero {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 768px) and (min-width: 1200px) {
+  .hero {
+    width: calc(100% * 12/12 - (1.25rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 0px) {
+    .hero {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 768px) {
+    .hero {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 1200px) {
+    .hero {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 1200px) and (min-width: 0px) {
+  .hero {
+    width: calc(100% * 8/12 - (0.5rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 0px) {
+    .hero {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 768px) {
+    .hero {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 1200px) {
+    .hero {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 1200px) and (min-width: 768px) {
+  .hero {
+    width: calc(100% * 8/12 - (1rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 0px) {
+    .hero {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 768px) {
+    .hero {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 1200px) {
+    .hero {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .hero {
+    width: calc(100% * 8/12 - (1.25rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 0px) {
+    .hero {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 768px) {
+    .hero {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 1200px) {
+    .hero {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 0px) {
+  .social-media {
+    width: calc(100% * 12/12 - (0.5rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 0px) and (min-width: 0px) {
+    .social-media {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 0px) and (min-width: 768px) {
+    .social-media {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 0px) and (min-width: 1200px) {
+    .social-media {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 768px) {
+  .social-media {
+    width: calc(100% * 12/12 - (1rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 768px) and (min-width: 0px) {
+    .social-media {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 768px) and (min-width: 768px) {
+    .social-media {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 1200px) {
+    .social-media {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 1200px) {
+  .social-media {
+    width: calc(100% * 12/12 - (1.25rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 1200px) and (min-width: 0px) {
+    .social-media {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1200px) and (min-width: 768px) {
+    .social-media {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1200px) and (min-width: 1200px) {
+    .social-media {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+.intro-paragraph {
+  margin-top: 0.5rem; }
+  @media (min-width: 0px) {
+    .intro-paragraph {
+      width: calc(100% * 12/12 - (0.5rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 0px) and (min-width: 0px) {
+    .intro-paragraph {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 0px) and (min-width: 768px) {
+    .intro-paragraph {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 0px) and (min-width: 1200px) {
+    .intro-paragraph {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+  @media (min-width: 768px) {
+    .intro-paragraph {
+      width: calc(100% * 12/12 - (1rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 768px) and (min-width: 0px) {
+    .intro-paragraph {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 768px) and (min-width: 768px) {
+    .intro-paragraph {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 1200px) {
+    .intro-paragraph {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+  @media (min-width: 1200px) {
+    .intro-paragraph {
+      width: calc(100% * 12/12 - (1.25rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 1200px) and (min-width: 0px) {
+    .intro-paragraph {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1200px) and (min-width: 768px) {
+    .intro-paragraph {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1200px) and (min-width: 1200px) {
+    .intro-paragraph {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+  @media (min-width: 768px) {
+    .intro-paragraph {
+      margin-top: 1rem; } }
+  @media (min-width: 768px) and (min-width: 0px) {
+    .intro-paragraph {
+      width: calc(100% * 9/12 - (0.5rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 768px) and (min-width: 0px) and (min-width: 0px) {
+    .intro-paragraph {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 768px) and (min-width: 0px) and (min-width: 768px) {
+    .intro-paragraph {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 0px) and (min-width: 1200px) {
+    .intro-paragraph {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+  @media (min-width: 768px) and (min-width: 768px) {
+    .intro-paragraph {
+      width: calc(100% * 9/12 - (1rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 768px) and (min-width: 768px) and (min-width: 0px) {
+    .intro-paragraph {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 768px) and (min-width: 768px) and (min-width: 768px) {
+    .intro-paragraph {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 768px) and (min-width: 1200px) {
+    .intro-paragraph {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+  @media (min-width: 768px) and (min-width: 1200px) {
+    .intro-paragraph {
+      width: calc(100% * 9/12 - (1.25rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 0px) {
+    .intro-paragraph {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 768px) {
+    .intro-paragraph {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 1200px) {
+    .intro-paragraph {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+  @media (min-width: 1200px) {
+    .intro-paragraph {
+      margin-top: 1.5rem; } }
+  @media (min-width: 1200px) and (min-width: 0px) {
+    .intro-paragraph {
+      width: calc(100% * 6/12 - (0.5rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 0px) {
+    .intro-paragraph {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 768px) {
+    .intro-paragraph {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 1200px) {
+    .intro-paragraph {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+  @media (min-width: 1200px) and (min-width: 768px) {
+    .intro-paragraph {
+      width: calc(100% * 6/12 - (1rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 0px) {
+    .intro-paragraph {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 768px) {
+    .intro-paragraph {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 1200px) {
+    .intro-paragraph {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+  @media (min-width: 1200px) and (min-width: 1200px) {
+    .intro-paragraph {
+      width: calc(100% * 6/12 - (1.25rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 0px) {
+    .intro-paragraph {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 768px) {
+    .intro-paragraph {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 1200px) {
+    .intro-paragraph {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+.process, .speaking {
+  margin-bottom: 40px; }
+  @media (min-width: 768px) {
+    .process, .speaking {
+      margin-bottom: 64px; } }
+  @media (min-width: 1200px) {
+    .process, .speaking {
+      margin-bottom: 80px; } }
+  .process .title, .speaking .title {
+    border-top: 16px solid #E5627C;
+    display: inline-block;
+    padding-left: 0.5rem;
+    margin-left: -0.5rem; }
+    @media (min-width: 768px) {
+      .process .title, .speaking .title {
+        padding-left: 1rem;
+        margin-left: -1rem; } }
+    @media (min-width: 1200px) {
+      .process .title, .speaking .title {
+        padding-left: 1.5rem;
+        margin-left: -1.5rem; } }
+
+.process-intro, .speaking-intro {
+  margin-bottom: 1.5rem; }
+  @media (min-width: 0px) {
+    .process-intro .subtitle, .speaking-intro .subtitle {
+      width: calc(100% * 11/12 - (0.5rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 0px) and (min-width: 0px) {
+    .process-intro .subtitle, .speaking-intro .subtitle {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 0px) and (min-width: 768px) {
+    .process-intro .subtitle, .speaking-intro .subtitle {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 0px) and (min-width: 1200px) {
+    .process-intro .subtitle, .speaking-intro .subtitle {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+  @media (min-width: 768px) {
+    .process-intro .subtitle, .speaking-intro .subtitle {
+      width: calc(100% * 11/12 - (1rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 768px) and (min-width: 0px) {
+    .process-intro .subtitle, .speaking-intro .subtitle {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 768px) and (min-width: 768px) {
+    .process-intro .subtitle, .speaking-intro .subtitle {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 1200px) {
+    .process-intro .subtitle, .speaking-intro .subtitle {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+  @media (min-width: 1200px) {
+    .process-intro .subtitle, .speaking-intro .subtitle {
+      width: calc(100% * 11/12 - (1.25rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 1200px) and (min-width: 0px) {
+    .process-intro .subtitle, .speaking-intro .subtitle {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1200px) and (min-width: 768px) {
+    .process-intro .subtitle, .speaking-intro .subtitle {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1200px) and (min-width: 1200px) {
+    .process-intro .subtitle, .speaking-intro .subtitle {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 1200px) and (min-width: 0px) {
+  .process-intro .subtitle, .speaking-intro .subtitle {
+    width: calc(100% * 8/12 - (0.5rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 0px) {
+    .process-intro .subtitle, .speaking-intro .subtitle {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 768px) {
+    .process-intro .subtitle, .speaking-intro .subtitle {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 1200px) {
+    .process-intro .subtitle, .speaking-intro .subtitle {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 1200px) and (min-width: 768px) {
+  .process-intro .subtitle, .speaking-intro .subtitle {
+    width: calc(100% * 8/12 - (1rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 0px) {
+    .process-intro .subtitle, .speaking-intro .subtitle {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 768px) {
+    .process-intro .subtitle, .speaking-intro .subtitle {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 1200px) {
+    .process-intro .subtitle, .speaking-intro .subtitle {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .process-intro .subtitle, .speaking-intro .subtitle {
+    width: calc(100% * 8/12 - (1.25rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 0px) {
+    .process-intro .subtitle, .speaking-intro .subtitle {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 768px) {
+    .process-intro .subtitle, .speaking-intro .subtitle {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 1200px) {
+    .process-intro .subtitle, .speaking-intro .subtitle {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+.process-step {
+  margin-top: 0.5rem; }
+  @media (min-width: 768px) {
+    .process-step {
+      margin-top: 1rem; } }
+  @media (min-width: 0px) {
+    .process-step {
+      width: calc(100% * 12/12 - (0.5rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 0px) and (min-width: 0px) {
+    .process-step {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 0px) and (min-width: 768px) {
+    .process-step {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 0px) and (min-width: 1200px) {
+    .process-step {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+  @media (min-width: 768px) {
+    .process-step {
+      width: calc(100% * 12/12 - (1rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 768px) and (min-width: 0px) {
+    .process-step {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 768px) and (min-width: 768px) {
+    .process-step {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 1200px) {
+    .process-step {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+  @media (min-width: 1200px) {
+    .process-step {
+      width: calc(100% * 12/12 - (1.25rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 1200px) and (min-width: 0px) {
+    .process-step {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1200px) and (min-width: 768px) {
+    .process-step {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1200px) and (min-width: 1200px) {
+    .process-step {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 768px) and (min-width: 0px) {
+  .process-step {
     width: calc(100% * 6/12 - (0.5rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 992px) and (min-width: 992px) and (min-width: 767px) {
-    .introduction-photo {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 992px) and (min-width: 992px) and (min-width: 992px) {
-    .introduction-photo {
+  @media (min-width: 768px) and (min-width: 0px) and (min-width: 0px) {
+    .process-step {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 992px) and (min-width: 992px) and (min-width: 1200px) {
-    .introduction-photo {
+  @media (min-width: 768px) and (min-width: 0px) and (min-width: 768px) {
+    .process-step {
       margin-right: 1rem;
       margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 0px) and (min-width: 1200px) {
+    .process-step {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
 
-@media (min-width: 992px) and (min-width: 1200px) {
-  .introduction-photo {
+@media (min-width: 768px) and (min-width: 768px) {
+  .process-step {
     width: calc(100% * 6/12 - (1rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 767px) {
-    .introduction-photo {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 992px) {
-    .introduction-photo {
+  @media (min-width: 768px) and (min-width: 768px) and (min-width: 0px) {
+    .process-step {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 1200px) {
-    .introduction-photo {
+  @media (min-width: 768px) and (min-width: 768px) and (min-width: 768px) {
+    .process-step {
       margin-right: 1rem;
       margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 768px) and (min-width: 1200px) {
+    .process-step {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
 
-.introduction-bio {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem; }
-  @media (min-width: 767px) {
-    .introduction-bio {
-      width: calc(100% * 12/12 - (0.25rem * 2));
+@media (min-width: 768px) and (min-width: 1200px) {
+  .process-step {
+    width: calc(100% * 6/12 - (1.25rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 0px) {
+    .process-step {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 768px) {
+    .process-step {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 1200px) {
+    .process-step {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 1200px) and (min-width: 0px) {
+  .process-step {
+    width: calc(100% * 3/12 - (0.5rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 0px) {
+    .process-step {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 768px) {
+    .process-step {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 1200px) {
+    .process-step {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 1200px) and (min-width: 768px) {
+  .process-step {
+    width: calc(100% * 3/12 - (1rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 0px) {
+    .process-step {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 768px) {
+    .process-step {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 1200px) {
+    .process-step {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .process-step {
+    width: calc(100% * 3/12 - (1.25rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 0px) {
+    .process-step {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 768px) {
+    .process-step {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 1200px) {
+    .process-step {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 0px) {
+  .process-step .process-icon {
+    width: calc(100% * 3/12 - (0.5rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 0px) and (min-width: 0px) {
+    .process-step .process-icon {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 0px) and (min-width: 768px) {
+    .process-step .process-icon {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 0px) and (min-width: 1200px) {
+    .process-step .process-icon {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 768px) {
+  .process-step .process-icon {
+    width: calc(100% * 3/12 - (1rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 768px) and (min-width: 0px) {
+    .process-step .process-icon {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 768px) and (min-width: 768px) {
+    .process-step .process-icon {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 1200px) {
+    .process-step .process-icon {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 1200px) {
+  .process-step .process-icon {
+    width: calc(100% * 3/12 - (1.25rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 1200px) and (min-width: 0px) {
+    .process-step .process-icon {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1200px) and (min-width: 768px) {
+    .process-step .process-icon {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1200px) and (min-width: 1200px) {
+    .process-step .process-icon {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 768px) and (min-width: 0px) {
+  .process-step .process-icon {
+    width: calc(100% * 12/12 - (0.5rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 768px) and (min-width: 0px) and (min-width: 0px) {
+    .process-step .process-icon {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 768px) and (min-width: 0px) and (min-width: 768px) {
+    .process-step .process-icon {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 0px) and (min-width: 1200px) {
+    .process-step .process-icon {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 768px) and (min-width: 768px) {
+  .process-step .process-icon {
+    width: calc(100% * 12/12 - (1rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 768px) and (min-width: 768px) and (min-width: 0px) {
+    .process-step .process-icon {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 768px) and (min-width: 768px) and (min-width: 768px) {
+    .process-step .process-icon {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 768px) and (min-width: 1200px) {
+    .process-step .process-icon {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 768px) and (min-width: 1200px) {
+  .process-step .process-icon {
+    width: calc(100% * 12/12 - (1.25rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 0px) {
+    .process-step .process-icon {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 768px) {
+    .process-step .process-icon {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 1200px) {
+    .process-step .process-icon {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 768px) {
+  .process-step .process-icon img {
+    width: 100px; } }
+
+.process-step .process-information {
+  padding-top: 0.5rem; }
+  @media (min-width: 0px) {
+    .process-step .process-information {
+      width: calc(100% * 9/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 767px) and (min-width: 767px) {
-    .introduction-bio {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 767px) and (min-width: 992px) {
-    .introduction-bio {
+  @media (min-width: 0px) and (min-width: 0px) {
+    .process-step .process-information {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 767px) and (min-width: 1200px) {
-    .introduction-bio {
+  @media (min-width: 0px) and (min-width: 768px) {
+    .process-step .process-information {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 992px) {
-    .introduction-bio {
+  @media (min-width: 0px) and (min-width: 1200px) {
+    .process-step .process-information {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+  @media (min-width: 768px) {
+    .process-step .process-information {
+      width: calc(100% * 9/12 - (1rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 768px) and (min-width: 0px) {
+    .process-step .process-information {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 768px) and (min-width: 768px) {
+    .process-step .process-information {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 1200px) {
+    .process-step .process-information {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+  @media (min-width: 1200px) {
+    .process-step .process-information {
+      width: calc(100% * 9/12 - (1.25rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 1200px) and (min-width: 0px) {
+    .process-step .process-information {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1200px) and (min-width: 768px) {
+    .process-step .process-information {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1200px) and (min-width: 1200px) {
+    .process-step .process-information {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 768px) and (min-width: 0px) {
+  .process-step .process-information {
+    width: calc(100% * 12/12 - (0.5rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 768px) and (min-width: 0px) and (min-width: 0px) {
+    .process-step .process-information {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 768px) and (min-width: 0px) and (min-width: 768px) {
+    .process-step .process-information {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 0px) and (min-width: 1200px) {
+    .process-step .process-information {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 768px) and (min-width: 768px) {
+  .process-step .process-information {
+    width: calc(100% * 12/12 - (1rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 768px) and (min-width: 768px) and (min-width: 0px) {
+    .process-step .process-information {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 768px) and (min-width: 768px) and (min-width: 768px) {
+    .process-step .process-information {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 768px) and (min-width: 1200px) {
+    .process-step .process-information {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 768px) and (min-width: 1200px) {
+  .process-step .process-information {
+    width: calc(100% * 12/12 - (1.25rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 0px) {
+    .process-step .process-information {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 768px) {
+    .process-step .process-information {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 1200px) {
+    .process-step .process-information {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+.process .header, .speaking .header {
+  margin-top: 40px; }
+  @media (min-width: 0px) {
+    .process .header, .speaking .header {
       width: calc(100% * 12/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 992px) and (min-width: 767px) {
-    .introduction-bio {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 992px) and (min-width: 992px) {
-    .introduction-bio {
+  @media (min-width: 0px) and (min-width: 0px) {
+    .process .header, .speaking .header {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 992px) and (min-width: 1200px) {
-    .introduction-bio {
+  @media (min-width: 0px) and (min-width: 768px) {
+    .process .header, .speaking .header {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1200px) {
-    .introduction-bio {
+  @media (min-width: 0px) and (min-width: 1200px) {
+    .process .header, .speaking .header {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+  @media (min-width: 768px) {
+    .process .header, .speaking .header {
       width: calc(100% * 12/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 767px) {
-    .introduction-bio {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 1200px) and (min-width: 992px) {
-    .introduction-bio {
+  @media (min-width: 768px) and (min-width: 0px) {
+    .process .header, .speaking .header {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
+  @media (min-width: 768px) and (min-width: 768px) {
+    .process .header, .speaking .header {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 1200px) {
+    .process .header, .speaking .header {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+  @media (min-width: 1200px) {
+    .process .header, .speaking .header {
+      width: calc(100% * 12/12 - (1.25rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 1200px) and (min-width: 0px) {
+    .process .header, .speaking .header {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1200px) and (min-width: 768px) {
+    .process .header, .speaking .header {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
   @media (min-width: 1200px) and (min-width: 1200px) {
-    .introduction-bio {
-      margin-right: 1rem;
-      margin-left: 1rem; } }
-  @media (min-width: 992px) {
-    .introduction-bio {
-      padding-left: 0.5rem;
-      padding-right: 0.5rem; } }
-  @media (min-width: 992px) and (min-width: 767px) {
-    .introduction-bio {
-      width: calc(100% * 8/12 - (0.25rem * 2));
-      float: left;
-      box-sizing: border-box; } }
-  @media (min-width: 992px) and (min-width: 767px) and (min-width: 767px) {
-    .introduction-bio {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 992px) and (min-width: 767px) and (min-width: 992px) {
-    .introduction-bio {
-      margin-right: 0.5rem;
-      margin-left: 0.5rem; } }
-  @media (min-width: 992px) and (min-width: 767px) and (min-width: 1200px) {
-    .introduction-bio {
-      margin-right: 1rem;
-      margin-left: 1rem; } }
-  @media (min-width: 992px) and (min-width: 992px) {
-    .introduction-bio {
-      width: calc(100% * 8/12 - (0.5rem * 2));
-      float: left;
-      box-sizing: border-box; } }
-  @media (min-width: 992px) and (min-width: 992px) and (min-width: 767px) {
-    .introduction-bio {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 992px) and (min-width: 992px) and (min-width: 992px) {
-    .introduction-bio {
-      margin-right: 0.5rem;
-      margin-left: 0.5rem; } }
-  @media (min-width: 992px) and (min-width: 992px) and (min-width: 1200px) {
-    .introduction-bio {
-      margin-right: 1rem;
-      margin-left: 1rem; } }
-  @media (min-width: 992px) and (min-width: 1200px) {
-    .introduction-bio {
-      width: calc(100% * 8/12 - (1rem * 2));
-      float: left;
-      box-sizing: border-box; } }
-  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 767px) {
-    .introduction-bio {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 992px) {
-    .introduction-bio {
-      margin-right: 0.5rem;
-      margin-left: 0.5rem; } }
-  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 1200px) {
-    .introduction-bio {
-      margin-right: 1rem;
-      margin-left: 1rem; } }
+    .process .header, .speaking .header {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
 
-.section-portfolio {
-  padding-bottom: 0.5rem; }
-  .section-portfolio:after {
-    display: table;
-    clear: both;
-    content: ''; }
+@media (min-width: 0px) {
+  .speaking-info {
+    width: calc(100% * 12/12 - (0.5rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 0px) and (min-width: 0px) {
+    .speaking-info {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 0px) and (min-width: 768px) {
+    .speaking-info {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 0px) and (min-width: 1200px) {
+    .speaking-info {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
 
-.section-portfolio .portfolio-article {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  padding-bottom: 1rem;
-  padding-top: 1.5rem; }
-  @media (min-width: 992px) {
-    .section-portfolio .portfolio-article {
-      padding-left: 0.5rem;
-      padding-right: 0.5rem; } }
-  @media (min-width: 992px) and (min-width: 767px) {
-    .section-portfolio .portfolio-article {
-      width: calc(100% * 4/12 - (0.25rem * 2));
-      float: left;
-      box-sizing: border-box; } }
-  @media (min-width: 992px) and (min-width: 767px) and (min-width: 767px) {
-    .section-portfolio .portfolio-article {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 992px) and (min-width: 767px) and (min-width: 992px) {
-    .section-portfolio .portfolio-article {
+@media (min-width: 768px) {
+  .speaking-info {
+    width: calc(100% * 12/12 - (1rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 768px) and (min-width: 0px) {
+    .speaking-info {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 992px) and (min-width: 767px) and (min-width: 1200px) {
-    .section-portfolio .portfolio-article {
+  @media (min-width: 768px) and (min-width: 768px) {
+    .speaking-info {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 992px) and (min-width: 992px) {
-    .section-portfolio .portfolio-article {
-      width: calc(100% * 4/12 - (0.5rem * 2));
-      float: left;
-      box-sizing: border-box; } }
-  @media (min-width: 992px) and (min-width: 992px) and (min-width: 767px) {
-    .section-portfolio .portfolio-article {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 992px) and (min-width: 992px) and (min-width: 992px) {
-    .section-portfolio .portfolio-article {
+  @media (min-width: 768px) and (min-width: 1200px) {
+    .speaking-info {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 1200px) {
+  .speaking-info {
+    width: calc(100% * 12/12 - (1.25rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 1200px) and (min-width: 0px) {
+    .speaking-info {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 992px) and (min-width: 992px) and (min-width: 1200px) {
-    .section-portfolio .portfolio-article {
+  @media (min-width: 1200px) and (min-width: 768px) {
+    .speaking-info {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 992px) and (min-width: 1200px) {
-    .section-portfolio .portfolio-article {
-      width: calc(100% * 4/12 - (1rem * 2));
-      float: left;
-      box-sizing: border-box; } }
-  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 767px) {
-    .section-portfolio .portfolio-article {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 992px) {
-    .section-portfolio .portfolio-article {
+  @media (min-width: 1200px) and (min-width: 1200px) {
+    .speaking-info {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 768px) and (min-width: 0px) {
+  .speaking-info {
+    width: calc(100% * 9/12 - (0.5rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 768px) and (min-width: 0px) and (min-width: 0px) {
+    .speaking-info {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 1200px) {
-    .section-portfolio .portfolio-article {
+  @media (min-width: 768px) and (min-width: 0px) and (min-width: 768px) {
+    .speaking-info {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  .section-portfolio .portfolio-article .portfolio-thumbnail {
-    width: 100%;
-    padding-bottom: 1rem; }
-  .section-portfolio .portfolio-article .button {
-    margin: 0px; }
+  @media (min-width: 768px) and (min-width: 0px) and (min-width: 1200px) {
+    .speaking-info {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 768px) and (min-width: 768px) {
+  .speaking-info {
+    width: calc(100% * 9/12 - (1rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 768px) and (min-width: 768px) and (min-width: 0px) {
+    .speaking-info {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 768px) and (min-width: 768px) and (min-width: 768px) {
+    .speaking-info {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 768px) and (min-width: 1200px) {
+    .speaking-info {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 768px) and (min-width: 1200px) {
+  .speaking-info {
+    width: calc(100% * 9/12 - (1.25rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 0px) {
+    .speaking-info {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 768px) {
+    .speaking-info {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 1200px) {
+    .speaking-info {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 1200px) and (min-width: 0px) {
+  .speaking-info {
+    width: calc(100% * 6/12 - (0.5rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 0px) {
+    .speaking-info {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 768px) {
+    .speaking-info {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 1200px) {
+    .speaking-info {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 1200px) and (min-width: 768px) {
+  .speaking-info {
+    width: calc(100% * 6/12 - (1rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 0px) {
+    .speaking-info {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 768px) {
+    .speaking-info {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 1200px) {
+    .speaking-info {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .speaking-info {
+    width: calc(100% * 6/12 - (1.25rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 0px) {
+    .speaking-info {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 768px) {
+    .speaking-info {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 1200px) {
+    .speaking-info {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
 
 /* Example CSS */
 .sample-grid {
@@ -1162,505 +1977,508 @@ input.error, textarea.error {
 .left-sidebar {
   padding: 0.5rem;
   background-color: #fccbc7; }
-  @media (min-width: 767px) {
-    .left-sidebar {
-      width: calc(100% * 12/12 - (0.25rem * 2));
-      float: left;
-      box-sizing: border-box; } }
-  @media (min-width: 767px) and (min-width: 767px) {
-    .left-sidebar {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 767px) and (min-width: 992px) {
-    .left-sidebar {
-      margin-right: 0.5rem;
-      margin-left: 0.5rem; } }
-  @media (min-width: 767px) and (min-width: 1200px) {
-    .left-sidebar {
-      margin-right: 1rem;
-      margin-left: 1rem; } }
-  @media (min-width: 992px) {
+  @media (min-width: 0px) {
     .left-sidebar {
       width: calc(100% * 12/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 992px) and (min-width: 767px) {
-    .left-sidebar {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 992px) and (min-width: 992px) {
+  @media (min-width: 0px) and (min-width: 0px) {
     .left-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 992px) and (min-width: 1200px) {
+  @media (min-width: 0px) and (min-width: 768px) {
     .left-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 0px) and (min-width: 1200px) {
+    .left-sidebar {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+  @media (min-width: 768px) {
     .left-sidebar {
       width: calc(100% * 12/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 767px) {
-    .left-sidebar {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 1200px) and (min-width: 992px) {
+  @media (min-width: 768px) and (min-width: 0px) {
     .left-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
+  @media (min-width: 768px) and (min-width: 768px) {
+    .left-sidebar {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 1200px) {
+    .left-sidebar {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+  @media (min-width: 1200px) {
+    .left-sidebar {
+      width: calc(100% * 12/12 - (1.25rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 1200px) and (min-width: 0px) {
+    .left-sidebar {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1200px) and (min-width: 768px) {
+    .left-sidebar {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
   @media (min-width: 1200px) and (min-width: 1200px) {
     .left-sidebar {
-      margin-right: 1rem;
-      margin-left: 1rem; } }
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
 
-@media (min-width: 992px) and (min-width: 767px) {
-  .left-sidebar {
-    width: calc(100% * 4/12 - (0.25rem * 2));
-    float: left;
-    box-sizing: border-box; } }
-  @media (min-width: 992px) and (min-width: 767px) and (min-width: 767px) {
-    .left-sidebar {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 992px) and (min-width: 767px) and (min-width: 992px) {
-    .left-sidebar {
-      margin-right: 0.5rem;
-      margin-left: 0.5rem; } }
-  @media (min-width: 992px) and (min-width: 767px) and (min-width: 1200px) {
-    .left-sidebar {
-      margin-right: 1rem;
-      margin-left: 1rem; } }
-
-@media (min-width: 992px) and (min-width: 992px) {
+@media (min-width: 768px) and (min-width: 0px) {
   .left-sidebar {
     width: calc(100% * 4/12 - (0.5rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 992px) and (min-width: 992px) and (min-width: 767px) {
-    .left-sidebar {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 992px) and (min-width: 992px) and (min-width: 992px) {
+  @media (min-width: 768px) and (min-width: 0px) and (min-width: 0px) {
     .left-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 992px) and (min-width: 992px) and (min-width: 1200px) {
+  @media (min-width: 768px) and (min-width: 0px) and (min-width: 768px) {
     .left-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 0px) and (min-width: 1200px) {
+    .left-sidebar {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
 
-@media (min-width: 992px) and (min-width: 1200px) {
+@media (min-width: 768px) and (min-width: 768px) {
   .left-sidebar {
     width: calc(100% * 4/12 - (1rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 767px) {
-    .left-sidebar {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 992px) {
+  @media (min-width: 768px) and (min-width: 768px) and (min-width: 0px) {
     .left-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 1200px) {
+  @media (min-width: 768px) and (min-width: 768px) and (min-width: 768px) {
     .left-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 768px) and (min-width: 1200px) {
+    .left-sidebar {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 768px) and (min-width: 1200px) {
+  .left-sidebar {
+    width: calc(100% * 4/12 - (1.25rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 0px) {
+    .left-sidebar {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 768px) {
+    .left-sidebar {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 1200px) {
+    .left-sidebar {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
   @media (min-width: 1200px) {
     .left-sidebar {
       float: left;
       box-sizing: border-box;
       padding: 1.5rem; } }
-  @media (min-width: 1200px) and (min-width: 767px) {
-    .left-sidebar {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 1200px) and (min-width: 992px) {
+  @media (min-width: 1200px) and (min-width: 0px) {
     .left-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
+  @media (min-width: 1200px) and (min-width: 768px) {
+    .left-sidebar {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
   @media (min-width: 1200px) and (min-width: 1200px) {
     .left-sidebar {
-      margin-right: 1rem;
-      margin-left: 1rem; } }
-  @media (min-width: 1200px) and (min-width: 767px) {
-    .left-sidebar {
-      width: calc(100% * 3/12 - (0.25rem * 2));
-      float: left;
-      box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 767px) and (min-width: 767px) {
-    .left-sidebar {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 1200px) and (min-width: 767px) and (min-width: 992px) {
-    .left-sidebar {
-      margin-right: 0.5rem;
-      margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 767px) and (min-width: 1200px) {
-    .left-sidebar {
-      margin-right: 1rem;
-      margin-left: 1rem; } }
-  @media (min-width: 1200px) and (min-width: 992px) {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+  @media (min-width: 1200px) and (min-width: 0px) {
     .left-sidebar {
       width: calc(100% * 3/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 992px) and (min-width: 767px) {
-    .left-sidebar {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 1200px) and (min-width: 992px) and (min-width: 992px) {
+  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 0px) {
     .left-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 992px) and (min-width: 1200px) {
+  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 768px) {
     .left-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1200px) and (min-width: 1200px) {
+  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 1200px) {
+    .left-sidebar {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+  @media (min-width: 1200px) and (min-width: 768px) {
     .left-sidebar {
       width: calc(100% * 3/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 767px) {
-    .left-sidebar {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 992px) {
+  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 0px) {
     .left-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 1200px) {
+  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 768px) {
     .left-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
+  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 1200px) {
+    .left-sidebar {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+  @media (min-width: 1200px) and (min-width: 1200px) {
+    .left-sidebar {
+      width: calc(100% * 3/12 - (1.25rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 0px) {
+    .left-sidebar {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 768px) {
+    .left-sidebar {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 1200px) {
+    .left-sidebar {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
 
 .middle-area {
   padding: 0.5rem;
   background-color: #f99d97; }
-  @media (min-width: 767px) {
-    .middle-area {
-      width: calc(100% * 12/12 - (0.25rem * 2));
-      float: left;
-      box-sizing: border-box; } }
-  @media (min-width: 767px) and (min-width: 767px) {
-    .middle-area {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 767px) and (min-width: 992px) {
-    .middle-area {
-      margin-right: 0.5rem;
-      margin-left: 0.5rem; } }
-  @media (min-width: 767px) and (min-width: 1200px) {
-    .middle-area {
-      margin-right: 1rem;
-      margin-left: 1rem; } }
-  @media (min-width: 992px) {
+  @media (min-width: 0px) {
     .middle-area {
       width: calc(100% * 12/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 992px) and (min-width: 767px) {
-    .middle-area {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 992px) and (min-width: 992px) {
+  @media (min-width: 0px) and (min-width: 0px) {
     .middle-area {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 992px) and (min-width: 1200px) {
+  @media (min-width: 0px) and (min-width: 768px) {
     .middle-area {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 0px) and (min-width: 1200px) {
+    .middle-area {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+  @media (min-width: 768px) {
     .middle-area {
       width: calc(100% * 12/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 767px) {
-    .middle-area {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 1200px) and (min-width: 992px) {
+  @media (min-width: 768px) and (min-width: 0px) {
     .middle-area {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 1200px) {
+  @media (min-width: 768px) and (min-width: 768px) {
     .middle-area {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) and (min-width: 1200px) {
     .middle-area {
-      padding: 0.5rem; } }
-  @media (min-width: 992px) and (min-width: 767px) {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+  @media (min-width: 1200px) {
     .middle-area {
-      width: calc(100% * 4/12 - (0.25rem * 2));
+      width: calc(100% * 12/12 - (1.25rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 992px) and (min-width: 767px) and (min-width: 767px) {
-    .middle-area {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 992px) and (min-width: 767px) and (min-width: 992px) {
+  @media (min-width: 1200px) and (min-width: 0px) {
     .middle-area {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 992px) and (min-width: 767px) and (min-width: 1200px) {
+  @media (min-width: 1200px) and (min-width: 768px) {
     .middle-area {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 992px) and (min-width: 992px) {
+  @media (min-width: 1200px) and (min-width: 1200px) {
+    .middle-area {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+  @media (min-width: 768px) {
+    .middle-area {
+      padding: 0.5rem; } }
+  @media (min-width: 768px) and (min-width: 0px) {
     .middle-area {
       width: calc(100% * 4/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 992px) and (min-width: 992px) and (min-width: 767px) {
-    .middle-area {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 992px) and (min-width: 992px) and (min-width: 992px) {
+  @media (min-width: 768px) and (min-width: 0px) and (min-width: 0px) {
     .middle-area {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 992px) and (min-width: 992px) and (min-width: 1200px) {
+  @media (min-width: 768px) and (min-width: 0px) and (min-width: 768px) {
     .middle-area {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 992px) and (min-width: 1200px) {
+  @media (min-width: 768px) and (min-width: 0px) and (min-width: 1200px) {
+    .middle-area {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+  @media (min-width: 768px) and (min-width: 768px) {
     .middle-area {
       width: calc(100% * 4/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 767px) {
-    .middle-area {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 992px) {
+  @media (min-width: 768px) and (min-width: 768px) and (min-width: 0px) {
     .middle-area {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 1200px) {
+  @media (min-width: 768px) and (min-width: 768px) and (min-width: 768px) {
     .middle-area {
       margin-right: 1rem;
       margin-left: 1rem; } }
-
-@media (min-width: 1200px) and (min-width: 767px) {
-  .middle-area {
-    width: calc(100% * 6/12 - (0.25rem * 2));
-    float: left;
-    box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 767px) and (min-width: 767px) {
+  @media (min-width: 768px) and (min-width: 768px) and (min-width: 1200px) {
     .middle-area {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 1200px) and (min-width: 767px) and (min-width: 992px) {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+  @media (min-width: 768px) and (min-width: 1200px) {
+    .middle-area {
+      width: calc(100% * 4/12 - (1.25rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 0px) {
     .middle-area {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 767px) and (min-width: 1200px) {
+  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 768px) {
     .middle-area {
       margin-right: 1rem;
       margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 1200px) {
+    .middle-area {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
 
-@media (min-width: 1200px) and (min-width: 992px) {
+@media (min-width: 1200px) and (min-width: 0px) {
   .middle-area {
     width: calc(100% * 6/12 - (0.5rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 992px) and (min-width: 767px) {
-    .middle-area {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 1200px) and (min-width: 992px) and (min-width: 992px) {
+  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 0px) {
     .middle-area {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 992px) and (min-width: 1200px) {
+  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 768px) {
     .middle-area {
       margin-right: 1rem;
       margin-left: 1rem; } }
+  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 1200px) {
+    .middle-area {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
 
-@media (min-width: 1200px) and (min-width: 1200px) {
+@media (min-width: 1200px) and (min-width: 768px) {
   .middle-area {
     width: calc(100% * 6/12 - (1rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 767px) {
-    .middle-area {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 992px) {
+  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 0px) {
     .middle-area {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 1200px) {
+  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 768px) {
     .middle-area {
       margin-right: 1rem;
       margin-left: 1rem; } }
+  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 1200px) {
+    .middle-area {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .middle-area {
+    width: calc(100% * 6/12 - (1.25rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 0px) {
+    .middle-area {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 768px) {
+    .middle-area {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 1200px) {
+    .middle-area {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
 
 .right-sidebar {
   padding: 0.5rem;
   background-color: #f77066; }
-  @media (min-width: 767px) {
-    .right-sidebar {
-      width: calc(100% * 12/12 - (0.25rem * 2));
-      float: left;
-      box-sizing: border-box; } }
-  @media (min-width: 767px) and (min-width: 767px) {
-    .right-sidebar {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 767px) and (min-width: 992px) {
-    .right-sidebar {
-      margin-right: 0.5rem;
-      margin-left: 0.5rem; } }
-  @media (min-width: 767px) and (min-width: 1200px) {
-    .right-sidebar {
-      margin-right: 1rem;
-      margin-left: 1rem; } }
-  @media (min-width: 992px) {
+  @media (min-width: 0px) {
     .right-sidebar {
       width: calc(100% * 12/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 992px) and (min-width: 767px) {
-    .right-sidebar {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 992px) and (min-width: 992px) {
+  @media (min-width: 0px) and (min-width: 0px) {
     .right-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 992px) and (min-width: 1200px) {
+  @media (min-width: 0px) and (min-width: 768px) {
     .right-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 0px) and (min-width: 1200px) {
+    .right-sidebar {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+  @media (min-width: 768px) {
     .right-sidebar {
       width: calc(100% * 12/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 767px) {
-    .right-sidebar {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 1200px) and (min-width: 992px) {
+  @media (min-width: 768px) and (min-width: 0px) {
     .right-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
+  @media (min-width: 768px) and (min-width: 768px) {
+    .right-sidebar {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 1200px) {
+    .right-sidebar {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+  @media (min-width: 1200px) {
+    .right-sidebar {
+      width: calc(100% * 12/12 - (1.25rem * 2));
+      float: left;
+      box-sizing: border-box; } }
+  @media (min-width: 1200px) and (min-width: 0px) {
+    .right-sidebar {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1200px) and (min-width: 768px) {
+    .right-sidebar {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
   @media (min-width: 1200px) and (min-width: 1200px) {
     .right-sidebar {
-      margin-right: 1rem;
-      margin-left: 1rem; } }
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
 
-@media (min-width: 992px) and (min-width: 767px) {
-  .right-sidebar {
-    width: calc(100% * 4/12 - (0.25rem * 2));
-    float: left;
-    box-sizing: border-box; } }
-  @media (min-width: 992px) and (min-width: 767px) and (min-width: 767px) {
-    .right-sidebar {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 992px) and (min-width: 767px) and (min-width: 992px) {
-    .right-sidebar {
-      margin-right: 0.5rem;
-      margin-left: 0.5rem; } }
-  @media (min-width: 992px) and (min-width: 767px) and (min-width: 1200px) {
-    .right-sidebar {
-      margin-right: 1rem;
-      margin-left: 1rem; } }
-
-@media (min-width: 992px) and (min-width: 992px) {
+@media (min-width: 768px) and (min-width: 0px) {
   .right-sidebar {
     width: calc(100% * 4/12 - (0.5rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 992px) and (min-width: 992px) and (min-width: 767px) {
-    .right-sidebar {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 992px) and (min-width: 992px) and (min-width: 992px) {
+  @media (min-width: 768px) and (min-width: 0px) and (min-width: 0px) {
     .right-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 992px) and (min-width: 992px) and (min-width: 1200px) {
+  @media (min-width: 768px) and (min-width: 0px) and (min-width: 768px) {
     .right-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 0px) and (min-width: 1200px) {
+    .right-sidebar {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
 
-@media (min-width: 992px) and (min-width: 1200px) {
+@media (min-width: 768px) and (min-width: 768px) {
   .right-sidebar {
     width: calc(100% * 4/12 - (1rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 767px) {
-    .right-sidebar {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 992px) {
+  @media (min-width: 768px) and (min-width: 768px) and (min-width: 0px) {
     .right-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 992px) and (min-width: 1200px) and (min-width: 1200px) {
+  @media (min-width: 768px) and (min-width: 768px) and (min-width: 768px) {
     .right-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 768px) and (min-width: 1200px) {
+    .right-sidebar {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
 
-@media (min-width: 1200px) and (min-width: 767px) {
+@media (min-width: 768px) and (min-width: 1200px) {
   .right-sidebar {
-    width: calc(100% * 3/12 - (0.25rem * 2));
+    width: calc(100% * 4/12 - (1.25rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 767px) and (min-width: 767px) {
-    .right-sidebar {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 1200px) and (min-width: 767px) and (min-width: 992px) {
+  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 0px) {
     .right-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 767px) and (min-width: 1200px) {
+  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 768px) {
     .right-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
+  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 1200px) {
+    .right-sidebar {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
 
-@media (min-width: 1200px) and (min-width: 992px) {
+@media (min-width: 1200px) and (min-width: 0px) {
   .right-sidebar {
     width: calc(100% * 3/12 - (0.5rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 992px) and (min-width: 767px) {
-    .right-sidebar {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 1200px) and (min-width: 992px) and (min-width: 992px) {
+  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 0px) {
     .right-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 992px) and (min-width: 1200px) {
+  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 768px) {
     .right-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
+  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 1200px) {
+    .right-sidebar {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
 
-@media (min-width: 1200px) and (min-width: 1200px) {
+@media (min-width: 1200px) and (min-width: 768px) {
   .right-sidebar {
     width: calc(100% * 3/12 - (1rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 767px) {
-    .right-sidebar {
-      margin-right: 0.25rem;
-      margin-left: 0.25rem; } }
-  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 992px) {
+  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 0px) {
     .right-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 1200px) {
+  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 768px) {
     .right-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
+  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 1200px) {
+    .right-sidebar {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
+
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .right-sidebar {
+    width: calc(100% * 3/12 - (1.25rem * 2));
+    float: left;
+    box-sizing: border-box; } }
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 0px) {
+    .right-sidebar {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem; } }
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 768px) {
+    .right-sidebar {
+      margin-right: 1rem;
+      margin-left: 1rem; } }
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 1200px) {
+    .right-sidebar {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem; } }
 
 .nested-grid-sample .column {
   background-color: #f6685e; }
+
+body {
+  background-color: #FAFBFF; }
