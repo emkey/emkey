@@ -1,7 +1,7 @@
 // This is the body typeface
 body{
   font-family: $main-typeface;
-  font-size: ms(0);
+  @include ms-respond(font-size,0);
   font-weight: $font-weight;
   line-height: $base-lineheight
 }

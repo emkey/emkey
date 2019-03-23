@@ -2,16 +2,16 @@
 $modularscale: (
   base: $base-fontsize,
   ratio: 1.3,
-  0px:(
-  base: 1em,
+  0em:(
+  base: $base-fontsize,
   ratio: 1.15,
-  	),
-  768px:(
-  	base: 1em,
-  	ratio: 1.3
   ),
-  1200px:(
-    base: 1em,
+  62em:(
+    base: $base-fontsize,
+    ratio: 1.3
+  ),
+  75em:(
+    base: $base-fontsize,
     ratio:1.35
   ),
 );

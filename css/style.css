@@ -368,7 +368,6 @@ II. Borders
 .box-shadow9 {
   box-shadow: 0px 3px 9px rgba(28, 31, 33, 0.3); }
 
-/* This is the Breakpoints Mixins */
 html {
   box-sizing: border-box; }
 
@@ -396,11 +395,11 @@ html {
 .column {
   float: left;
   box-sizing: border-box; }
-  @media (min-width: 0px) {
+  @media (max-width: 991px) {
     .column {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) {
     .column {
       margin-right: 1rem;
       margin-left: 1rem; } }
@@ -411,11 +410,11 @@ html {
 
 /* Creates a mixin for columns */
 /* Creates all the css column classes */
-@media (min-width: 0px) {
+@media (max-width: 991px) {
   .column-1 {
     width: calc(100% * 1/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) and (max-width: 1999px) {
   .column-1 {
     width: calc(100% * 1/12 - (1rem * 2 )); } }
 
@@ -423,11 +422,11 @@ html {
   .column-1 {
     width: calc(100% * 1/12 - (1.25rem * 2 )); } }
 
-@media (min-width: 0px) {
+@media (max-width: 991px) {
   .column-2 {
     width: calc(100% * 2/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) and (max-width: 1999px) {
   .column-2 {
     width: calc(100% * 2/12 - (1rem * 2 )); } }
 
@@ -435,11 +434,11 @@ html {
   .column-2 {
     width: calc(100% * 2/12 - (1.25rem * 2 )); } }
 
-@media (min-width: 0px) {
+@media (max-width: 991px) {
   .column-3 {
     width: calc(100% * 3/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) and (max-width: 1999px) {
   .column-3 {
     width: calc(100% * 3/12 - (1rem * 2 )); } }
 
@@ -447,11 +446,11 @@ html {
   .column-3 {
     width: calc(100% * 3/12 - (1.25rem * 2 )); } }
 
-@media (min-width: 0px) {
+@media (max-width: 991px) {
   .column-4 {
     width: calc(100% * 4/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) and (max-width: 1999px) {
   .column-4 {
     width: calc(100% * 4/12 - (1rem * 2 )); } }
 
@@ -459,11 +458,11 @@ html {
   .column-4 {
     width: calc(100% * 4/12 - (1.25rem * 2 )); } }
 
-@media (min-width: 0px) {
+@media (max-width: 991px) {
   .column-5 {
     width: calc(100% * 5/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) and (max-width: 1999px) {
   .column-5 {
     width: calc(100% * 5/12 - (1rem * 2 )); } }
 
@@ -471,11 +470,11 @@ html {
   .column-5 {
     width: calc(100% * 5/12 - (1.25rem * 2 )); } }
 
-@media (min-width: 0px) {
+@media (max-width: 991px) {
   .column-6 {
     width: calc(100% * 6/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) and (max-width: 1999px) {
   .column-6 {
     width: calc(100% * 6/12 - (1rem * 2 )); } }
 
@@ -483,11 +482,11 @@ html {
   .column-6 {
     width: calc(100% * 6/12 - (1.25rem * 2 )); } }
 
-@media (min-width: 0px) {
+@media (max-width: 991px) {
   .column-7 {
     width: calc(100% * 7/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) and (max-width: 1999px) {
   .column-7 {
     width: calc(100% * 7/12 - (1rem * 2 )); } }
 
@@ -495,11 +494,11 @@ html {
   .column-7 {
     width: calc(100% * 7/12 - (1.25rem * 2 )); } }
 
-@media (min-width: 0px) {
+@media (max-width: 991px) {
   .column-8 {
     width: calc(100% * 8/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) and (max-width: 1999px) {
   .column-8 {
     width: calc(100% * 8/12 - (1rem * 2 )); } }
 
@@ -507,11 +506,11 @@ html {
   .column-8 {
     width: calc(100% * 8/12 - (1.25rem * 2 )); } }
 
-@media (min-width: 0px) {
+@media (max-width: 991px) {
   .column-9 {
     width: calc(100% * 9/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) and (max-width: 1999px) {
   .column-9 {
     width: calc(100% * 9/12 - (1rem * 2 )); } }
 
@@ -519,11 +518,11 @@ html {
   .column-9 {
     width: calc(100% * 9/12 - (1.25rem * 2 )); } }
 
-@media (min-width: 0px) {
+@media (max-width: 991px) {
   .column-10 {
     width: calc(100% * 10/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) and (max-width: 1999px) {
   .column-10 {
     width: calc(100% * 10/12 - (1rem * 2 )); } }
 
@@ -531,11 +530,11 @@ html {
   .column-10 {
     width: calc(100% * 10/12 - (1.25rem * 2 )); } }
 
-@media (min-width: 0px) {
+@media (max-width: 991px) {
   .column-11 {
     width: calc(100% * 11/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) and (max-width: 1999px) {
   .column-11 {
     width: calc(100% * 11/12 - (1rem * 2 )); } }
 
@@ -543,11 +542,11 @@ html {
   .column-11 {
     width: calc(100% * 11/12 - (1.25rem * 2 )); } }
 
-@media (min-width: 0px) {
+@media (max-width: 991px) {
   .column-12 {
     width: calc(100% * 12/12 - (0.5rem * 2 )); } }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) and (max-width: 1999px) {
   .column-12 {
     width: calc(100% * 12/12 - (1rem * 2 )); } }
 
@@ -558,10 +557,10 @@ html {
 .css-grid-container {
   display: grid;
   grid-template-rows: 100px; }
-  @media (min-width: 0px) {
+  @media (max-width: 991px) {
     .css-grid-container {
       grid-template-columns: 0.5rem auto 0.5rem; } }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) {
     .css-grid-container {
       grid-template-columns: 1rem auto 1rem; } }
   @media (min-width: 1200px) {
@@ -588,10 +587,10 @@ html {
   grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
   grid-template-rows: 100px;
   grid-gap: 1rem; }
-  @media (min-width: 0px) {
+  @media (max-width: 991px) {
     .css-grid {
       grid-gap: 1rem; } }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) {
     .css-grid {
       grid-gap: 2rem; } }
   @media (min-width: 1200px) {
@@ -602,13 +601,22 @@ body {
   font-family: "Merriweather", sans-serif;
   font-size: 1em;
   font-weight: 300;
-  line-height: 1.5em; }
+  line-height: 1.5; }
+  @media (min-width: 0em) and (max-width: 62em) {
+    body {
+      font-size: calc( 1em + 0 * ( ( 100vw - 0em) / 62 )); } }
+  @media (min-width: 62em) and (max-width: 75em) {
+    body {
+      font-size: calc( 1em + 0 * ( ( 100vw - 62em) / 13 )); } }
+  @media (min-width: 75em) {
+    body {
+      font-size: 1em; } }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Fira Sans", serif;
   font-weight: bold;
   line-height: 1.2em; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) {
     h1, h2, h3, h4, h5, h6 {
       line-height: 1.3em; } }
   @media (min-width: 1200px) {
@@ -617,73 +625,73 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 2.31306em; }
-  @media (min-width: 0px) and (max-width: 768px) {
+  @media (min-width: 0em) and (max-width: 62em) {
     h1 {
-      font-size: calc( 2.31306em + 2.51375 * ( ( 100vw - 0px) / 768 )); } }
-  @media (min-width: 768px) and (max-width: 1200px) {
+      font-size: calc( 2.31306em + 2.51375 * ( ( 100vw - 0em) / 62 )); } }
+  @media (min-width: 62em) and (max-width: 75em) {
     h1 {
-      font-size: calc( 4.82681em + 1.22664 * ( ( 100vw - 768px) / 432 )); } }
-  @media (min-width: 1200px) {
+      font-size: calc( 4.82681em + 1.22664 * ( ( 100vw - 62em) / 13 )); } }
+  @media (min-width: 75em) {
     h1 {
       font-size: 6.05345em; } }
 
 h2 {
   font-size: 2.01136em; }
-  @media (min-width: 0px) and (max-width: 768px) {
+  @media (min-width: 0em) and (max-width: 62em) {
     h2 {
-      font-size: calc( 2.01136em + 1.70157 * ( ( 100vw - 0px) / 768 )); } }
-  @media (min-width: 768px) and (max-width: 1200px) {
+      font-size: calc( 2.01136em + 1.70157 * ( ( 100vw - 0em) / 62 )); } }
+  @media (min-width: 62em) and (max-width: 75em) {
     h2 {
-      font-size: calc( 3.71293em + 0.7711 * ( ( 100vw - 768px) / 432 )); } }
-  @media (min-width: 1200px) {
+      font-size: calc( 3.71293em + 0.7711 * ( ( 100vw - 62em) / 13 )); } }
+  @media (min-width: 75em) {
     h2 {
       font-size: 4.48403em; } }
 
 h3 {
   font-size: 1.74901em; }
-  @media (min-width: 0px) and (max-width: 768px) {
+  @media (min-width: 0em) and (max-width: 62em) {
     h3 {
-      font-size: calc( 1.74901em + 1.10709 * ( ( 100vw - 0px) / 768 )); } }
-  @media (min-width: 768px) and (max-width: 1200px) {
+      font-size: calc( 1.74901em + 1.10709 * ( ( 100vw - 0em) / 62 )); } }
+  @media (min-width: 62em) and (max-width: 75em) {
     h3 {
-      font-size: calc( 2.8561em + 0.46541 * ( ( 100vw - 768px) / 432 )); } }
-  @media (min-width: 1200px) {
+      font-size: calc( 2.8561em + 0.46541 * ( ( 100vw - 62em) / 13 )); } }
+  @media (min-width: 75em) {
     h3 {
       font-size: 3.32151em; } }
 
 h4 {
   font-size: 1.52087em; }
-  @media (min-width: 0px) and (max-width: 768px) {
+  @media (min-width: 0em) and (max-width: 62em) {
     h4 {
-      font-size: calc( 1.52087em + 0.67613 * ( ( 100vw - 0px) / 768 )); } }
-  @media (min-width: 768px) and (max-width: 1200px) {
+      font-size: calc( 1.52087em + 0.67613 * ( ( 100vw - 0em) / 62 )); } }
+  @media (min-width: 62em) and (max-width: 75em) {
     h4 {
-      font-size: calc( 2.197em + 0.26337 * ( ( 100vw - 768px) / 432 )); } }
-  @media (min-width: 1200px) {
+      font-size: calc( 2.197em + 0.26337 * ( ( 100vw - 62em) / 13 )); } }
+  @media (min-width: 75em) {
     h4 {
       font-size: 2.46038em; } }
 
 h5 {
   font-size: 1.3225em; }
-  @media (min-width: 0px) and (max-width: 768px) {
+  @media (min-width: 0em) and (max-width: 62em) {
     h5 {
-      font-size: calc( 1.3225em + 0.3675 * ( ( 100vw - 0px) / 768 )); } }
-  @media (min-width: 768px) and (max-width: 1200px) {
+      font-size: calc( 1.3225em + 0.3675 * ( ( 100vw - 0em) / 62 )); } }
+  @media (min-width: 62em) and (max-width: 75em) {
     h5 {
-      font-size: calc( 1.69em + 0.1325 * ( ( 100vw - 768px) / 432 )); } }
-  @media (min-width: 1200px) {
+      font-size: calc( 1.69em + 0.1325 * ( ( 100vw - 62em) / 13 )); } }
+  @media (min-width: 75em) {
     h5 {
       font-size: 1.8225em; } }
 
 h6 {
   font-size: 1.15em; }
-  @media (min-width: 0px) and (max-width: 768px) {
+  @media (min-width: 0em) and (max-width: 62em) {
     h6 {
-      font-size: calc( 1.15em + 0.15 * ( ( 100vw - 0px) / 768 )); } }
-  @media (min-width: 768px) and (max-width: 1200px) {
+      font-size: calc( 1.15em + 0.15 * ( ( 100vw - 0em) / 62 )); } }
+  @media (min-width: 62em) and (max-width: 75em) {
     h6 {
-      font-size: calc( 1.3em + 0.05 * ( ( 100vw - 768px) / 432 )); } }
-  @media (min-width: 1200px) {
+      font-size: calc( 1.3em + 0.05 * ( ( 100vw - 62em) / 13 )); } }
+  @media (min-width: 75em) {
     h6 {
       font-size: 1.35em; } }
 
@@ -781,7 +789,7 @@ II. Secondary Buttons
   padding: 1rem;
   margin-top: 1rem;
   margin-bottom: 0.5rem; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) {
     .card {
       padding: 1rem;
       margin-top: 1rem;
@@ -804,7 +812,7 @@ input {
   padding-top: 0.5rem;
   font-size: 1em;
   font-weight: "Merriweather", sans-serif;
-  line-height: 1.5em; }
+  line-height: 1.5; }
   input::placeholder {
     color: #626d74;
     font-weight: 300; }
@@ -822,7 +830,7 @@ textarea {
   font-family: "Merriweather", sans-serif;
   font-weight: 300;
   font-size: 1em;
-  line-height: 1.5em;
+  line-height: 1.5;
   color: #626d74;
   display: inline-block;
   padding-top: 0.5rem;
@@ -845,7 +853,7 @@ input.error, textarea.error {
 .intro {
   border-top: 16px solid #E5627C;
   margin-bottom: 40px; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) {
     .intro {
       margin-bottom: 64px; } }
   @media (min-width: 1200px) {
@@ -854,37 +862,37 @@ input.error, textarea.error {
 
 .hero {
   margin-bottom: 0.5rem; }
-  @media (min-width: 0px) {
+  @media (max-width: 991px) {
     .hero {
       width: calc(100% * 12/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 0px) and (min-width: 0px) {
+  @media (max-width: 991px) and (max-width: 991px) {
     .hero {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 0px) and (min-width: 768px) {
+  @media (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .hero {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 0px) and (min-width: 1200px) {
+  @media (max-width: 991px) and (min-width: 1200px) {
     .hero {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) {
     .hero {
       width: calc(100% * 12/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .hero {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .hero {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .hero {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
@@ -893,11 +901,11 @@ input.error, textarea.error {
       width: calc(100% * 12/12 - (1.25rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (max-width: 991px) {
     .hero {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .hero {
       margin-right: 1rem;
       margin-left: 1rem; } }
@@ -905,94 +913,94 @@ input.error, textarea.error {
     .hero {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) {
     .hero {
       margin-bottom: 1rem; } }
-  @media (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .hero {
       width: calc(100% * 12/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) and (max-width: 991px) {
     .hero {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 0px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .hero {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 0px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) and (min-width: 1200px) {
     .hero {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-  @media (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .hero {
       width: calc(100% * 12/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .hero {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .hero {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .hero {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .hero {
       width: calc(100% * 12/12 - (1.25rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) and (max-width: 991px) {
     .hero {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .hero {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) and (min-width: 1200px) {
     .hero {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
   @media (min-width: 1200px) {
     .hero {
       margin-bottom: 1.5rem; } }
-  @media (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (max-width: 991px) {
     .hero {
       width: calc(100% * 8/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (max-width: 991px) and (max-width: 991px) {
     .hero {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .hero {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 1200px) {
+  @media (min-width: 1200px) and (max-width: 991px) and (min-width: 1200px) {
     .hero {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .hero {
       width: calc(100% * 8/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .hero {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .hero {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .hero {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
@@ -1001,11 +1009,11 @@ input.error, textarea.error {
       width: calc(100% * 8/12 - (1.25rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 1200px) and (max-width: 991px) {
     .hero {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .hero {
       margin-right: 1rem;
       margin-left: 1rem; } }
@@ -1014,38 +1022,38 @@ input.error, textarea.error {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 0px) {
+@media (max-width: 991px) {
   .social-media {
     width: calc(100% * 12/12 - (0.5rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 0px) and (min-width: 0px) {
+  @media (max-width: 991px) and (max-width: 991px) {
     .social-media {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 0px) and (min-width: 768px) {
+  @media (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .social-media {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 0px) and (min-width: 1200px) {
+  @media (max-width: 991px) and (min-width: 1200px) {
     .social-media {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) and (max-width: 1999px) {
   .social-media {
     width: calc(100% * 12/12 - (1rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .social-media {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .social-media {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .social-media {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
@@ -1055,11 +1063,11 @@ input.error, textarea.error {
     width: calc(100% * 12/12 - (1.25rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (max-width: 991px) {
     .social-media {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .social-media {
       margin-right: 1rem;
       margin-left: 1rem; } }
@@ -1073,37 +1081,37 @@ input.error, textarea.error {
 
 .intro-paragraph {
   margin-top: 0.5rem; }
-  @media (min-width: 0px) {
+  @media (max-width: 991px) {
     .intro-paragraph {
       width: calc(100% * 12/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 0px) and (min-width: 0px) {
+  @media (max-width: 991px) and (max-width: 991px) {
     .intro-paragraph {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 0px) and (min-width: 768px) {
+  @media (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .intro-paragraph {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 0px) and (min-width: 1200px) {
+  @media (max-width: 991px) and (min-width: 1200px) {
     .intro-paragraph {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) {
     .intro-paragraph {
       width: calc(100% * 12/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .intro-paragraph {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .intro-paragraph {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .intro-paragraph {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
@@ -1112,11 +1120,11 @@ input.error, textarea.error {
       width: calc(100% * 12/12 - (1.25rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (max-width: 991px) {
     .intro-paragraph {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .intro-paragraph {
       margin-right: 1rem;
       margin-left: 1rem; } }
@@ -1124,94 +1132,94 @@ input.error, textarea.error {
     .intro-paragraph {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) {
     .intro-paragraph {
       margin-top: 1rem; } }
-  @media (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .intro-paragraph {
       width: calc(100% * 9/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) and (max-width: 991px) {
     .intro-paragraph {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 0px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .intro-paragraph {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 0px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) and (min-width: 1200px) {
     .intro-paragraph {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-  @media (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .intro-paragraph {
       width: calc(100% * 9/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .intro-paragraph {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .intro-paragraph {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .intro-paragraph {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .intro-paragraph {
       width: calc(100% * 9/12 - (1.25rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) and (max-width: 991px) {
     .intro-paragraph {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .intro-paragraph {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) and (min-width: 1200px) {
     .intro-paragraph {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
   @media (min-width: 1200px) {
     .intro-paragraph {
       margin-top: 1.5rem; } }
-  @media (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (max-width: 991px) {
     .intro-paragraph {
       width: calc(100% * 6/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (max-width: 991px) and (max-width: 991px) {
     .intro-paragraph {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .intro-paragraph {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 1200px) {
+  @media (min-width: 1200px) and (max-width: 991px) and (min-width: 1200px) {
     .intro-paragraph {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .intro-paragraph {
       width: calc(100% * 6/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .intro-paragraph {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .intro-paragraph {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .intro-paragraph {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
@@ -1220,11 +1228,11 @@ input.error, textarea.error {
       width: calc(100% * 6/12 - (1.25rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 1200px) and (max-width: 991px) {
     .intro-paragraph {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .intro-paragraph {
       margin-right: 1rem;
       margin-left: 1rem; } }
@@ -1235,7 +1243,7 @@ input.error, textarea.error {
 
 .process, .speaking {
   margin-bottom: 40px; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) {
     .process, .speaking {
       margin-bottom: 64px; } }
   @media (min-width: 1200px) {
@@ -1246,7 +1254,7 @@ input.error, textarea.error {
     display: inline-block;
     padding-left: 0.5rem;
     margin-left: -0.5rem; }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) and (max-width: 1999px) {
       .process .title, .speaking .title {
         padding-left: 1rem;
         margin-left: -1rem; } }
@@ -1257,37 +1265,37 @@ input.error, textarea.error {
 
 .process-intro, .speaking-intro {
   margin-bottom: 1.5rem; }
-  @media (min-width: 0px) {
+  @media (max-width: 991px) {
     .process-intro .subtitle, .speaking-intro .subtitle {
       width: calc(100% * 11/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 0px) and (min-width: 0px) {
+  @media (max-width: 991px) and (max-width: 991px) {
     .process-intro .subtitle, .speaking-intro .subtitle {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 0px) and (min-width: 768px) {
+  @media (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .process-intro .subtitle, .speaking-intro .subtitle {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 0px) and (min-width: 1200px) {
+  @media (max-width: 991px) and (min-width: 1200px) {
     .process-intro .subtitle, .speaking-intro .subtitle {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) {
     .process-intro .subtitle, .speaking-intro .subtitle {
       width: calc(100% * 11/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .process-intro .subtitle, .speaking-intro .subtitle {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .process-intro .subtitle, .speaking-intro .subtitle {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .process-intro .subtitle, .speaking-intro .subtitle {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
@@ -1296,11 +1304,11 @@ input.error, textarea.error {
       width: calc(100% * 11/12 - (1.25rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (max-width: 991px) {
     .process-intro .subtitle, .speaking-intro .subtitle {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .process-intro .subtitle, .speaking-intro .subtitle {
       margin-right: 1rem;
       margin-left: 1rem; } }
@@ -1309,38 +1317,38 @@ input.error, textarea.error {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 1200px) and (min-width: 0px) {
+@media (min-width: 1200px) and (max-width: 991px) {
   .process-intro .subtitle, .speaking-intro .subtitle {
     width: calc(100% * 8/12 - (0.5rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (max-width: 991px) and (max-width: 991px) {
     .process-intro .subtitle, .speaking-intro .subtitle {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .process-intro .subtitle, .speaking-intro .subtitle {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 1200px) {
+  @media (min-width: 1200px) and (max-width: 991px) and (min-width: 1200px) {
     .process-intro .subtitle, .speaking-intro .subtitle {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 1200px) and (min-width: 768px) {
+@media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
   .process-intro .subtitle, .speaking-intro .subtitle {
     width: calc(100% * 8/12 - (1rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .process-intro .subtitle, .speaking-intro .subtitle {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .process-intro .subtitle, .speaking-intro .subtitle {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .process-intro .subtitle, .speaking-intro .subtitle {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
@@ -1350,11 +1358,11 @@ input.error, textarea.error {
     width: calc(100% * 8/12 - (1.25rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 1200px) and (max-width: 991px) {
     .process-intro .subtitle, .speaking-intro .subtitle {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .process-intro .subtitle, .speaking-intro .subtitle {
       margin-right: 1rem;
       margin-left: 1rem; } }
@@ -1365,40 +1373,40 @@ input.error, textarea.error {
 
 .process-step {
   margin-top: 0.5rem; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) {
     .process-step {
       margin-top: 1rem; } }
-  @media (min-width: 0px) {
+  @media (max-width: 991px) {
     .process-step {
       width: calc(100% * 12/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 0px) and (min-width: 0px) {
+  @media (max-width: 991px) and (max-width: 991px) {
     .process-step {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 0px) and (min-width: 768px) {
+  @media (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .process-step {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 0px) and (min-width: 1200px) {
+  @media (max-width: 991px) and (min-width: 1200px) {
     .process-step {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) {
     .process-step {
       width: calc(100% * 12/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .process-step {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .process-step {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .process-step {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
@@ -1407,11 +1415,11 @@ input.error, textarea.error {
       width: calc(100% * 12/12 - (1.25rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (max-width: 991px) {
     .process-step {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .process-step {
       margin-right: 1rem;
       margin-left: 1rem; } }
@@ -1420,92 +1428,92 @@ input.error, textarea.error {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 768px) and (min-width: 0px) {
+@media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
   .process-step {
     width: calc(100% * 6/12 - (0.5rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) and (max-width: 991px) {
     .process-step {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 0px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .process-step {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 0px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) and (min-width: 1200px) {
     .process-step {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 768px) and (min-width: 768px) {
+@media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
   .process-step {
     width: calc(100% * 6/12 - (1rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .process-step {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .process-step {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .process-step {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 768px) and (min-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
   .process-step {
     width: calc(100% * 6/12 - (1.25rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) and (max-width: 991px) {
     .process-step {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .process-step {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) and (min-width: 1200px) {
     .process-step {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 1200px) and (min-width: 0px) {
+@media (min-width: 1200px) and (max-width: 991px) {
   .process-step {
     width: calc(100% * 3/12 - (0.5rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (max-width: 991px) and (max-width: 991px) {
     .process-step {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .process-step {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 1200px) {
+  @media (min-width: 1200px) and (max-width: 991px) and (min-width: 1200px) {
     .process-step {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 1200px) and (min-width: 768px) {
+@media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
   .process-step {
     width: calc(100% * 3/12 - (1rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .process-step {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .process-step {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .process-step {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
@@ -1515,11 +1523,11 @@ input.error, textarea.error {
     width: calc(100% * 3/12 - (1.25rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 1200px) and (max-width: 991px) {
     .process-step {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .process-step {
       margin-right: 1rem;
       margin-left: 1rem; } }
@@ -1528,38 +1536,38 @@ input.error, textarea.error {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 0px) {
+@media (max-width: 991px) {
   .process-step .process-icon {
     width: calc(100% * 3/12 - (0.5rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 0px) and (min-width: 0px) {
+  @media (max-width: 991px) and (max-width: 991px) {
     .process-step .process-icon {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 0px) and (min-width: 768px) {
+  @media (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .process-step .process-icon {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 0px) and (min-width: 1200px) {
+  @media (max-width: 991px) and (min-width: 1200px) {
     .process-step .process-icon {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) and (max-width: 1999px) {
   .process-step .process-icon {
     width: calc(100% * 3/12 - (1rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .process-step .process-icon {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .process-step .process-icon {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .process-step .process-icon {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
@@ -1569,11 +1577,11 @@ input.error, textarea.error {
     width: calc(100% * 3/12 - (1.25rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (max-width: 991px) {
     .process-step .process-icon {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .process-step .process-icon {
       margin-right: 1rem;
       margin-left: 1rem; } }
@@ -1582,97 +1590,97 @@ input.error, textarea.error {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 768px) and (min-width: 0px) {
+@media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
   .process-step .process-icon {
     width: calc(100% * 12/12 - (0.5rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) and (max-width: 991px) {
     .process-step .process-icon {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 0px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .process-step .process-icon {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 0px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) and (min-width: 1200px) {
     .process-step .process-icon {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 768px) and (min-width: 768px) {
+@media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
   .process-step .process-icon {
     width: calc(100% * 12/12 - (1rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .process-step .process-icon {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .process-step .process-icon {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .process-step .process-icon {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 768px) and (min-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
   .process-step .process-icon {
     width: calc(100% * 12/12 - (1.25rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) and (max-width: 991px) {
     .process-step .process-icon {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .process-step .process-icon {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) and (min-width: 1200px) {
     .process-step .process-icon {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) and (max-width: 1999px) {
   .process-step .process-icon img {
     width: 100px; } }
 
 .process-step .process-information {
   padding-top: 0.5rem; }
-  @media (min-width: 0px) {
+  @media (max-width: 991px) {
     .process-step .process-information {
       width: calc(100% * 9/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 0px) and (min-width: 0px) {
+  @media (max-width: 991px) and (max-width: 991px) {
     .process-step .process-information {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 0px) and (min-width: 768px) {
+  @media (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .process-step .process-information {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 0px) and (min-width: 1200px) {
+  @media (max-width: 991px) and (min-width: 1200px) {
     .process-step .process-information {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) {
     .process-step .process-information {
       width: calc(100% * 9/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .process-step .process-information {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .process-step .process-information {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .process-step .process-information {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
@@ -1681,11 +1689,11 @@ input.error, textarea.error {
       width: calc(100% * 9/12 - (1.25rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (max-width: 991px) {
     .process-step .process-information {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .process-step .process-information {
       margin-right: 1rem;
       margin-left: 1rem; } }
@@ -1693,94 +1701,94 @@ input.error, textarea.error {
     .process-step .process-information {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) {
     .process-step .process-information {
       padding-top: 1rem; } }
-  @media (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .process-step .process-information {
       width: calc(100% * 12/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) and (max-width: 991px) {
     .process-step .process-information {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 0px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .process-step .process-information {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 0px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) and (min-width: 1200px) {
     .process-step .process-information {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-  @media (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .process-step .process-information {
       width: calc(100% * 12/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .process-step .process-information {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .process-step .process-information {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .process-step .process-information {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .process-step .process-information {
       width: calc(100% * 12/12 - (1.25rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) and (max-width: 991px) {
     .process-step .process-information {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .process-step .process-information {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) and (min-width: 1200px) {
     .process-step .process-information {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
 .process .header, .speaking .header {
   margin-top: 40px; }
-  @media (min-width: 0px) {
+  @media (max-width: 991px) {
     .process .header, .speaking .header {
       width: calc(100% * 12/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 0px) and (min-width: 0px) {
+  @media (max-width: 991px) and (max-width: 991px) {
     .process .header, .speaking .header {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 0px) and (min-width: 768px) {
+  @media (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .process .header, .speaking .header {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 0px) and (min-width: 1200px) {
+  @media (max-width: 991px) and (min-width: 1200px) {
     .process .header, .speaking .header {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) {
     .process .header, .speaking .header {
       width: calc(100% * 12/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .process .header, .speaking .header {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .process .header, .speaking .header {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .process .header, .speaking .header {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
@@ -1789,11 +1797,11 @@ input.error, textarea.error {
       width: calc(100% * 12/12 - (1.25rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (max-width: 991px) {
     .process .header, .speaking .header {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .process .header, .speaking .header {
       margin-right: 1rem;
       margin-left: 1rem; } }
@@ -1802,38 +1810,38 @@ input.error, textarea.error {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 0px) {
+@media (max-width: 991px) {
   .speaking-info {
     width: calc(100% * 12/12 - (0.5rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 0px) and (min-width: 0px) {
+  @media (max-width: 991px) and (max-width: 991px) {
     .speaking-info {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 0px) and (min-width: 768px) {
+  @media (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .speaking-info {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 0px) and (min-width: 1200px) {
+  @media (max-width: 991px) and (min-width: 1200px) {
     .speaking-info {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) and (max-width: 1999px) {
   .speaking-info {
     width: calc(100% * 12/12 - (1rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .speaking-info {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .speaking-info {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .speaking-info {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
@@ -1843,11 +1851,11 @@ input.error, textarea.error {
     width: calc(100% * 12/12 - (1.25rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (max-width: 991px) {
     .speaking-info {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .speaking-info {
       margin-right: 1rem;
       margin-left: 1rem; } }
@@ -1856,92 +1864,92 @@ input.error, textarea.error {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 768px) and (min-width: 0px) {
+@media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
   .speaking-info {
     width: calc(100% * 9/12 - (0.5rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) and (max-width: 991px) {
     .speaking-info {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 0px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .speaking-info {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 0px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) and (min-width: 1200px) {
     .speaking-info {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 768px) and (min-width: 768px) {
+@media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
   .speaking-info {
     width: calc(100% * 9/12 - (1rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .speaking-info {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .speaking-info {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .speaking-info {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 768px) and (min-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
   .speaking-info {
     width: calc(100% * 9/12 - (1.25rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) and (max-width: 991px) {
     .speaking-info {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .speaking-info {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) and (min-width: 1200px) {
     .speaking-info {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 1200px) and (min-width: 0px) {
+@media (min-width: 1200px) and (max-width: 991px) {
   .speaking-info {
     width: calc(100% * 6/12 - (0.5rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (max-width: 991px) and (max-width: 991px) {
     .speaking-info {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .speaking-info {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 1200px) {
+  @media (min-width: 1200px) and (max-width: 991px) and (min-width: 1200px) {
     .speaking-info {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 1200px) and (min-width: 768px) {
+@media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
   .speaking-info {
     width: calc(100% * 6/12 - (1rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .speaking-info {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .speaking-info {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .speaking-info {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
@@ -1951,11 +1959,11 @@ input.error, textarea.error {
     width: calc(100% * 6/12 - (1.25rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 1200px) and (max-width: 991px) {
     .speaking-info {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .speaking-info {
       margin-right: 1rem;
       margin-left: 1rem; } }
@@ -1964,38 +1972,38 @@ input.error, textarea.error {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 0px) {
+@media (max-width: 991px) {
   .speaking-talks {
     width: calc(100% * 12/12 - (0.5rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 0px) and (min-width: 0px) {
+  @media (max-width: 991px) and (max-width: 991px) {
     .speaking-talks {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 0px) and (min-width: 768px) {
+  @media (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .speaking-talks {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 0px) and (min-width: 1200px) {
+  @media (max-width: 991px) and (min-width: 1200px) {
     .speaking-talks {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) and (max-width: 1999px) {
   .speaking-talks {
     width: calc(100% * 12/12 - (1rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .speaking-talks {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .speaking-talks {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .speaking-talks {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
@@ -2005,11 +2013,11 @@ input.error, textarea.error {
     width: calc(100% * 12/12 - (1.25rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (max-width: 991px) {
     .speaking-talks {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .speaking-talks {
       margin-right: 1rem;
       margin-left: 1rem; } }
@@ -2018,92 +2026,92 @@ input.error, textarea.error {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 768px) and (min-width: 0px) {
+@media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
   .speaking-talks {
     width: calc(100% * 6/12 - (0.5rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) and (max-width: 991px) {
     .speaking-talks {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 0px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .speaking-talks {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 0px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) and (min-width: 1200px) {
     .speaking-talks {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 768px) and (min-width: 768px) {
+@media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
   .speaking-talks {
     width: calc(100% * 6/12 - (1rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .speaking-talks {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .speaking-talks {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .speaking-talks {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 768px) and (min-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
   .speaking-talks {
     width: calc(100% * 6/12 - (1.25rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) and (max-width: 991px) {
     .speaking-talks {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .speaking-talks {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) and (min-width: 1200px) {
     .speaking-talks {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 1200px) and (min-width: 0px) {
+@media (min-width: 1200px) and (max-width: 991px) {
   .speaking-talks {
     width: calc(100% * 4/12 - (0.5rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (max-width: 991px) and (max-width: 991px) {
     .speaking-talks {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .speaking-talks {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 1200px) {
+  @media (min-width: 1200px) and (max-width: 991px) and (min-width: 1200px) {
     .speaking-talks {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 1200px) and (min-width: 768px) {
+@media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
   .speaking-talks {
     width: calc(100% * 4/12 - (1rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .speaking-talks {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .speaking-talks {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .speaking-talks {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
@@ -2113,11 +2121,11 @@ input.error, textarea.error {
     width: calc(100% * 4/12 - (1.25rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 1200px) and (max-width: 991px) {
     .speaking-talks {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .speaking-talks {
       margin-right: 1rem;
       margin-left: 1rem; } }
@@ -2132,38 +2140,38 @@ input.error, textarea.error {
   margin-bottom: 0.5rem;
   margin-top: 0.5rem; }
 
-@media (min-width: 0px) {
+@media (max-width: 991px) {
   .events {
     width: calc(100% * 12/12 - (0.5rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 0px) and (min-width: 0px) {
+  @media (max-width: 991px) and (max-width: 991px) {
     .events {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 0px) and (min-width: 768px) {
+  @media (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .events {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 0px) and (min-width: 1200px) {
+  @media (max-width: 991px) and (min-width: 1200px) {
     .events {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) and (max-width: 1999px) {
   .events {
     width: calc(100% * 12/12 - (1rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .events {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .events {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .events {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
@@ -2173,11 +2181,11 @@ input.error, textarea.error {
     width: calc(100% * 12/12 - (1.25rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (max-width: 991px) {
     .events {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .events {
       margin-right: 1rem;
       margin-left: 1rem; } }
@@ -2201,37 +2209,37 @@ input.error, textarea.error {
 .left-sidebar {
   padding: 0.5rem;
   background-color: #fccbc7; }
-  @media (min-width: 0px) {
+  @media (max-width: 991px) {
     .left-sidebar {
       width: calc(100% * 12/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 0px) and (min-width: 0px) {
+  @media (max-width: 991px) and (max-width: 991px) {
     .left-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 0px) and (min-width: 768px) {
+  @media (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .left-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 0px) and (min-width: 1200px) {
+  @media (max-width: 991px) and (min-width: 1200px) {
     .left-sidebar {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) {
     .left-sidebar {
       width: calc(100% * 12/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .left-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .left-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .left-sidebar {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
@@ -2240,11 +2248,11 @@ input.error, textarea.error {
       width: calc(100% * 12/12 - (1.25rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (max-width: 991px) {
     .left-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .left-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
@@ -2253,56 +2261,56 @@ input.error, textarea.error {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 768px) and (min-width: 0px) {
+@media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
   .left-sidebar {
     width: calc(100% * 4/12 - (0.5rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) and (max-width: 991px) {
     .left-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 0px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .left-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 0px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) and (min-width: 1200px) {
     .left-sidebar {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 768px) and (min-width: 768px) {
+@media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
   .left-sidebar {
     width: calc(100% * 4/12 - (1rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .left-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .left-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .left-sidebar {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 768px) and (min-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
   .left-sidebar {
     width: calc(100% * 4/12 - (1.25rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) and (max-width: 991px) {
     .left-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .left-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) and (min-width: 1200px) {
     .left-sidebar {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
@@ -2311,11 +2319,11 @@ input.error, textarea.error {
       float: left;
       box-sizing: border-box;
       padding: 1.5rem; } }
-  @media (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (max-width: 991px) {
     .left-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .left-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
@@ -2323,37 +2331,37 @@ input.error, textarea.error {
     .left-sidebar {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-  @media (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (max-width: 991px) {
     .left-sidebar {
       width: calc(100% * 3/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (max-width: 991px) and (max-width: 991px) {
     .left-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .left-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 1200px) {
+  @media (min-width: 1200px) and (max-width: 991px) and (min-width: 1200px) {
     .left-sidebar {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .left-sidebar {
       width: calc(100% * 3/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .left-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .left-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .left-sidebar {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
@@ -2362,11 +2370,11 @@ input.error, textarea.error {
       width: calc(100% * 3/12 - (1.25rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 1200px) and (max-width: 991px) {
     .left-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .left-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
@@ -2378,37 +2386,37 @@ input.error, textarea.error {
 .middle-area {
   padding: 0.5rem;
   background-color: #f99d97; }
-  @media (min-width: 0px) {
+  @media (max-width: 991px) {
     .middle-area {
       width: calc(100% * 12/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 0px) and (min-width: 0px) {
+  @media (max-width: 991px) and (max-width: 991px) {
     .middle-area {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 0px) and (min-width: 768px) {
+  @media (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .middle-area {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 0px) and (min-width: 1200px) {
+  @media (max-width: 991px) and (min-width: 1200px) {
     .middle-area {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) {
     .middle-area {
       width: calc(100% * 12/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .middle-area {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .middle-area {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .middle-area {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
@@ -2417,11 +2425,11 @@ input.error, textarea.error {
       width: calc(100% * 12/12 - (1.25rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (max-width: 991px) {
     .middle-area {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .middle-area {
       margin-right: 1rem;
       margin-left: 1rem; } }
@@ -2429,93 +2437,93 @@ input.error, textarea.error {
     .middle-area {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) {
     .middle-area {
       padding: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .middle-area {
       width: calc(100% * 4/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) and (max-width: 991px) {
     .middle-area {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 0px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .middle-area {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 0px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) and (min-width: 1200px) {
     .middle-area {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-  @media (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .middle-area {
       width: calc(100% * 4/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .middle-area {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .middle-area {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .middle-area {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .middle-area {
       width: calc(100% * 4/12 - (1.25rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) and (max-width: 991px) {
     .middle-area {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .middle-area {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) and (min-width: 1200px) {
     .middle-area {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 1200px) and (min-width: 0px) {
+@media (min-width: 1200px) and (max-width: 991px) {
   .middle-area {
     width: calc(100% * 6/12 - (0.5rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (max-width: 991px) and (max-width: 991px) {
     .middle-area {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .middle-area {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 1200px) {
+  @media (min-width: 1200px) and (max-width: 991px) and (min-width: 1200px) {
     .middle-area {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 1200px) and (min-width: 768px) {
+@media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
   .middle-area {
     width: calc(100% * 6/12 - (1rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .middle-area {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .middle-area {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .middle-area {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
@@ -2525,11 +2533,11 @@ input.error, textarea.error {
     width: calc(100% * 6/12 - (1.25rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 1200px) and (max-width: 991px) {
     .middle-area {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .middle-area {
       margin-right: 1rem;
       margin-left: 1rem; } }
@@ -2541,37 +2549,37 @@ input.error, textarea.error {
 .right-sidebar {
   padding: 0.5rem;
   background-color: #f77066; }
-  @media (min-width: 0px) {
+  @media (max-width: 991px) {
     .right-sidebar {
       width: calc(100% * 12/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 0px) and (min-width: 0px) {
+  @media (max-width: 991px) and (max-width: 991px) {
     .right-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 0px) and (min-width: 768px) {
+  @media (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .right-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 0px) and (min-width: 1200px) {
+  @media (max-width: 991px) and (min-width: 1200px) {
     .right-sidebar {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) {
     .right-sidebar {
       width: calc(100% * 12/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .right-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .right-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .right-sidebar {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
@@ -2580,11 +2588,11 @@ input.error, textarea.error {
       width: calc(100% * 12/12 - (1.25rem * 2));
       float: left;
       box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (max-width: 991px) {
     .right-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .right-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
@@ -2593,92 +2601,92 @@ input.error, textarea.error {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 768px) and (min-width: 0px) {
+@media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
   .right-sidebar {
     width: calc(100% * 4/12 - (0.5rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) and (max-width: 991px) {
     .right-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 0px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .right-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 0px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) and (min-width: 1200px) {
     .right-sidebar {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 768px) and (min-width: 768px) {
+@media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
   .right-sidebar {
     width: calc(100% * 4/12 - (1rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .right-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .right-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .right-sidebar {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 768px) and (min-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
   .right-sidebar {
     width: calc(100% * 4/12 - (1.25rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) and (max-width: 991px) {
     .right-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .right-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 768px) and (min-width: 1200px) and (min-width: 1200px) {
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) and (min-width: 1200px) {
     .right-sidebar {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 1200px) and (min-width: 0px) {
+@media (min-width: 1200px) and (max-width: 991px) {
   .right-sidebar {
     width: calc(100% * 3/12 - (0.5rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (max-width: 991px) and (max-width: 991px) {
     .right-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
     .right-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1200px) and (min-width: 0px) and (min-width: 1200px) {
+  @media (min-width: 1200px) and (max-width: 991px) and (min-width: 1200px) {
     .right-sidebar {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (min-width: 1200px) and (min-width: 768px) {
+@media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
   .right-sidebar {
     width: calc(100% * 3/12 - (1rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .right-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
     .right-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }
-  @media (min-width: 1200px) and (min-width: 768px) and (min-width: 1200px) {
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
     .right-sidebar {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
@@ -2688,11 +2696,11 @@ input.error, textarea.error {
     width: calc(100% * 3/12 - (1.25rem * 2));
     float: left;
     box-sizing: border-box; } }
-  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 0px) {
+  @media (min-width: 1200px) and (min-width: 1200px) and (max-width: 991px) {
     .right-sidebar {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
-  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 768px) {
+  @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
     .right-sidebar {
       margin-right: 1rem;
       margin-left: 1rem; } }

@@ -107,7 +107,7 @@
 	@include column-width(9);
 	@include padding-top($normal-spacing);
 	@include respond-to(medium){
-		@include column-width(12)
+		@include column-width(12);
 		@include padding-top($medium-spacing);
 	}
 }
