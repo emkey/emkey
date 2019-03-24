@@ -599,12 +599,12 @@ html {
 
 body {
   font-family: "Merriweather", sans-serif;
-  font-size: 1em;
+  font-size: 0.75em;
   font-weight: 300;
   line-height: 1.5; }
   @media (min-width: 0em) and (max-width: 62em) {
     body {
-      font-size: calc( 1em + 0 * ( ( 100vw - 0em) / 62 )); } }
+      font-size: calc( 0.75em + 0.25 * ( ( 100vw - 0em) / 62 )); } }
   @media (min-width: 62em) and (max-width: 75em) {
     body {
       font-size: calc( 1em + 0 * ( ( 100vw - 62em) / 13 )); } }
@@ -624,76 +624,76 @@ h1, h2, h3, h4, h5, h6 {
       line-height: 1.2em; } }
 
 h1 {
-  font-size: 2.31306em; }
+  font-size: 2.23949em; }
   @media (min-width: 0em) and (max-width: 62em) {
     h1 {
-      font-size: calc( 2.31306em + 2.51375 * ( ( 100vw - 0em) / 62 )); } }
+      font-size: calc( 2.23949em + 2.58732 * ( ( 100vw - 0em) / 62 )); } }
   @media (min-width: 62em) and (max-width: 75em) {
     h1 {
-      font-size: calc( 4.82681em + 1.22664 * ( ( 100vw - 62em) / 13 )); } }
+      font-size: calc( 4.82681em + 0 * ( ( 100vw - 62em) / 13 )); } }
   @media (min-width: 75em) {
     h1 {
-      font-size: 6.05345em; } }
+      font-size: 4.82681em; } }
 
 h2 {
-  font-size: 2.01136em; }
+  font-size: 1.86624em; }
   @media (min-width: 0em) and (max-width: 62em) {
     h2 {
-      font-size: calc( 2.01136em + 1.70157 * ( ( 100vw - 0em) / 62 )); } }
+      font-size: calc( 1.86624em + 1.84669 * ( ( 100vw - 0em) / 62 )); } }
   @media (min-width: 62em) and (max-width: 75em) {
     h2 {
-      font-size: calc( 3.71293em + 0.7711 * ( ( 100vw - 62em) / 13 )); } }
+      font-size: calc( 3.71293em + 0 * ( ( 100vw - 62em) / 13 )); } }
   @media (min-width: 75em) {
     h2 {
-      font-size: 4.48403em; } }
+      font-size: 3.71293em; } }
 
 h3 {
-  font-size: 1.74901em; }
+  font-size: 1.5552em; }
   @media (min-width: 0em) and (max-width: 62em) {
     h3 {
-      font-size: calc( 1.74901em + 1.10709 * ( ( 100vw - 0em) / 62 )); } }
+      font-size: calc( 1.5552em + 1.3009 * ( ( 100vw - 0em) / 62 )); } }
   @media (min-width: 62em) and (max-width: 75em) {
     h3 {
-      font-size: calc( 2.8561em + 0.46541 * ( ( 100vw - 62em) / 13 )); } }
+      font-size: calc( 2.8561em + 0 * ( ( 100vw - 62em) / 13 )); } }
   @media (min-width: 75em) {
     h3 {
-      font-size: 3.32151em; } }
+      font-size: 2.8561em; } }
 
 h4 {
-  font-size: 1.52087em; }
+  font-size: 1.296em; }
   @media (min-width: 0em) and (max-width: 62em) {
     h4 {
-      font-size: calc( 1.52087em + 0.67613 * ( ( 100vw - 0em) / 62 )); } }
+      font-size: calc( 1.296em + 0.901 * ( ( 100vw - 0em) / 62 )); } }
   @media (min-width: 62em) and (max-width: 75em) {
     h4 {
-      font-size: calc( 2.197em + 0.26337 * ( ( 100vw - 62em) / 13 )); } }
+      font-size: calc( 2.197em + 0 * ( ( 100vw - 62em) / 13 )); } }
   @media (min-width: 75em) {
     h4 {
-      font-size: 2.46038em; } }
+      font-size: 2.197em; } }
 
 h5 {
-  font-size: 1.3225em; }
+  font-size: 1.08em; }
   @media (min-width: 0em) and (max-width: 62em) {
     h5 {
-      font-size: calc( 1.3225em + 0.3675 * ( ( 100vw - 0em) / 62 )); } }
+      font-size: calc( 1.08em + 0.61 * ( ( 100vw - 0em) / 62 )); } }
   @media (min-width: 62em) and (max-width: 75em) {
     h5 {
-      font-size: calc( 1.69em + 0.1325 * ( ( 100vw - 62em) / 13 )); } }
+      font-size: calc( 1.69em + 0 * ( ( 100vw - 62em) / 13 )); } }
   @media (min-width: 75em) {
     h5 {
-      font-size: 1.8225em; } }
+      font-size: 1.69em; } }
 
 h6 {
-  font-size: 1.15em; }
+  font-size: 0.9em; }
   @media (min-width: 0em) and (max-width: 62em) {
     h6 {
-      font-size: calc( 1.15em + 0.15 * ( ( 100vw - 0em) / 62 )); } }
+      font-size: calc( 0.9em + 0.4 * ( ( 100vw - 0em) / 62 )); } }
   @media (min-width: 62em) and (max-width: 75em) {
     h6 {
-      font-size: calc( 1.3em + 0.05 * ( ( 100vw - 62em) / 13 )); } }
+      font-size: calc( 1.3em + 0 * ( ( 100vw - 62em) / 13 )); } }
   @media (min-width: 75em) {
     h6 {
-      font-size: 1.35em; } }
+      font-size: 1.3em; } }
 
 .title {
   color: #E5627C; }
@@ -713,14 +713,14 @@ strong {
   font-weight: bold; }
 
 small {
-  font-size: 0.76923em; }
+  font-size: 0.83333em; }
 
 .caption {
-  font-size: 0.76923em;
+  font-size: 0.83333em;
   font-family: "Fira Sans", serif; }
 
 label {
-  font-size: 0.76923em; }
+  font-size: 0.83333em; }
 
 a {
   color: #14386C;
@@ -1972,11 +1972,13 @@ input.error, textarea.error {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-@media (max-width: 991px) {
-  .speaking-talks {
-    width: calc(100% * 12/12 - (0.5rem * 2));
-    float: left;
-    box-sizing: border-box; } }
+.speaking-talks {
+  margin-top: 0.5rem; }
+  @media (max-width: 991px) {
+    .speaking-talks {
+      width: calc(100% * 12/12 - (0.5rem * 2));
+      float: left;
+      box-sizing: border-box; } }
   @media (max-width: 991px) and (max-width: 991px) {
     .speaking-talks {
       margin-right: 0.5rem;
@@ -1989,12 +1991,11 @@ input.error, textarea.error {
     .speaking-talks {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-
-@media (min-width: 992px) and (max-width: 1999px) {
-  .speaking-talks {
-    width: calc(100% * 12/12 - (1rem * 2));
-    float: left;
-    box-sizing: border-box; } }
+  @media (min-width: 992px) and (max-width: 1999px) {
+    .speaking-talks {
+      width: calc(100% * 12/12 - (1rem * 2));
+      float: left;
+      box-sizing: border-box; } }
   @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .speaking-talks {
       margin-right: 0.5rem;
@@ -2007,12 +2008,11 @@ input.error, textarea.error {
     .speaking-talks {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-
-@media (min-width: 1200px) {
-  .speaking-talks {
-    width: calc(100% * 12/12 - (1.25rem * 2));
-    float: left;
-    box-sizing: border-box; } }
+  @media (min-width: 1200px) {
+    .speaking-talks {
+      width: calc(100% * 12/12 - (1.25rem * 2));
+      float: left;
+      box-sizing: border-box; } }
   @media (min-width: 1200px) and (max-width: 991px) {
     .speaking-talks {
       margin-right: 0.5rem;
@@ -2025,12 +2025,14 @@ input.error, textarea.error {
     .speaking-talks {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-
-@media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
-  .speaking-talks {
-    width: calc(100% * 6/12 - (0.5rem * 2));
-    float: left;
-    box-sizing: border-box; } }
+  @media (min-width: 992px) and (max-width: 1999px) {
+    .speaking-talks {
+      margin-top: 1rem; } }
+  @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
+    .speaking-talks {
+      width: calc(100% * 6/12 - (0.5rem * 2));
+      float: left;
+      box-sizing: border-box; } }
   @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) and (max-width: 991px) {
     .speaking-talks {
       margin-right: 0.5rem;
@@ -2043,12 +2045,11 @@ input.error, textarea.error {
     .speaking-talks {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-
-@media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
-  .speaking-talks {
-    width: calc(100% * 6/12 - (1rem * 2));
-    float: left;
-    box-sizing: border-box; } }
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
+    .speaking-talks {
+      width: calc(100% * 6/12 - (1rem * 2));
+      float: left;
+      box-sizing: border-box; } }
   @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .speaking-talks {
       margin-right: 0.5rem;
@@ -2061,12 +2062,11 @@ input.error, textarea.error {
     .speaking-talks {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-
-@media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
-  .speaking-talks {
-    width: calc(100% * 6/12 - (1.25rem * 2));
-    float: left;
-    box-sizing: border-box; } }
+  @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
+    .speaking-talks {
+      width: calc(100% * 6/12 - (1.25rem * 2));
+      float: left;
+      box-sizing: border-box; } }
   @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) and (max-width: 991px) {
     .speaking-talks {
       margin-right: 0.5rem;
@@ -2079,12 +2079,14 @@ input.error, textarea.error {
     .speaking-talks {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-
-@media (min-width: 1200px) and (max-width: 991px) {
-  .speaking-talks {
-    width: calc(100% * 4/12 - (0.5rem * 2));
-    float: left;
-    box-sizing: border-box; } }
+  @media (min-width: 1200px) {
+    .speaking-talks {
+      margin-top: 1.5rem; } }
+  @media (min-width: 1200px) and (max-width: 991px) {
+    .speaking-talks {
+      width: calc(100% * 4/12 - (0.5rem * 2));
+      float: left;
+      box-sizing: border-box; } }
   @media (min-width: 1200px) and (max-width: 991px) and (max-width: 991px) {
     .speaking-talks {
       margin-right: 0.5rem;
@@ -2097,12 +2099,11 @@ input.error, textarea.error {
     .speaking-talks {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-
-@media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
-  .speaking-talks {
-    width: calc(100% * 4/12 - (1rem * 2));
-    float: left;
-    box-sizing: border-box; } }
+  @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
+    .speaking-talks {
+      width: calc(100% * 4/12 - (1rem * 2));
+      float: left;
+      box-sizing: border-box; } }
   @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .speaking-talks {
       margin-right: 0.5rem;
@@ -2115,12 +2116,11 @@ input.error, textarea.error {
     .speaking-talks {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-
-@media (min-width: 1200px) and (min-width: 1200px) {
-  .speaking-talks {
-    width: calc(100% * 4/12 - (1.25rem * 2));
-    float: left;
-    box-sizing: border-box; } }
+  @media (min-width: 1200px) and (min-width: 1200px) {
+    .speaking-talks {
+      width: calc(100% * 4/12 - (1.25rem * 2));
+      float: left;
+      box-sizing: border-box; } }
   @media (min-width: 1200px) and (min-width: 1200px) and (max-width: 991px) {
     .speaking-talks {
       margin-right: 0.5rem;

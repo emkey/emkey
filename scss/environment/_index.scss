@@ -126,12 +126,15 @@
 	}
 }
 .speaking-talks{
+	@include margin-top($normal-spacing);
 	@include column-width(12);
 	@include respond-to(medium){
 		@include column-width(6);
+		@include margin-top($medium-spacing);
 	}
 	@include respond-to(large){
 		@include column-width(4);
+		@include margin-top($large-spacing);
 	}
 }
 .speaking-talks li{

@@ -1,10 +1,10 @@
 
 $modularscale: (
   base: $base-fontsize,
-  ratio: 1.3,
+  ratio: 1.2,
   0em:(
-  base: $base-fontsize,
-  ratio: 1.15,
+  base: 0.75em,
+  ratio: 1.2,
   ),
   62em:(
     base: $base-fontsize,
@@ -12,7 +12,7 @@ $modularscale: (
   ),
   75em:(
     base: $base-fontsize,
-    ratio:1.35
+    ratio:1.3
   ),
 );
 
