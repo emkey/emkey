@@ -1022,7 +1022,7 @@ input.error, textarea.error {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-.portfolio-title a {
+h4.portfolio-title a {
   border: none; }
 
 @media (max-width: 991px) {
