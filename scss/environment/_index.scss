@@ -33,6 +33,7 @@ h4.portfolio-title a{
 }
 .portfolio-article{
 	@include padding-top($large-spacing);
+	@include padding-bottom($large-spacing);
 	@include column-width(12);
 	@include respond-to(medium){
 		@include column-width(6);

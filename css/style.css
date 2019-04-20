@@ -1026,7 +1026,8 @@ h4.portfolio-title a {
   border: none; }
 
 .portfolio-article {
-  padding-top: 1.5rem; }
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem; }
   @media (max-width: 991px) {
     .portfolio-article {
       width: calc(100% * 12/12 - (0.5rem * 2));
