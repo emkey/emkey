@@ -1025,11 +1025,13 @@ input.error, textarea.error {
 h4.portfolio-title a {
   border: none; }
 
-@media (max-width: 991px) {
-  .portfolio-article {
-    width: calc(100% * 12/12 - (0.5rem * 2));
-    float: left;
-    box-sizing: border-box; } }
+.portfolio-article {
+  margin-top: 1.5rem; }
+  @media (max-width: 991px) {
+    .portfolio-article {
+      width: calc(100% * 12/12 - (0.5rem * 2));
+      float: left;
+      box-sizing: border-box; } }
   @media (max-width: 991px) and (max-width: 991px) {
     .portfolio-article {
       margin-right: 0.5rem;
@@ -1042,12 +1044,11 @@ h4.portfolio-title a {
     .portfolio-article {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-
-@media (min-width: 992px) and (max-width: 1999px) {
-  .portfolio-article {
-    width: calc(100% * 12/12 - (1rem * 2));
-    float: left;
-    box-sizing: border-box; } }
+  @media (min-width: 992px) and (max-width: 1999px) {
+    .portfolio-article {
+      width: calc(100% * 12/12 - (1rem * 2));
+      float: left;
+      box-sizing: border-box; } }
   @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
     .portfolio-article {
       margin-right: 0.5rem;
@@ -1060,12 +1061,11 @@ h4.portfolio-title a {
     .portfolio-article {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
-
-@media (min-width: 1200px) {
-  .portfolio-article {
-    width: calc(100% * 12/12 - (1.25rem * 2));
-    float: left;
-    box-sizing: border-box; } }
+  @media (min-width: 1200px) {
+    .portfolio-article {
+      width: calc(100% * 12/12 - (1.25rem * 2));
+      float: left;
+      box-sizing: border-box; } }
   @media (min-width: 1200px) and (max-width: 991px) {
     .portfolio-article {
       margin-right: 0.5rem;
