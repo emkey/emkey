@@ -25,7 +25,35 @@
 		@include margin-bottom($large-spacing);
 	}
 }
+.portfolio{
+}
+.portfolio-title{
 
+}
+
+.portfolio-title a{
+	border: none;
+}
+.portfolio-work-list{
+	@extend .layout-row;
+}
+.portfolio-article{
+	@include column-width(12);
+	@include respond-to(medium){
+		@include column-width(6);
+	}
+	@include respond-to(large){
+		@include column-width(4);
+	}
+}
+.portfolio-thumbnail{
+	@include margin-bottom($large-spacing);
+	overflow: hidden;
+	border-radius: 8px;
+}
+.portfolio-thumbnail img{
+	width: 100%;
+}
 .social-media{
 	@include column-width(12);
 }
@@ -141,7 +169,19 @@
 	border-left: $normal-spacing solid $magenta;
 	padding-left: $normal-spacing;
 	margin-bottom: $normal-spacing;
+	@include respond-to(medium){
+		margin-bottom: $medium-spacing;
+	}
+	@include respond-to(large){
+		margin-bottom: $large-spacing;
+	}
 	margin-top: $normal-spacing;
+	@include respond-to(medium){
+		margin-top: $medium-spacing;
+	}
+	@include respond-to(large){
+		margin-top: $large-spacing;
+	}
 }
 .events{
 	@include column-width(12);
