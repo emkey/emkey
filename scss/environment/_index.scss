@@ -32,7 +32,7 @@ h4.portfolio-title a{
 	@extend .layout-row;
 }
 .portfolio-article{
-	@include margin-top($large-spacing);
+	@include padding-top($large-spacing);
 	@include column-width(12);
 	@include respond-to(medium){
 		@include column-width(6);
