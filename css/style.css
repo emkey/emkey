@@ -384,9 +384,9 @@ html {
   margin-right: auto; }
 
 /* Sets up a layout row */
-.layout-row, .intro, .portfolio-work-list, .process, .speaking, .process-intro, .speaking-intro {
+.layout-row, .intro, .portfolio-work-list, .process, .speaking, .portfolio, .process-intro, .speaking-intro {
   width: 100%; }
-  .layout-row:after, .intro:after, .portfolio-work-list:after, .process:after, .speaking:after, .process-intro:after, .speaking-intro:after {
+  .layout-row:after, .intro:after, .portfolio-work-list:after, .process:after, .speaking:after, .portfolio:after, .process-intro:after, .speaking-intro:after {
     display: table;
     clear: both;
     content: ''; }
@@ -1415,25 +1415,25 @@ h4.portfolio-title a {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-.process, .speaking {
+.process, .speaking, .portfolio {
   margin-bottom: 40px; }
   @media (min-width: 992px) and (max-width: 1999px) {
-    .process, .speaking {
+    .process, .speaking, .portfolio {
       margin-bottom: 64px; } }
   @media (min-width: 1200px) {
-    .process, .speaking {
+    .process, .speaking, .portfolio {
       margin-bottom: 80px; } }
-  .process .title, .speaking .title {
+  .process .title, .speaking .title, .portfolio .title {
     border-top: 16px solid #E5627C;
     display: inline-block;
     padding-left: 0.5rem;
     margin-left: -0.5rem; }
     @media (min-width: 992px) and (max-width: 1999px) {
-      .process .title, .speaking .title {
+      .process .title, .speaking .title, .portfolio .title {
         padding-left: 1rem;
         margin-left: -1rem; } }
     @media (min-width: 1200px) {
-      .process .title, .speaking .title {
+      .process .title, .speaking .title, .portfolio .title {
         padding-left: 1.5rem;
         margin-left: -1.5rem; } }
 

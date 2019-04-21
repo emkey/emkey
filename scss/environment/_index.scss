@@ -70,7 +70,7 @@ h4.portfolio-title a{
 	}
 }
 
-.process, .speaking{
+.process, .speaking, .portfolio{
 	@extend .layout-row;
 	margin-bottom: 40px;
 	@include respond-to(medium){
