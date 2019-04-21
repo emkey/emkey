@@ -384,9 +384,9 @@ html {
   margin-right: auto; }
 
 /* Sets up a layout row */
-.layout-row, .intro, .portfolio-work-list, .process, .speaking, .portfolio, .process-intro, .speaking-intro {
+.layout-row, .intro, .portfolio-work-list, .process, .speaking, .portfolio, .process-intro, .speaking-intro, .portfolio-work-intro {
   width: 100%; }
-  .layout-row:after, .intro:after, .portfolio-work-list:after, .process:after, .speaking:after, .portfolio:after, .process-intro:after, .speaking-intro:after {
+  .layout-row:after, .intro:after, .portfolio-work-list:after, .process:after, .speaking:after, .portfolio:after, .process-intro:after, .speaking-intro:after, .portfolio-work-intro:after {
     display: table;
     clear: both;
     content: ''; }
@@ -1022,6 +1022,9 @@ input.error, textarea.error {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
+.portfolio-work-intro {
+  margin-bottom: 4.5rem; }
+
 h4.portfolio-title a {
   border: none; }
 
@@ -1437,111 +1440,111 @@ h4.portfolio-title a {
         padding-left: 1.5rem;
         margin-left: -1.5rem; } }
 
-.process-intro, .speaking-intro {
+.process-intro, .speaking-intro, .portfolio-work-intro {
   margin-bottom: 1.5rem; }
   @media (max-width: 991px) {
-    .process-intro .subtitle, .speaking-intro .subtitle {
+    .process-intro .subtitle, .speaking-intro .subtitle, .portfolio-work-intro .subtitle {
       width: calc(100% * 11/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
   @media (max-width: 991px) and (max-width: 991px) {
-    .process-intro .subtitle, .speaking-intro .subtitle {
+    .process-intro .subtitle, .speaking-intro .subtitle, .portfolio-work-intro .subtitle {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
   @media (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
-    .process-intro .subtitle, .speaking-intro .subtitle {
+    .process-intro .subtitle, .speaking-intro .subtitle, .portfolio-work-intro .subtitle {
       margin-right: 1rem;
       margin-left: 1rem; } }
   @media (max-width: 991px) and (min-width: 1200px) {
-    .process-intro .subtitle, .speaking-intro .subtitle {
+    .process-intro .subtitle, .speaking-intro .subtitle, .portfolio-work-intro .subtitle {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
   @media (min-width: 992px) and (max-width: 1999px) {
-    .process-intro .subtitle, .speaking-intro .subtitle {
+    .process-intro .subtitle, .speaking-intro .subtitle, .portfolio-work-intro .subtitle {
       width: calc(100% * 11/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
   @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
-    .process-intro .subtitle, .speaking-intro .subtitle {
+    .process-intro .subtitle, .speaking-intro .subtitle, .portfolio-work-intro .subtitle {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
   @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
-    .process-intro .subtitle, .speaking-intro .subtitle {
+    .process-intro .subtitle, .speaking-intro .subtitle, .portfolio-work-intro .subtitle {
       margin-right: 1rem;
       margin-left: 1rem; } }
   @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
-    .process-intro .subtitle, .speaking-intro .subtitle {
+    .process-intro .subtitle, .speaking-intro .subtitle, .portfolio-work-intro .subtitle {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
   @media (min-width: 1200px) {
-    .process-intro .subtitle, .speaking-intro .subtitle {
+    .process-intro .subtitle, .speaking-intro .subtitle, .portfolio-work-intro .subtitle {
       width: calc(100% * 11/12 - (1.25rem * 2));
       float: left;
       box-sizing: border-box; } }
   @media (min-width: 1200px) and (max-width: 991px) {
-    .process-intro .subtitle, .speaking-intro .subtitle {
+    .process-intro .subtitle, .speaking-intro .subtitle, .portfolio-work-intro .subtitle {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
   @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
-    .process-intro .subtitle, .speaking-intro .subtitle {
+    .process-intro .subtitle, .speaking-intro .subtitle, .portfolio-work-intro .subtitle {
       margin-right: 1rem;
       margin-left: 1rem; } }
   @media (min-width: 1200px) and (min-width: 1200px) {
-    .process-intro .subtitle, .speaking-intro .subtitle {
+    .process-intro .subtitle, .speaking-intro .subtitle, .portfolio-work-intro .subtitle {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
 @media (min-width: 1200px) and (max-width: 991px) {
-  .process-intro .subtitle, .speaking-intro .subtitle {
+  .process-intro .subtitle, .speaking-intro .subtitle, .portfolio-work-intro .subtitle {
     width: calc(100% * 8/12 - (0.5rem * 2));
     float: left;
     box-sizing: border-box; } }
   @media (min-width: 1200px) and (max-width: 991px) and (max-width: 991px) {
-    .process-intro .subtitle, .speaking-intro .subtitle {
+    .process-intro .subtitle, .speaking-intro .subtitle, .portfolio-work-intro .subtitle {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
   @media (min-width: 1200px) and (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
-    .process-intro .subtitle, .speaking-intro .subtitle {
+    .process-intro .subtitle, .speaking-intro .subtitle, .portfolio-work-intro .subtitle {
       margin-right: 1rem;
       margin-left: 1rem; } }
   @media (min-width: 1200px) and (max-width: 991px) and (min-width: 1200px) {
-    .process-intro .subtitle, .speaking-intro .subtitle {
+    .process-intro .subtitle, .speaking-intro .subtitle, .portfolio-work-intro .subtitle {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
 @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
-  .process-intro .subtitle, .speaking-intro .subtitle {
+  .process-intro .subtitle, .speaking-intro .subtitle, .portfolio-work-intro .subtitle {
     width: calc(100% * 8/12 - (1rem * 2));
     float: left;
     box-sizing: border-box; } }
   @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
-    .process-intro .subtitle, .speaking-intro .subtitle {
+    .process-intro .subtitle, .speaking-intro .subtitle, .portfolio-work-intro .subtitle {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
   @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
-    .process-intro .subtitle, .speaking-intro .subtitle {
+    .process-intro .subtitle, .speaking-intro .subtitle, .portfolio-work-intro .subtitle {
       margin-right: 1rem;
       margin-left: 1rem; } }
   @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
-    .process-intro .subtitle, .speaking-intro .subtitle {
+    .process-intro .subtitle, .speaking-intro .subtitle, .portfolio-work-intro .subtitle {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
 @media (min-width: 1200px) and (min-width: 1200px) {
-  .process-intro .subtitle, .speaking-intro .subtitle {
+  .process-intro .subtitle, .speaking-intro .subtitle, .portfolio-work-intro .subtitle {
     width: calc(100% * 8/12 - (1.25rem * 2));
     float: left;
     box-sizing: border-box; } }
   @media (min-width: 1200px) and (min-width: 1200px) and (max-width: 991px) {
-    .process-intro .subtitle, .speaking-intro .subtitle {
+    .process-intro .subtitle, .speaking-intro .subtitle, .portfolio-work-intro .subtitle {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
   @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
-    .process-intro .subtitle, .speaking-intro .subtitle {
+    .process-intro .subtitle, .speaking-intro .subtitle, .portfolio-work-intro .subtitle {
       margin-right: 1rem;
       margin-left: 1rem; } }
   @media (min-width: 1200px) and (min-width: 1200px) and (min-width: 1200px) {
-    .process-intro .subtitle, .speaking-intro .subtitle {
+    .process-intro .subtitle, .speaking-intro .subtitle, .portfolio-work-intro .subtitle {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
@@ -1930,57 +1933,57 @@ h4.portfolio-title a {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 
-.process .header, .speaking .header {
+.process .header, .speaking .header, .portfolio .header {
   margin-top: 40px; }
   @media (max-width: 991px) {
-    .process .header, .speaking .header {
+    .process .header, .speaking .header, .portfolio .header {
       width: calc(100% * 12/12 - (0.5rem * 2));
       float: left;
       box-sizing: border-box; } }
   @media (max-width: 991px) and (max-width: 991px) {
-    .process .header, .speaking .header {
+    .process .header, .speaking .header, .portfolio .header {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
   @media (max-width: 991px) and (min-width: 992px) and (max-width: 1999px) {
-    .process .header, .speaking .header {
+    .process .header, .speaking .header, .portfolio .header {
       margin-right: 1rem;
       margin-left: 1rem; } }
   @media (max-width: 991px) and (min-width: 1200px) {
-    .process .header, .speaking .header {
+    .process .header, .speaking .header, .portfolio .header {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
   @media (min-width: 992px) and (max-width: 1999px) {
-    .process .header, .speaking .header {
+    .process .header, .speaking .header, .portfolio .header {
       width: calc(100% * 12/12 - (1rem * 2));
       float: left;
       box-sizing: border-box; } }
   @media (min-width: 992px) and (max-width: 1999px) and (max-width: 991px) {
-    .process .header, .speaking .header {
+    .process .header, .speaking .header, .portfolio .header {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
   @media (min-width: 992px) and (max-width: 1999px) and (min-width: 992px) and (max-width: 1999px) {
-    .process .header, .speaking .header {
+    .process .header, .speaking .header, .portfolio .header {
       margin-right: 1rem;
       margin-left: 1rem; } }
   @media (min-width: 992px) and (max-width: 1999px) and (min-width: 1200px) {
-    .process .header, .speaking .header {
+    .process .header, .speaking .header, .portfolio .header {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
   @media (min-width: 1200px) {
-    .process .header, .speaking .header {
+    .process .header, .speaking .header, .portfolio .header {
       width: calc(100% * 12/12 - (1.25rem * 2));
       float: left;
       box-sizing: border-box; } }
   @media (min-width: 1200px) and (max-width: 991px) {
-    .process .header, .speaking .header {
+    .process .header, .speaking .header, .portfolio .header {
       margin-right: 0.5rem;
       margin-left: 0.5rem; } }
   @media (min-width: 1200px) and (min-width: 992px) and (max-width: 1999px) {
-    .process .header, .speaking .header {
+    .process .header, .speaking .header, .portfolio .header {
       margin-right: 1rem;
       margin-left: 1rem; } }
   @media (min-width: 1200px) and (min-width: 1200px) {
-    .process .header, .speaking .header {
+    .process .header, .speaking .header, .portfolio .header {
       margin-right: 1.25rem;
       margin-left: 1.25rem; } }
 

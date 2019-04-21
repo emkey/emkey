@@ -25,6 +25,9 @@
 		@include margin-bottom($large-spacing);
 	}
 }
+.portfolio-work-intro{
+	@include margin-bottom($large-spacing*3);
+}
 h4.portfolio-title a{
 	border: none;
 }
@@ -95,7 +98,7 @@ h4.portfolio-title a{
 
 	}
 }
-.process-intro, .speaking-intro{
+.process-intro, .speaking-intro, .portfolio-work-intro{
 	@extend .layout-row;
 	@include margin-bottom($large-spacing);
 	.subtitle{
@@ -136,7 +139,7 @@ h4.portfolio-title a{
 	}
 }
 
-.process .header, .speaking .header{
+.process .header, .speaking .header, .portfolio .header{
 	@include column-width(12);
 	margin-top:40px;
 }
